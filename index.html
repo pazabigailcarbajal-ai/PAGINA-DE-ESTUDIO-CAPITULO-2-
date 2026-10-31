@@ -1,0 +1,1515 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"></head><body><title>Carmen · Derecho Penal</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Plataforma de estudio guiado del Capítulo 2 (Breve historia) de Lecciones de derecho penal, Díaz-Aranda">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=DM+Serif+Display&display=swap">
+<style>
+/* Concepto: «Expediente rosa» — cada estación es una hoja del expediente de estudio de Carmen; citas del libro como fojas engrapadas, rosa como color de marca. */
+:root {
+  --bg: #fbf1f5;
+  --surface: #ffffff;
+  --surface-2: #f8e6ee;
+  --ink: #2b1621;
+  --muted: #7b5b69;
+  --line: #efd3df;
+  --accent: #c2185b;
+  --accent-2: #e04a86;
+  --accent-soft: #fde1ec;
+  --on-accent: #ffffff;
+  --mark: #ffc4da;
+  --mark-ink: #2b1621;
+  --ok: #18794e;
+  --ok-soft: #ddf3e8;
+  --bad: #b3261e;
+  --bad-soft: #fde4e1;
+  --warn: #8a5300;
+  --warn-soft: #fff0d9;
+  --paper-rule: #f3c6d7;
+  --shadow: 0 1px 2px rgba(120, 20, 60, .06), 0 8px 22px rgba(120, 20, 60, .07);
+  --font-display: "DM Serif Display", Georgia, "Times New Roman", serif;
+  --font-body: "Atkinson Hyperlegible", "Segoe UI", system-ui, -apple-system, Roboto, sans-serif;
+  --r: 16px;
+  --cw: 24px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #170c12; --surface: #241520; --surface-2: #301c29; --ink: #f9e9f0; --muted: #c4a3b2; --line: #44293a;
+    --accent: #ff6fa3; --accent-2: #ff9cc0; --accent-soft: #3d1a2c; --on-accent: #2a0716;
+    --mark: #6e2547; --mark-ink: #fff0f6; --ok: #62d39c; --ok-soft: #153325; --bad: #ff8b80; --bad-soft: #3e1c1a;
+    --warn: #ffc56b; --warn-soft: #3a2a12; --paper-rule: #5c2a42; --shadow: 0 1px 2px rgba(0,0,0,.35), 0 8px 22px rgba(0,0,0,.3);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #170c12; --surface: #241520; --surface-2: #301c29; --ink: #f9e9f0; --muted: #c4a3b2; --line: #44293a;
+  --accent: #ff6fa3; --accent-2: #ff9cc0; --accent-soft: #3d1a2c; --on-accent: #2a0716;
+  --mark: #6e2547; --mark-ink: #fff0f6; --ok: #62d39c; --ok-soft: #153325; --bad: #ff8b80; --bad-soft: #3e1c1a;
+  --warn: #ffc56b; --warn-soft: #3a2a12; --paper-rule: #5c2a42; --shadow: 0 1px 2px rgba(0,0,0,.35), 0 8px 22px rgba(0,0,0,.3);
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 17px; line-height: 1.6; }
+button, input, select, textarea { font: inherit; color: inherit; }
+button { cursor: pointer; }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-radius: 8px; }
+mark { background: linear-gradient(transparent 40%, var(--mark) 40%, var(--mark) 92%, transparent 92%); color: var(--mark-ink); padding: 0 2px; }
+a { color: var(--accent); }
+.app { max-width: 720px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 18px calc(100px + env(safe-area-inset-bottom, 0px)); display: grid; gap: 16px; grid-template-columns: minmax(0, 1fr); }
+.app > * { min-width: 0; }
+h1, h2, h3 { font-family: var(--font-display); font-weight: 400; line-height: 1.15; margin: 0; text-wrap: balance; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.4rem; }
+h3 { font-size: 1.1rem; font-family: var(--font-body); font-weight: 700; }
+p { margin: 0; }
+.muted { color: var(--muted); }
+.small { font-size: .88rem; }
+.center { text-align: center; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+.eyebrow { font-size: .74rem; letter-spacing: .09em; text-transform: uppercase; font-weight: 700; color: var(--muted); }
+.stack { display: grid; gap: 12px; min-width: 0; grid-template-columns: minmax(0, 1fr); }
+.stack.tight { gap: 3px; }
+.row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.spread { display: flex; gap: 10px; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+.card { background: var(--surface); border-radius: var(--r); box-shadow: var(--shadow); padding: 18px; min-width: 0; display: grid; gap: 10px; }
+.card.quiet { box-shadow: none; background: transparent; border: 1.5px dashed var(--paper-rule); }
+.tnum { font-variant-numeric: tabular-nums; }
+.tight-list { margin: 0; padding-left: 20px; display: grid; gap: 6px; }
+
+.btn { border: 0; border-radius: 999px; padding: 11px 20px; font-weight: 700; background: var(--accent); color: var(--on-accent); display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 46px; text-decoration: none; max-width: 100%; text-align: center; line-height: 1.25; }
+.btn:active { transform: translateY(1px); }
+.btn.ghost { background: var(--accent-soft); color: var(--accent); }
+.btn.line { background: transparent; color: var(--ink); border: 1.5px solid var(--line); }
+.btn.small { padding: 8px 14px; min-height: 40px; font-size: .9rem; }
+.btn.wide { width: 100%; }
+.btn[disabled] { opacity: .45; cursor: not-allowed; }
+.icon-btn { border: 1.5px solid var(--line); background: var(--surface); border-radius: 999px; padding: 6px 12px; font-size: .86rem; font-weight: 700; min-height: 38px; display: inline-flex; gap: 6px; align-items: center; color: var(--ink); text-align: left; }
+.icon-btn.on { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
+.chip { display: inline-flex; align-items: center; font-size: .72rem; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; padding: 3px 9px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); white-space: nowrap; }
+.chip.done { background: var(--ok-soft); color: var(--ok); }
+.bar { height: 10px; background: var(--surface-2); border-radius: 999px; overflow: hidden; }
+.bar > i { display: block; height: 100%; background: var(--accent); border-radius: 999px; transition: width .4s ease; }
+.bar.ok > i { background: var(--ok); }
+
+/* Inicio */
+.hero { background: var(--accent); color: var(--on-accent); border-radius: 22px; padding: 22px 20px; display: grid; gap: 10px; position: relative; overflow: hidden; }
+.hero::after { content: "§"; position: absolute; right: -8px; top: -38px; font-family: var(--font-display); font-size: 11rem; line-height: 1; opacity: .13; pointer-events: none; }
+.hero h1 { font-size: 2.3rem; color: var(--on-accent); }
+.hero .sub { opacity: .92; max-width: 46ch; }
+.eyebrow.on-acc { color: var(--on-accent); opacity: .8; }
+.hero-meter { display: grid; gap: 6px; margin-top: 4px; font-weight: 700; font-size: .92rem; }
+.hero .bar { background: rgba(255,255,255,.28); }
+.hero .bar > i { background: var(--on-accent); }
+.next-row { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 14px; align-items: start; }
+.big-ic { width: 52px; height: 52px; border-radius: 14px; background: var(--accent-soft); display: grid; place-items: center; font-size: 1.6rem; }
+.due { border: 2px solid var(--accent); }
+.mission-l { display: flex; gap: 10px; align-items: center; padding: 12px; border-radius: 12px; background: var(--surface-2); border: 0; width: 100%; text-align: left; }
+.mission-l .t { flex: 1; min-width: 0; font-weight: 700; }
+.method-l { margin: 0; padding-left: 22px; display: grid; gap: 8px; }
+.method-l li::marker { color: var(--accent); font-weight: 800; }
+.motiv { font-family: var(--font-display); font-size: 1.3rem; line-height: 1.3; color: var(--accent); }
+
+/* Aprender */
+.route { display: grid; gap: 8px; }
+.lrow { display: grid; grid-template-columns: 36px minmax(0, 1fr) auto; gap: 12px; align-items: center; padding: 12px 14px; border-radius: 14px; background: var(--surface); border: 1.5px solid var(--line); text-align: left; width: 100%; }
+.lrow .n { width: 36px; height: 36px; border-radius: 50%; border: 2px solid var(--paper-rule); display: grid; place-items: center; font-weight: 800; color: var(--accent); font-family: var(--font-display); font-size: 1.05rem; }
+.lrow.done .n { background: var(--ok); border-color: var(--ok); color: var(--on-accent); font-family: var(--font-body); }
+.lrow .tt { font-weight: 700; line-height: 1.3; }
+.lrow .meta { font-size: .8rem; color: var(--muted); line-height: 1.35; }
+.lrow .ic { font-size: 1.3rem; }
+.back { border: 0; background: none; color: var(--accent); font-weight: 800; padding: 6px 0; justify-self: start; }
+.lesson-top { display: grid; gap: 8px; }
+.goal { font-size: .95rem; color: var(--muted); }
+.steps-dots { display: flex; gap: 4px; }
+.steps-dots i { flex: 1; height: 6px; border-radius: 99px; background: var(--surface-2); }
+.steps-dots i.on { background: var(--accent); }
+.steps-dots i.cur { background: var(--accent-2); }
+.sheet { background: var(--surface); border-radius: var(--r); box-shadow: var(--shadow); padding: 20px 18px 20px 30px; position: relative; display: grid; gap: 12px; min-width: 0; }
+.sheet::before { content: ""; position: absolute; left: 14px; top: 16px; bottom: 16px; width: 2px; background: var(--paper-rule); border-radius: 2px; }
+.sheet h2 { color: var(--accent); }
+.sheet .body { font-size: 1.07rem; line-height: 1.7; }
+.nav-btns { display: flex; gap: 10px; }
+.nav-btns .btn { flex: 1; }
+.callout { border-radius: 14px; padding: 14px 16px; display: grid; gap: 8px; }
+.callout.trap { background: var(--bad-soft); }
+.callout.trap h3 { color: var(--bad); }
+.callout.trick { background: var(--accent-soft); }
+.callout.trick h3 { color: var(--accent); }
+.callout ul { margin: 0; padding-left: 20px; display: grid; gap: 6px; }
+.ta { width: 100%; border: 1.5px solid var(--line); border-radius: 12px; padding: 12px 14px; background: var(--bg); resize: vertical; min-height: 140px; line-height: 1.55; }
+.model { background: var(--ok-soft); border-radius: 12px; padding: 12px 14px; display: grid; gap: 6px; }
+.check { display: flex; gap: 10px; align-items: flex-start; padding: 8px 0; border-top: 1px solid var(--line); }
+.check input { width: 22px; height: 22px; accent-color: var(--accent); flex: none; margin-top: 2px; }
+
+/* Visuales */
+.vis { min-width: 0; }
+.line-wrap { overflow-x: auto; padding-bottom: 6px; }
+.line { display: flex; min-width: max-content; }
+.line-item { width: 138px; display: grid; gap: 4px; justify-items: center; align-content: start; text-align: center; position: relative; padding: 0 6px; }
+.line-item::before { content: ""; position: absolute; top: calc(2.6em + 9px); left: 0; right: 0; height: 3px; background: var(--paper-rule); }
+.line-age { font-size: .78rem; font-weight: 800; color: var(--accent); min-height: 2.6em; display: grid; align-items: end; line-height: 1.2; }
+.line-dot { width: 18px; height: 18px; border-radius: 50%; background: var(--accent); border: 3px solid var(--surface); box-shadow: 0 0 0 2px var(--accent); z-index: 1; }
+.line-t { font-weight: 700; font-size: .88rem; line-height: 1.2; }
+.line-s { font-size: .76rem; color: var(--muted); line-height: 1.3; }
+.flow { display: grid; gap: 4px; }
+.flow-step { display: flex; gap: 10px; align-items: flex-start; background: var(--surface-2); border-radius: 12px; padding: 10px 12px; }
+.flow-step b { display: block; line-height: 1.25; }
+.flow-step small { display: block; line-height: 1.4; margin-top: 2px; color: var(--muted); font-size: .88rem; }
+.flow-n { flex: none; width: 26px; height: 26px; border-radius: 50%; background: var(--accent); color: var(--on-accent); display: grid; place-items: center; font-weight: 800; font-size: .8rem; }
+.flow-arrow { text-align: center; color: var(--muted); line-height: 1; font-size: .9rem; }
+.tbl-wrap { overflow-x: auto; border-radius: 12px; border: 1px solid var(--line); }
+.tbl { border-collapse: collapse; width: 100%; font-size: .92rem; min-width: 420px; }
+.tbl th { background: var(--accent-soft); color: var(--accent); text-align: left; padding: 8px 10px; font-size: .76rem; letter-spacing: .05em; text-transform: uppercase; }
+.tbl td { padding: 9px 10px; border-top: 1px solid var(--line); vertical-align: top; line-height: 1.4; }
+.tree { display: grid; gap: 10px; justify-items: center; }
+.tree-root { background: var(--accent); color: var(--on-accent); padding: 8px 18px; border-radius: 12px; font-family: var(--font-display); font-size: 1.1rem; }
+.tree-kids { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 8px; width: 100%; }
+.tree-kid { border: 2px solid var(--accent); border-radius: 12px; padding: 10px; display: grid; gap: 4px; }
+.tree-kid small { color: var(--muted); line-height: 1.35; }
+.vs { display: grid; grid-template-columns: minmax(0,1fr) auto minmax(0,1fr); gap: 8px; }
+.vs-col { background: var(--surface-2); border-radius: 12px; padding: 12px; min-width: 0; }
+.vs-h { font-weight: 800; font-size: .82rem; letter-spacing: .03em; color: var(--accent); margin-bottom: 6px; text-transform: uppercase; }
+.vs-col ul { margin: 0; padding-left: 18px; display: grid; gap: 5px; font-size: .93rem; line-height: 1.4; }
+.vs-mid { align-self: center; font-family: var(--font-display); color: var(--muted); }
+@media (max-width: 480px) { .vs { grid-template-columns: minmax(0,1fr); } .vs-mid { justify-self: center; } }
+.pairs { display: grid; gap: 6px; }
+.pair { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr); gap: 12px; background: var(--surface-2); border-radius: 12px; padding: 10px 12px; font-size: .93rem; line-height: 1.4; }
+@media (max-width: 480px) { .pair { grid-template-columns: minmax(0,1fr); gap: 2px; } }
+.bookq, .nowbox { border-radius: 4px 14px 14px 4px; border-left: 4px solid var(--accent); background: var(--accent-soft); padding: 12px 14px; display: grid; gap: 6px; }
+.nowbox { border-left-color: var(--warn); background: var(--warn-soft); }
+.bookq-h { font-size: .72rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+.nowbox .bookq-h { color: var(--warn); }
+.bookq-b { font-size: .98rem; line-height: 1.55; }
+
+/* Preguntas */
+.q { gap: 12px; }
+.q-text { font-size: 1.07rem; font-weight: 700; line-height: 1.5; }
+.qn { display: inline-grid; place-items: center; width: 26px; height: 26px; border-radius: 50%; background: var(--accent-soft); color: var(--accent); font-size: .8rem; margin-right: 8px; vertical-align: 2px; }
+.opts { display: grid; gap: 8px; }
+.opt { display: grid; grid-template-columns: 30px minmax(0, 1fr); gap: 10px; align-items: center; text-align: left; border: 1.5px solid var(--line); background: var(--surface); border-radius: 14px; padding: 10px 12px; min-height: 50px; line-height: 1.4; }
+.opt .ov { width: 30px; height: 30px; border-radius: 50%; border: 2px solid var(--paper-rule); display: grid; place-items: center; font-weight: 800; font-size: .82rem; color: var(--muted); }
+.opt:not([disabled]):hover { border-color: var(--accent); }
+.opt.ok { border-color: var(--ok); background: var(--ok-soft); }
+.opt.ok .ov { background: var(--ok); border-color: var(--ok); color: var(--surface); }
+.opt.no { border-color: var(--bad); background: var(--bad-soft); }
+.opt.no .ov { background: var(--bad); border-color: var(--bad); color: var(--surface); }
+.opt[disabled] { cursor: default; }
+.fb { border-radius: 12px; padding: 12px 14px; display: grid; gap: 6px; }
+.fb.ok { background: var(--ok-soft); }
+.fb.no { background: var(--bad-soft); }
+.fb b.h { font-family: var(--font-display); font-weight: 400; font-size: 1.15rem; }
+.fb.ok b.h { color: var(--ok); }
+.fb.no b.h { color: var(--bad); }
+.fb .pg { font-size: .8rem; font-weight: 700; color: var(--muted); }
+.grade { justify-items: center; text-align: center; padding: 22px; }
+.grade > b { font-family: var(--font-display); font-weight: 400; font-size: 4rem; line-height: 1; color: var(--accent); }
+.review-item { border-top: 1px solid var(--line); padding-top: 10px; display: grid; gap: 4px; font-size: .95rem; overflow-wrap: anywhere; }
+.review-item .ok { color: var(--ok); font-weight: 700; }
+.search { width: 100%; border: 1.5px solid var(--line); border-radius: 12px; padding: 11px 14px; background: var(--surface); min-height: 46px; }
+
+/* Practicar */
+.tiles { display: grid; grid-template-columns: repeat(auto-fill, minmax(155px, 1fr)); gap: 10px; }
+.tile { border: 0; text-align: left; background: var(--surface); border-radius: var(--r); box-shadow: var(--shadow); padding: 14px; display: grid; gap: 4px; align-content: start; min-height: 112px; }
+.tile .ti { font-size: 1.5rem; }
+.tile b { font-family: var(--font-display); font-weight: 400; font-size: 1.15rem; }
+.tile span:last-child { font-size: .84rem; color: var(--muted); line-height: 1.35; }
+.tf-card { text-align: center; font-size: 1.2rem; font-weight: 700; padding: 30px 18px; line-height: 1.45; }
+.tf-btns { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.order-list { display: grid; gap: 8px; }
+.order-item { display: grid; grid-template-columns: 28px minmax(0, 1fr) auto; gap: 8px; align-items: center; background: var(--surface); border: 1.5px solid var(--line); border-radius: 12px; padding: 8px 10px; line-height: 1.35; }
+.order-item .on { font-weight: 800; color: var(--accent); text-align: center; }
+.order-item .mv { display: flex; gap: 4px; }
+.order-item .mv button { width: 40px; height: 40px; border-radius: 10px; border: 1.5px solid var(--line); background: var(--surface-2); font-weight: 800; }
+.order-item .mv button[disabled] { opacity: .3; }
+.order-item.good { border-color: var(--ok); background: var(--ok-soft); }
+.order-item.badp { border-color: var(--bad); background: var(--bad-soft); }
+.match-grid { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 8px; }
+.match-grid .stack { gap: 8px; }
+.match-grid button { border: 1.5px solid var(--line); background: var(--surface); border-radius: 12px; padding: 10px; min-height: 56px; font-size: .92rem; font-weight: 600; line-height: 1.3; overflow-wrap: anywhere; }
+.match-grid button.sel { border-color: var(--accent); background: var(--accent-soft); }
+.match-grid button.done { border-color: var(--ok); background: var(--ok-soft); opacity: .7; }
+.match-grid button.err { border-color: var(--bad); background: var(--bad-soft); }
+.flip { perspective: 1000px; border: 0; background: none; padding: 0; width: 100%; }
+.flip-in { position: relative; min-height: 240px; transition: transform .5s; transform-style: preserve-3d; }
+.flip.on .flip-in { transform: rotateY(180deg); }
+.face { position: absolute; inset: 0; backface-visibility: hidden; -webkit-backface-visibility: hidden; border-radius: 20px; padding: 24px; display: grid; place-items: center; text-align: center; font-size: 1.25rem; font-weight: 700; line-height: 1.4; box-shadow: var(--shadow); }
+.face.front { background: var(--surface); border: 2px solid var(--paper-rule); }
+.face.back { background: var(--accent); color: var(--on-accent); transform: rotateY(180deg); font-size: 1.05rem; font-weight: 600; }
+.face small { display: block; font-size: .72rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-bottom: 8px; }
+.face small.hint-s { margin: 12px 0 0; }
+
+/* Crucigrama */
+.cw-wrap { overflow-x: auto; padding: 4px 0 8px; }
+.cw { display: grid; gap: 2px; width: max-content; margin: 0 auto; }
+.cw-x { width: var(--cw); height: var(--cw); }
+.cw-c { position: relative; width: var(--cw); height: var(--cw); background: var(--surface); border: 1.5px solid var(--paper-rule); border-radius: 4px; display: block; }
+.cw-c i { position: absolute; top: 0; left: 2px; font-size: 8px; font-style: normal; font-weight: 800; color: var(--muted); line-height: 1; pointer-events: none; }
+.cw-c input { width: 100%; height: 100%; border: 0; background: transparent; text-align: center; font-weight: 800; font-size: .82rem; padding: 4px 0 0; text-transform: uppercase; color: var(--ink); caret-color: var(--accent); }
+.cw-c input:focus { outline: none; }
+.cw-c:focus-within { border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent); z-index: 1; }
+.cw-c.hl { background: var(--accent-soft); }
+.cw-c.good { background: var(--ok-soft); border-color: var(--ok); }
+.cw-c.bad { background: var(--bad-soft); border-color: var(--bad); }
+.cw-now { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; padding: 12px 14px; font-size: .95rem; }
+.clues { display: grid; gap: 6px; }
+.clue { display: grid; grid-template-columns: 28px minmax(0,1fr); gap: 8px; text-align: left; border: 0; background: var(--surface-2); border-radius: 10px; padding: 8px 10px; line-height: 1.35; font-size: .93rem; }
+.clue b { color: var(--accent); }
+.clue.on { outline: 2px solid var(--accent); }
+.clue.solved { opacity: .55; text-decoration: line-through; }
+@media (min-width: 560px) { :root { --cw: 32px; } .cw-c input { font-size: 1rem; } .cw-c i { font-size: 9px; } }
+
+/* Videos y avance */
+.vrow { grid-template-columns: minmax(0,1fr) auto; align-items: center; gap: 12px; }
+@media (max-width: 420px) { .vrow { grid-template-columns: minmax(0,1fr); } }
+.trust { background: var(--accent-soft); box-shadow: none; }
+.link { font-weight: 700; }
+.stats { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 10px; }
+.stat { background: var(--surface); border-radius: var(--r); padding: 14px 12px; box-shadow: var(--shadow); display: grid; gap: 2px; min-width: 0; }
+.stat b { font-family: var(--font-display); font-weight: 400; font-size: 2rem; color: var(--accent); line-height: 1; }
+.stat span { font-size: .78rem; color: var(--muted); line-height: 1.3; }
+.evidence { border: 2px solid var(--ok); box-shadow: none; }
+.unitbar { display: grid; gap: 5px; }
+
+/* Navegación */
+.tabbar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 20; background: var(--surface); border-top: 1px solid var(--line); padding-bottom: env(safe-area-inset-bottom, 0px); padding-left: max(8px, env(safe-area-inset-left, 0px)); padding-right: max(8px, env(safe-area-inset-right, 0px)); }
+.tabbar-in { max-width: 720px; margin: 0 auto; display: grid; grid-template-columns: repeat(6, minmax(0,1fr)); }
+.tab { border: 0; background: none; padding: 8px 0 9px; display: grid; justify-items: center; gap: 2px; font-size: .66rem; font-weight: 700; color: var(--muted); min-height: 58px; }
+.tab svg { width: 24px; height: 24px; }
+.tab.on { color: var(--accent); }
+.toast { position: fixed; left: 50%; transform: translateX(-50%); bottom: calc(78px + env(safe-area-inset-bottom, 0px)); z-index: 50; background: var(--ink); color: var(--bg); border-radius: 999px; padding: 10px 18px; font-weight: 700; font-size: .92rem; box-shadow: var(--shadow); max-width: calc(100% - 32px); text-align: center; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+
+/* v2 · guía, lectura guiada, examen, glosario, hoja interactiva */
+.guide { border: 2px solid var(--accent); }
+.secmap { display: grid; gap: 8px; }
+.sec { display: grid; grid-template-columns: 40px minmax(0,1fr); gap: 12px; align-items: start; text-align: left; border: 1.5px solid var(--line); background: var(--surface); border-radius: 14px; padding: 12px; line-height: 1.4; }
+.sec b { font-family: var(--font-display); font-weight: 400; font-size: 1.15rem; color: var(--accent); }
+.sec span span { font-size: .9rem; }
+.sec small { color: var(--muted); font-size: .8rem; }
+.sec-ic { width: 40px; height: 40px; border-radius: 12px; background: var(--accent-soft); color: var(--accent); display: grid; place-items: center; }
+.sec-ic svg { width: 22px; height: 22px; }
+.howto { background: var(--accent-soft); box-shadow: none; }
+.phase-legend { display: grid; gap: 6px; font-size: .9rem; }
+.phase-legend span b { color: var(--accent); margin-right: 6px; }
+.phasebar { display: grid; grid-template-columns: repeat(5, minmax(0,1fr)); gap: 4px; }
+.ph { border: 0; border-top: 5px solid var(--surface-2); background: none; padding: 6px 0 0; font-size: .7rem; font-weight: 800; color: var(--muted); text-align: left; letter-spacing: .02em; }
+.ph.on { border-top-color: var(--accent); color: var(--accent); }
+.ph.cur { border-top-color: var(--accent-2); color: var(--ink); }
+.plan { display: grid; gap: 6px; }
+.plan-r { display: grid; grid-template-columns: 26px minmax(0,1fr) auto; gap: 10px; align-items: center; background: var(--surface-2); border-radius: 12px; padding: 9px 12px; }
+.plan-r small { display: block; color: var(--muted); font-size: .85rem; line-height: 1.35; }
+.tips { background: var(--warn-soft); box-shadow: none; }
+.tips h2 { color: var(--warn); }
+.frag { border-left: 5px solid var(--paper-rule); }
+.frag.fdone { border-left-color: var(--ok); }
+.fr-where { background: var(--surface-2); border-radius: 12px; padding: 10px 12px; display: grid; gap: 4px; font-size: .95rem; font-style: italic; }
+.lab { font-style: normal; font-size: .68rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); margin-right: 6px; }
+.fr-look { font-size: 1.02rem; }
+.case-s { background: var(--surface-2); border-radius: 12px; padding: 12px; line-height: 1.55; }
+.chip.fmt { vertical-align: 2px; margin-right: 4px; }
+.opt.picked { border-color: var(--accent); background: var(--accent-soft); }
+.opt.picked .ov { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
+.qnav { display: grid; grid-template-columns: repeat(auto-fill, minmax(34px, 1fr)); gap: 5px; }
+.qnav button { height: 34px; border-radius: 8px; border: 1.5px solid var(--line); background: var(--surface); font-size: .78rem; font-weight: 700; }
+.qnav button.ans { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); }
+.qnav button.cur { outline: 2px solid var(--ink); }
+.exrow { grid-template-columns: minmax(0,1fr) auto; align-items: center; }
+.exn { font-family: var(--font-display); font-weight: 400; font-size: 1.3rem; }
+.review-item .yo { color: var(--bad); }
+.linkbtn { border: 0; background: none; color: var(--accent); font-weight: 700; padding: 2px 0; text-align: left; justify-self: start; }
+.gloss { display: grid; gap: 8px; }
+.gterm { background: var(--surface); border-radius: 14px; padding: 14px; display: grid; gap: 6px; border: 1.5px solid var(--line); }
+.gterm > .spread b { font-family: var(--font-display); font-weight: 400; font-size: 1.2rem; color: var(--accent); }
+.gex { font-size: .92rem; color: var(--muted); }
+.vrow { display: grid; gap: 10px; }
+.vq { font-size: .92rem; }
+.sel { user-select: all; -webkit-user-select: all; color: var(--accent); font-weight: 700; }
+.url { font-weight: 400; overflow-wrap: anywhere; font-size: .78rem; }
+.tl-wrap { overflow-x: auto; padding-bottom: 6px; }
+.tl { display: flex; min-width: max-content; }
+.tl-i { width: 92px; border: 0; background: none; display: grid; justify-items: center; gap: 4px; text-align: center; position: relative; padding: 0 4px; align-content: start; }
+.tl-i::before { content: ""; position: absolute; top: calc(1.3em + 9px); left: 0; right: 0; height: 3px; background: var(--paper-rule); }
+.tl-y { font-size: .74rem; font-weight: 800; color: var(--accent); min-height: 1.3em; white-space: nowrap; }
+.tl-d { width: 16px; height: 16px; border-radius: 50%; background: var(--surface); border: 3px solid var(--accent); z-index: 1; }
+.tl-i.on .tl-d { background: var(--accent); transform: scale(1.3); }
+.tl-t { font-size: .74rem; font-weight: 700; line-height: 1.2; }
+.tl-i.on .tl-t { color: var(--accent); }
+.tl-card { background: var(--accent-soft); border-radius: 14px; padding: 14px; display: grid; gap: 8px; }
+.rvt th[scope=row] { background: var(--surface-2); color: var(--ink); text-transform: none; letter-spacing: 0; font-size: .85rem; vertical-align: top; }
+.rv { width: 100%; min-height: 44px; border: 1.5px dashed var(--accent); background: var(--accent-soft); border-radius: 10px; padding: 8px; text-align: left; font-size: .88rem; line-height: 1.35; color: var(--ink); }
+.rv span { color: var(--accent); font-weight: 700; font-size: .78rem; }
+.rv.open { border-style: solid; border-color: var(--line); background: var(--surface); }
+.era { display: grid; gap: 6px; padding-top: 10px; border-top: 1px solid var(--line); }
+.era-g { display: grid; grid-template-columns: 150px minmax(0,1fr); gap: 6px 10px; align-items: center; }
+.era-g .lab { margin: 0; }
+@media (max-width: 480px) { .era-g { grid-template-columns: minmax(0,1fr); } }
+.clue-r { display: flex; gap: 10px; align-items: flex-start; font-size: 1.05rem; }
+.vt { font-family: var(--font-display); font-weight: 400; font-size: 1.25rem; }
+.vid { display: grid; gap: 8px; border-top: 1px solid var(--line); padding-top: 12px; }
+.vid > .vid-play + .stack, .vid { grid-template-columns: minmax(0,1fr); }
+.vid-play { display: none; }
+.ojo { background: var(--warn-soft); border-radius: 10px; padding: 8px 10px; }
+.ok-n { color: var(--ok); font-weight: 700; }
+
+</style>
+<div id="app"><p style="padding:24px">Cargando tu plataforma…</p></div>
+<noscript><p style="padding:24px">Activa JavaScript para usar la plataforma.</p></noscript>
+<script>
+/* ═══════════ CONTENIDO · Díaz-Aranda, Enrique, Lecciones de derecho penal para el nuevo sistema de justicia en México, UNAM-IIJ, 2014. Primera parte, Capítulo segundo «Breve historia» (pp. 7–15) + puente con el Capítulo primero (pp. 3–5). ═══════════ */
+
+const V = {
+  line(items) {
+    return `<div class="vis line-wrap"><div class="line">${items.map((it) =>
+      `<div class="line-item"><div class="line-age">${it.a}</div><div class="line-dot"></div><div class="line-t">${it.t}</div>${it.s ? `<div class="line-s">${it.s}</div>` : ''}</div>`).join('')}</div></div>`;
+  },
+  flow(items) {
+    return `<div class="vis flow">${items.map((it, i) =>
+      `<div class="flow-step"><span class="flow-n">${i + 1}</span><div><b>${it.t}</b>${it.s ? `<small>${it.s}</small>` : ''}</div></div>`).join('<div class="flow-arrow" aria-hidden="true">↓</div>')}</div>`;
+  },
+  tbl(head, rows) {
+    return `<div class="vis tbl-wrap"><table class="tbl"><thead><tr>${head.map(h => `<th>${h}</th>`).join('')}</tr></thead><tbody>${rows.map(r => `<tr>${r.map(c => `<td>${c}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
+  },
+  tree(root, kids) {
+    return `<div class="vis tree"><div class="tree-root">${root}</div><div class="tree-kids">${kids.map(k =>
+      `<div class="tree-kid"><b>${k.t}</b>${k.s ? `<small>${k.s}</small>` : ''}</div>`).join('')}</div></div>`;
+  },
+  vs(a, b) {
+    const col = c => `<div class="vs-col"><div class="vs-h">${c.t}</div><ul>${c.items.map(x => `<li>${x}</li>`).join('')}</ul></div>`;
+    return `<div class="vis vs">${col(a)}<div class="vs-mid">vs</div>${col(b)}</div>`;
+  },
+  pairs(list) {
+    return `<div class="vis pairs">${list.map(p => `<div class="pair"><b>${p[0]}</b><span>${p[1]}</span></div>`).join('')}</div>`;
+  },
+  book(page, html) {
+    return `<div class="vis bookq"><div class="bookq-h">Lo que dice el libro · pág. ${page}</div><div class="bookq-b">${html}</div></div>`;
+  },
+  now(html) {
+    return `<div class="vis nowbox"><div class="bookq-h">Dato actual · no viene en el libro (es de 2014)</div><div class="bookq-b">${html}</div></div>`;
+  }
+};
+
+const BOOK = {
+  title: 'Lecciones de derecho penal para el nuevo sistema de justicia en México',
+  author: 'Enrique Díaz-Aranda',
+  pub: 'UNAM, Instituto de Investigaciones Jurídicas · STRAF, 2014',
+  chapter: 'Primera parte · Capítulo segundo: «Breve historia» (págs. 7 a 15)',
+  url: 'http://biblio.juridicas.unam.mx/libros/libro.htm?l=3805'
+};
+
+/* ESTACIONES (lecciones guiadas) */
+const LESSONS = [];
+
+LESSONS.push({
+  id: 'puente', icon: '🧭', era: 'Antes de empezar', title: '¿Qué es el derecho penal?', pages: '3–5', mins: 12, base: true,
+  goal: 'Recordar las ideas del Capítulo 1 que necesitas para entender la historia: ius puniendi, derecho penal subjetivo y objetivo.',
+  steps: [
+    { h: 'Imagina que…', t: 'Piensa en el reglamento de tránsito. Alguien <b>escribe las reglas</b> (no pasarse el alto), alguien las <b>aplica</b> cuando una persona las rompe y alguien se encarga de que la sanción <b>se cumpla</b>. Con el derecho penal pasa algo parecido: el Estado pone las reglas, las aplica y las ejecuta. A ese poder del Estado se le llama <mark>ius puniendi</mark>, que en latín significa «derecho a penar», es decir, a castigar.' },
+    { h: 'Dos caras del derecho penal', t: 'El libro explica que el derecho penal se puede ver desde dos lados:',
+      v: () => V.vs({ t: 'Derecho penal SUBJETIVO', items: ['Es el <b>ius puniendi</b> o «derecho a penar».', 'Es una <b>facultad</b> (un poder) del Estado.', 'Sirve para <b>prohibir</b> conductas como delitos e <b>imponer sanciones</b> a quien las comete.'] },
+        { t: 'Derecho penal OBJETIVO', items: ['Es el <b>sistema de normas</b> escritas en las leyes.', 'Nace cuando el Estado usa su poder y <b>emite</b> las normas.', 'Da a conocer qué conductas están prohibidas y qué se necesita para sancionarlas.'] }) },
+    { h: 'El trípode del ius puniendi', t: 'El libro dice que el poder de castigar del Estado mexicano se sostiene en un <b>trípode</b>, como un banquito de tres patas. Si falta una pata, el banco se cae.',
+      v: () => V.tree('Ius puniendi', [{ t: '1. Emisión', s: 'Hacer las leyes penales (Poder Legislativo, art. 73, fr. XXI de la Constitución)' }, { t: '2. Aplicación', s: 'Juzgar y fijar la sanción (Poder Judicial, art. 21)' }, { t: '3. Ejecución', s: 'Organizar el sistema penitenciario donde se cumplen las penas (art. 18)' }]) },
+    { h: 'Tu idea de la clase, con palabras del libro', t: 'En clase entendiste que «no todos los delitos se castigan; depende de argumentos jurídicos». ¡Vas bien encaminada! El libro da un ejemplo muy claro: el Código Penal Federal tiene <b>dos libros</b>. El <b>libro segundo</b> describe las conductas prohibidas (por ejemplo, el homicidio: «privar de la vida a otro»). Pero hay que leerlo junto con el <b>libro primero</b>, que tiene las reglas generales.',
+      v: () => V.book('4', 'Aunque una persona haya matado a otra, <b>puede no haber delito</b> si existe una <b>causa de justificación</b>, como la <b>legítima defensa</b>, prevista en el libro primero del Código Penal Federal.') },
+    { h: 'Piensa en esto', t: 'Así que no se trata de cuánto «daño» sienta alguien, sino de lo que dice la ley completa: la conducta descrita en el libro segundo <b>más</b> las reglas del libro primero. Más adelante en el libro verás el tema del <b>bien jurídico tutelado</b> (Capítulo 4) y de las <b>causas de justificación</b> (Segunda parte, Capítulo 7). Por ahora quédate con esto: <mark>para saber si hay delito, se revisa todo el sistema de normas, no solo un artículo</mark>.' }
+  ],
+  trap: ['<b>Subjetivo ≠ objetivo.</b> Subjetivo = el <i>poder</i> del Estado (ius puniendi). Objetivo = las <i>normas escritas</i>.', 'El trípode es <b>emisión, aplicación y ejecución</b>. No es «policía, juez y cárcel».'],
+  trick: '<b>Su</b>bjetivo = el <b>su</b>jeto que tiene el poder (el Estado). <b>Ob</b>jetivo = el <b>ob</b>jeto que ves escrito (la ley).',
+  explain: { q: '¿Qué es el ius puniendi y en qué se diferencia del derecho penal objetivo?', model: 'El ius puniendi es el derecho penal subjetivo: la facultad del Estado para prohibir conductas como delitos y castigar a quien las comete. Cuando el Estado usa esa facultad y escribe las normas en las leyes, nace el derecho penal objetivo, que es el sistema de normas que dice qué está prohibido y qué se necesita para sancionarlo.', keys: ['Ius puniendi = derecho a penar', 'Es una facultad del Estado', 'Objetivo = sistema de normas en leyes', 'Trípode: emisión, aplicación, ejecución'] }
+});
+
+LESSONS.push({
+  id: 'prehispanica', icon: '🌽', era: 'I. Época prehispánica', title: 'El derecho penal antes de la Conquista', pages: '7–8', mins: 20,
+  goal: 'Saber dónde estaban escritas las normas, qué penas había y las 4 características del derecho penal prehispánico.',
+  steps: [
+    { h: 'Imagina que…', t: 'Imagina que no hay libros ni códigos impresos. Las reglas se guardan en <b>pinturas</b>. Así era en la época prehispánica: las normas penales estaban en <mark>códices en forma de pinturas</mark>. Después, los <b>cronistas españoles</b> las interpretaron y las escribieron en textos. Por eso hoy las conocemos.' },
+    { h: 'Delitos y penas en la Triple Alianza', t: 'El autor usa la descripción de <b>Teja Zabre</b> sobre el territorio de la <b>Triple Alianza: México, Texcoco y Tacuba</b>. Las penas eran muy duras. Algunos ejemplos del libro:',
+      v: () => V.tbl(['Conducta', 'Pena'], [
+        ['Robo en el mercado (tianguis)', 'Muerte a pedradas por los mercaderes'],
+        ['Robar más de veinte mazorcas de maíz', 'Pena capital (muerte)'],
+        ['Matar al esclavo de otra persona', 'Pasaba a ser esclavo del dueño perjudicado'],
+        ['Embriaguez escandalosa (salvo fiestas o bodas)', 'Trasquilarlo en público'],
+        ['Malversación de fondos', 'Esclavitud'],
+        ['Riña', 'Cárcel e indemnizaciones (muerte si provocaba un motín)'],
+        ['Homicidio', 'Muerte; los celos no eran atenuante']]) },
+    { h: 'Agravantes y atenuantes', t: 'Ya existía la idea de que algunas circunstancias <b>suben</b> la pena (agravantes) y otras la <b>bajan</b> (atenuantes):',
+      v: () => V.vs({ t: 'Agravantes (suben la pena)', items: ['La juventud', 'La nobleza', 'La condición militar'] }, { t: 'Atenuantes (bajan la pena)', items: ['La embriaguez, en determinados casos', 'El perdón del ofendido', 'La minoría de edad muchas veces liberaba de culpa'] }) },
+    { h: 'Las cárceles prehispánicas', t: 'Según García Ramírez, había distintas formas de privar de la libertad:',
+      v: () => V.pairs([['Teilpiloyan', 'Deudores y reos que no tenían pena de muerte'], ['Cauhcalli', 'Responsables de delitos graves'], ['Malcalli', 'Prisioneros de guerra'], ['Petlacalli', 'Reos de faltas leves']]) },
+    { h: 'Vamos paso por paso: las 4 características', t: 'Esto es lo más importante para tu examen. El libro resume el derecho penal prehispánico en <b>cuatro características</b>:',
+      v: () => V.flow([
+        { t: 'Sin códigos', s: 'El pueblo conocía las normas por pinturas jeroglíficas: no había codificación ni sistematización.' },
+        { t: 'Venganza privada', s: 'Se permitía en ciertos casos; no siempre intervenía un juez ni había proceso.' },
+        { t: 'Muchas sanciones', s: 'Muerte, esclavitud, prisión, castigos corporales, destierro, confiscación y hasta demoler la casa del infractor.' },
+        { t: 'Según la clase social', s: 'La duración de la pena y cómo se ejecutaba dependían de la clase social del delincuente.' }]) },
+    { h: 'Piensa en esto', t: 'El autor pide algo importante: <mark>evitar juicios de valor</mark>. Las reglas de esa época respondían a los <b>valores sociales de su tiempo</b>, no a los de hoy. Y agrega que, según los historiadores, en la época prehispánica la <b>criminalidad era escasa</b>.' }
+  ],
+  trap: ['Las normas <b>no</b> estaban en códigos escritos: estaban en <b>códices (pinturas)</b>. «Código» ≠ «códice».', 'La <b>nobleza agravaba</b> la pena; no la reducía.', 'Cauhcalli = delitos <b>graves</b>. Petlacalli = faltas <b>leves</b>.'],
+  trick: 'Las 4 características: <b>«Pinturas, Venganza, Variedad y Clase»</b>. Imagina un mural (pinturas) donde alguien se venga, con muchos castigos distintos, y un noble arriba.',
+  explain: { q: 'Explica con tus palabras cómo era el derecho penal prehispánico.', model: 'Las normas no estaban en códigos, sino en códices de pinturas que después interpretaron los cronistas españoles. Se permitía la venganza privada en algunos casos, había muchas sanciones (muerte, esclavitud, prisión, destierro, confiscación) y la pena dependía de la clase social. El autor pide no juzgarlo con los valores actuales.', keys: ['Códices / pinturas', 'Venganza privada en ciertos casos', 'Muchas sanciones', 'Dependía de la clase social', 'No hacer juicios de valor'] }
+});
+
+LESSONS.push({
+  id: 'colonial', icon: '⛪', era: 'II. Época colonial', title: 'La Nueva España', pages: '9', mins: 15,
+  goal: 'Identificar las leyes que se aplicaban en la Colonia, cómo se veía el delito y por qué el sistema era desigual.',
+  steps: [
+    { h: 'Imagina que…', t: 'Imagina que en tu trabajo dos personas cometen la misma falta, pero a una solo le llaman la atención y a la otra la despiden por su origen, y nadie sabe de antemano qué regla le van a aplicar. Algo así pasaba en la <b>Época Colonial</b>: después de la Conquista se aplicaron leyes españolas en los nuevos territorios, pero <mark>las leyes y las penas dependían de la raza del condenado</mark>.' },
+    { h: '¿Qué leyes se usaban?', t: 'Los ordenamientos aplicados con más frecuencia en la Nueva España fueron:',
+      v: () => V.pairs([['La Novísima Recopilación de 1805', 'Ordenamiento español aplicado en la Nueva España'], ['Las Siete Partidas', 'Basadas en la tradición <b>romano-canónica-germánica</b>; son el <b>origen de nuestro sistema jurídico actual</b>']]) },
+    { h: '¿Cómo se veía el delito?', t: 'El delito se miraba desde una perspectiva <b>religiosa y política</b>: como un <b>pecado</b> que rompía las normas de la religión, como una <b>infidelidad al Estado</b> o como un daño a la seguridad de las personas. La pena se entendía como <b>expiación</b> (pagar la culpa), <b>vindicta</b> (venganza) o <b>escarmiento</b>.' },
+    { h: 'Un sistema desigual', t: 'A los conquistadores se les aplicaban las leyes de la península; a indígenas y negros, las leyes emitidas para la Nueva España. Las penas incluían muerte, horca, prisión, azotes, destierro, trabajos forzados, multa y confiscación, entre otras.',
+      v: () => V.book('9', 'Citando a Sainz Cantero, el libro describe la legislación española como <b>heterogénea y caótica</b>, <b>desigual, injusta, arbitraria y cruel</b>, aplicada con un procedimiento <b>secreto e inquisitivo</b> que ignoraba las garantías de defensa.') },
+    { h: 'Piensa en esto', t: 'Teja Zabre agrega que esas normas fueron <b>poco eficaces</b>: los territorios eran enormes, estaban poco colonizados y sus poblaciones conservaban gran parte de sus costumbres.' }
+  ],
+  trap: ['Las Siete Partidas son el <b>origen de nuestro sistema jurídico</b>; no fueron un código mexicano.', 'El procedimiento colonial era <b>inquisitivo y secreto</b>. El sistema actual (desde 2008) es <b>acusatorio</b>: son opuestos.'],
+  trick: 'Colonia = <b>«3 R»</b>: <b>R</b>eligión (delito = pecado), <b>R</b>aza (ley según el origen) y <b>R</b>ecopilación + Partidas (las leyes que se usaban).',
+  explain: { q: '¿Por qué se dice que el derecho penal colonial era desigual?', model: 'Porque las leyes y las penas se aplicaban según la raza del condenado: a los conquistadores, las leyes de la península; a indígenas y negros, las leyes para la Nueva España. Además, el procedimiento era secreto e inquisitivo y no respetaba las garantías de defensa.', keys: ['Según la raza', 'Siete Partidas y Novísima Recopilación', 'Delito = pecado / infidencia', 'Procedimiento secreto e inquisitivo'] }
+});
+
+LESSONS.push({
+  id: 'independiente', icon: '🦅', era: 'III. Época independiente', title: 'Del vacío legal al primer código', pages: '10', mins: 15,
+  goal: 'Ubicar la Constitución de Apatzingán, el primer código penal de nuestra historia y el papel de la Constitución de 1857.',
+  steps: [
+    { h: 'Imagina que…', t: 'Imagina que te mudas a un fraccionamiento nuevo que todavía no tiene reglamento, y mientras lo escriben usan, como pueden, el del lugar anterior. Eso le pasó a México: tras la independencia (<b>1821</b>) no había leyes penales propias, así que se aplicaron <mark>de forma confusa y arbitraria las normas coloniales</mark>, más algunos <b>bandos</b> (para castigar la portación de armas, el robo, la vagancia y la malvivencia).' },
+    { h: 'El gran pleito político', t: 'El problema de fondo era decidir la forma del Estado: <b>centralismo o federalismo</b>. Mientras se discutía, los legisladores casi no se ocuparon de las leyes penales.' },
+    { h: 'Vamos paso por paso: la línea del tiempo', t: 'Fíjate en el orden. Desliza la línea:',
+      v: () => V.line([
+        { a: '1814', t: 'Constitución de Apatzingán', s: 'Bases: principio de legalidad (art. 21) y fines de la pena (art. 23)' },
+        { a: '1821', t: 'Independencia', s: 'Centralismo o federalismo' },
+        { a: '1831', t: 'Bosquejo del Estado de México', s: 'No llegó a expedirse' },
+        { a: '1835', t: 'Código Penal de Veracruz', s: 'El PRIMERO de nuestra historia (modelo: código español de 1822)' },
+        { a: '1851–1853', t: 'Proyecto de Antonio Corona', s: 'No llegó a tener validez' },
+        { a: '1857', t: 'Constitución de 1857', s: 'Sistema federal' }]) },
+    { h: 'Observa con atención: 1857', t: 'La Constitución de 1857 adoptó el <b>sistema federal</b>. Por eso surgió la necesidad de un código penal para la Federación y los territorios federales, y los <b>estados</b> conservaron la facultad de legislar sobre delitos del <b>orden común</b>. Ese reparto (fuero federal y fuero común) sigue existiendo hoy.' },
+    { h: 'Piensa en esto', t: 'La Constitución de Apatzingán es de <b>1814</b>, antes de que se consumara la independencia, pero el libro la estudia aquí porque ya contenía las bases de las futuras leyes penales. Su artículo 21 decía, en esencia, que <mark>solo las leyes pueden determinar cuándo se acusa, apresa o detiene a un ciudadano</mark>: eso es el <b>principio de legalidad</b>.' }
+  ],
+  trap: ['El primer código penal de nuestra historia es el de <b>Veracruz (1835)</b>, no el de 1871. El de 1871 fue el primero para el Distrito Federal y para delitos federales.', 'El bosquejo de 1831 (Estado de México) <b>no se expidió</b>.'],
+  trick: '<b>«Veracruz llegó primero al puerto»</b>: 1835, primer código, modelo español de 1822.',
+  explain: { q: '¿Qué pasó con las leyes penales después de la independencia?', model: 'Como no había leyes penales propias, se siguieron aplicando de forma confusa las normas coloniales y algunos bandos. La Constitución de Apatzingán (1814) ya tenía bases como el principio de legalidad y los fines de la pena. El primer código penal fue el de Veracruz en 1835, y la Constitución de 1857 adoptó el sistema federal.', keys: ['Vacío legal: normas coloniales + bandos', 'Apatzingán 1814: legalidad y fines de la pena', 'Veracruz 1835: primer código', '1857: sistema federal'] }
+});
+
+LESSONS.push({
+  id: 'c1871', icon: '📕', era: 'III.1 · Código Penal de 1871', title: 'El Código de Martínez de Castro', pages: '10–12', mins: 15,
+  goal: 'Conocer quién lo hizo, su modelo, su ideología, su gran aporte y su defecto.',
+  steps: [
+    { h: 'Imagina que…', t: 'Imagina un reglamento escolar que intenta poner una regla para <b>cada falta posible</b>: «llegar 1 minuto tarde», «llegar 2 minutos tarde», «llegar tarde en lunes», «llegar tarde en lunes con lluvia»… Terminaría con más de mil renglones y aun así faltarían casos. Eso se llama <mark>casuismo</mark>: querer describir cada caso en la ley. El Código de 1871 tenía <b>1151 artículos</b>.' },
+    { h: 'Ficha del código', t: 'Datos que conviene tener claros:',
+      v: () => V.tbl(['Dato', 'Respuesta'], [
+        ['Nombre popular', '<b>Código de Martínez de Castro</b>'],
+        ['Promulgado', '<b>7 de diciembre de 1871</b>'],
+        ['Modelo', 'Código Penal <b>español de 1870</b> (con aportaciones mexicanas propias)'],
+        ['Comisión', 'Antonio Martínez de Castro, José María Lafragua, Manuel Ortiz de Montellano y Manuel M. de Zamacona'],
+        ['Rige para', 'Distrito Federal y Baja California (fuero común) y toda la República (delitos federales)'],
+        ['Ideología', '<b>Liberal</b>, inspirada en la Declaración de los Derechos del Hombre']]) },
+    { h: '¿Cómo veía el delito y la pena?', t: 'La comisión siguió una escuela que veía al delito como una acción de la <b>libertad y la inteligencia</b> de la persona, y a la pena como un medio de <b>ejemplaridad y corrección</b>. De ahí sacó una regla: <mark>la pena debe ser proporcional al mal causado</mark>. El libro dice que tenía una concepción <b>retribucionista</b> de la pena (castigar en proporción al mal hecho).' },
+    { h: 'Lo bueno y lo malo', t: '',
+      v: () => V.vs({ t: 'Su gran aporte', items: ['Reunió y <b>sistematizó por primera vez</b> las normas penales', 'Dio <b>certeza jurídica</b> a los ciudadanos'] }, { t: 'Su defecto', items: ['<b>1151 artículos</b>', '<b>Casuismo extremo</b>, propio del positivismo jurídico de la época'] }) },
+    { h: 'Intentos que no prosperaron', t: 'Durante el imperio de <b>Maximiliano</b> se hizo un proyecto de código (Teodosio Lares, Urbano Fonseca y Juan Herrera) que <b>nunca se aplicó</b>. En <b>1912</b> se presentó un proyecto de reformas al código de 1871 que <b>tampoco prosperó</b>.' }
+  ],
+  trap: ['El modelo fue el código español de <b>1870</b> (el de Veracruz usó el de <b>1822</b>). No los confundas.', 'Retribucionista = castigar en proporción al mal causado. No es «reinserción».'],
+  trick: '<b>1871 = 1151 artículos.</b> Fíjate: los dos números empiezan con 1 y terminan con 1.',
+  explain: { q: '¿Qué aportó el Código de 1871 y cuál fue su principal problema?', model: 'El Código de Martínez de Castro (1871), inspirado en el código español de 1870 y en ideas liberales, reunió y sistematizó por primera vez las normas penales y dio certeza jurídica. Su problema fue el casuismo extremo: tenía 1151 artículos porque intentaba describir cada caso. Veía la pena de forma retribucionista, proporcional al mal causado.', keys: ['Martínez de Castro', 'Modelo: código español de 1870', 'Primera sistematización: certeza jurídica', 'Casuismo: 1151 artículos', 'Pena retribucionista'] }
+});
+
+LESSONS.push({
+  id: 'c1929', icon: '📗', era: 'III.2 · Código Penal de 1929', title: 'El Código de Almaraz', pages: '12', mins: 15,
+  goal: 'Distinguir los aciertos y los errores del código de 1929 y entender por qué duró tan poco.',
+  steps: [
+    { h: 'Imagina que…', t: 'Imagina un manual de trabajo escrito por alguien que nunca ha hecho ese trabajo: suena bien en papel, pero en la práctica no funciona. Así describieron al código de 1929: como una <mark>obra de gabinete</mark> (hecha desde el escritorio), con omisiones, contradicciones y errores. Por eso <b>de inmediato</b> se empezó a trabajar en uno nuevo.' },
+    { h: 'Ficha del código', t: '',
+      v: () => V.tbl(['Dato', 'Respuesta'], [
+        ['Contexto', 'Terminada la Revolución y emitida la <b>Constitución de 1917</b>'],
+        ['Lo encargó', '<b>Emilio Portes Gil</b>'],
+        ['Nombre popular', '<b>Código de Almaraz</b> (por José Almaraz)'],
+        ['Otros integrantes', 'Luis Chico Goerne, Ignacio Ramírez Arriaga, Antonio Ramos Pedrueza, Enrique C. Gudiño y Manuel Ramos Estrada'],
+        ['Tamaño', '<b>1,228 artículos</b> (¡más que el de 1871!)']]) },
+    { h: 'Una idea muy importante: el bien jurídico', t: 'Luis Chico Goerne explicó el delito como un acto social que <b>daña</b> a las personas en sus <b>valores esenciales</b> reconocidos por la ley fundamental, de tal forma que el daño <b>no puede repararse con una sanción civil</b>.',
+      v: () => V.book('12', 'Con esa idea quedó clara la concepción del <b>bien jurídico tutelado</b> como sustento del derecho penal.') },
+    { h: 'Aciertos y críticas', t: '',
+      v: () => V.vs({ t: 'Lo que vale la pena', items: ['Distingue responsabilidad <b>dolosa</b> y <b>culposa</b>', 'Responsabilidad <b>individual</b>', 'Principio de <b>legalidad</b>', 'Fines <b>preventivos</b> de la pena (art. 68)'] }, { t: 'Lo muy criticable', items: ['El «<b>estado peligroso</b>» (art. 32)', 'El delito como <b>síntoma de temibilidad</b> (art. 161)', 'Mayoría de edad a los <b>16 años</b> (art. 69)', '<b>Casuismo extremo</b>: 1,228 artículos'] }) },
+    { h: 'Piensa en esto', t: 'Fíjate que el problema del casuismo <b>no se corrigió</b>: el de 1929 tuvo todavía más artículos que el de 1871. El autor lo vuelve a mencionar en el Capítulo 3 como ejemplo de una ley tan extensa que <b>complica su aplicación</b> y contraviene la certeza jurídica.' }
+  ],
+  trap: ['El de 1929 <b>sí</b> tuvo aciertos (dolo/culpa, legalidad, fines preventivos). Si una opción dice que «no tuvo nada rescatable», es falsa.', 'Mayoría de edad en 1929: <b>16 años</b>.'],
+  trick: '<b>Almaraz = alarma</b>: suena a peligro, igual que su «estado peligroso» y su «temibilidad».',
+  explain: { q: '¿Qué tuvo de bueno y de malo el Código de 1929?', model: 'El Código de Almaraz, encargado por Portes Gil después de la Constitución de 1917, aclaró la idea del bien jurídico tutelado y distinguió la responsabilidad dolosa de la culposa, además de reconocer la legalidad y los fines preventivos de la pena. Pero fue muy criticado por el «estado peligroso», por ver el delito como síntoma de temibilidad, por fijar la mayoría de edad en 16 años y por su casuismo: 1,228 artículos. Por eso fue reemplazado pronto.', keys: ['Almaraz / Portes Gil', 'Bien jurídico tutelado (Chico Goerne)', 'Dolo y culpa, legalidad, prevención', 'Estado peligroso y temibilidad', '1,228 artículos'] }
+});
+
+LESSONS.push({
+  id: 'c1931', icon: '📘', era: 'III.3 · Código Penal de 1931', title: 'El código que llega hasta hoy', pages: '13–14', mins: 20,
+  goal: 'Entender la filosofía ecléctica del código de 1931, sus ideas centrales y cómo se convirtió en el Código Penal Federal.',
+  steps: [
+    { h: 'Imagina que…', t: 'Quien cocina bien no sigue una sola receta al pie de la letra: toma lo que funciona de varias según lo que necesita. La comisión del código de 1931 pensó igual: <mark>ninguna escuela puede servir sola para construir un código penal</mark>. Por eso eligió una tendencia <b>ecléctica y programática</b>, es decir, <b>práctica y realizable</b>.' },
+    { h: 'Ficha del código', t: '',
+      v: () => V.tbl(['Dato', 'Respuesta'], [
+        ['Publicado', '<b>14 de agosto de 1931</b>'],
+        ['Comisión', 'José Ángel <b>Ceniceros</b>, José López Lira, Alfonso Teja Zabre, Luis Garrido y Ernesto Garza'],
+        ['Exposición de motivos', '<b>No se publicó</b>. Por eso las <b>actas</b> de la comisión son muy importantes: orientan y sirven como <b>interpretación auténtica</b>'],
+        ['1974', 'Deja de aplicarse para el Distrito Federal (reforma del 23 de diciembre)'],
+        ['1999', 'Con la reforma del 18 de mayo queda como <b>Código Penal Federal (CPF)</b>'],
+        ['Reformas clave', '<b>1984 y 1994</b>, para ajustarlo a un Estado social y de derecho']]) },
+    { h: 'Las ideas de las actas', t: 'Las actas dicen muchas cosas. Estas son las que más conviene entender:',
+      v: () => V.pairs([
+        ['«No hay delitos sino delincuentes… no hay delincuentes sino hombres»', 'Detrás de cada delito hay una persona.'],
+        ['La pena', 'Es un <b>mal necesario</b>; se justifica sobre todo por la necesidad de <b>conservar el orden social</b> (defensa y prevención social).'],
+        ['Temibilidad o peligrosidad', 'Solo sirven como factores para fijar el <b>monto</b> de la sanción, junto con el daño causado.'],
+        ['Actos antisociales que no son delito', 'Corresponden a la prevención del gobierno o de la iniciativa privada, no al derecho penal.'],
+        ['Los niños', 'Quedan <b>fuera</b> de la función penal represiva, con una política <b>tutelar y educativa</b>.'],
+        ['Readaptación', 'Completar las sanciones con la <b>readaptación a la vida social</b> (libertad preparatoria, condicional, reeducación).']]) },
+    { h: 'Las soluciones prácticas que propuso', t: 'Para remediar los problemas anteriores, las actas proponen, entre otras:',
+      v: () => V.flow([{ t: 'Ampliar el arbitrio judicial', s: 'Más margen para el juez, dentro de los límites constitucionales' }, { t: 'Disminuir el casuismo', s: '¡La lección de 1871 y 1929!' }, { t: 'Simplificar sanciones y procedimiento', s: 'Y hacer efectiva la reparación del daño' }, { t: 'Organizar el trabajo de los presos', s: 'Y vigilar y ayudar a quienes salen de la cárcel' }]) },
+    { h: 'Piensa en esto', t: 'Después se hicieron anteproyectos de código en <b>1949</b> y <b>1958</b>, pero <b>ninguno entró en vigor</b>. Por eso el código de 1931, con muchas reformas, es la base del <b>CPF</b> que el autor usa en todo el libro.',
+      v: () => V.now('Desde 2016 el antiguo Distrito Federal se llama <b>Ciudad de México</b> (reforma política de la Ciudad de México). El CPF sigue vigente para delitos del orden federal.') }
+  ],
+  trap: ['El código de 1931 <b>no</b> siguió una sola escuela: es <b>ecléctico</b>.', 'Lo que no se publicó fue la <b>exposición de motivos</b>; por eso se usan las <b>actas</b>.', 'Los anteproyectos de 1949 y 1958 <b>nunca</b> entraron en vigor.'],
+  trick: 'Los tres códigos en una frase: <b>«En 1871 se ordenó, en 1929 se alarmó y en 1931 se equilibró»</b> (sistematiza → peligrosidad → ecléctico).',
+  explain: { q: '¿Qué significa que el Código de 1931 sea «ecléctico» y por qué importan sus actas?', model: 'Ecléctico quiere decir que no se basó en una sola escuela penal, sino que tomó lo práctico y realizable de varias. Como la comisión no publicó una exposición de motivos, las actas de sus sesiones sirven para conocer qué buscaba el código y como interpretación auténtica. Entre sus ideas: la pena es un mal necesario para conservar el orden social, los niños quedan fuera de la función penal y se busca la readaptación social. Con la reforma de 1999 quedó como Código Penal Federal.', keys: ['Ecléctico y programático', 'Sin exposición de motivos → actas', 'Pena = mal necesario', 'Niños fuera, readaptación social', '1999: Código Penal Federal'] }
+});
+
+LESSONS.push({
+  id: 'r2008', icon: '⚖️', era: 'IV. Reforma constitucional de 2008', title: 'El nuevo sistema de justicia penal', pages: '14–15', mins: 12,
+  goal: 'Explicar por qué se hizo la reforma de 2008, qué cambió y qué fechas la marcan.',
+  steps: [
+    { h: 'Imagina que…', t: 'Cuando un negocio tiene quejas constantes, no basta con cambiar un letrero: hay que cambiar reglas, organización y forma de pensar. Eso hizo México en <b>2008</b>. Ante el <b>aumento de la criminalidad</b>, la <b>inseguridad</b>, la <b>impunidad</b>, la <b>condena de inocentes</b> y el <b>desamparo de las víctimas</b>, se reformó la Constitución.' },
+    { h: 'Vamos paso por paso: fechas clave', t: '',
+      v: () => V.line([
+        { a: '18 jun 2008', t: 'Reforma constitucional', s: 'Bases del nuevo sistema de seguridad pública y justicia penal' },
+        { a: '5 mar 2014', t: 'Código Nacional de Procedimientos Penales (CNPP)', s: 'Adopta el proceso penal acusatorio' },
+        { a: '17 jun 2016', t: 'Fecha límite', s: 'Para concluir todos los cambios' }]) },
+    { h: 'Tres tipos de cambios', t: 'El libro dice que el nuevo sistema implica cambios de gran envergadura:',
+      v: () => V.tree('Reforma de 2008', [{ t: 'Normativos', s: 'Leyes nuevas y reformadas' }, { t: 'Estructurales', s: 'Cómo se organizan las instituciones' }, { t: 'Ideológicos', s: 'La forma de pensar la justicia penal' }]) },
+    { h: 'Piensa en esto', t: 'El autor no quiso esperar a que terminaran los cambios. Por eso desarrolla su propia forma de interpretar el derecho penal, el <mark>sistema funcionalista social</mark>, a partir de las leyes vigentes cuando publicó el libro.',
+      v: () => V.now('El plazo del 17 de junio de 2016 ya se cumplió: hoy el sistema penal <b>acusatorio</b> funciona en todo el país, y el CNPP es la ley procesal penal que se aplica.') }
+  ],
+  trap: ['La reforma es del <b>18 de junio de 2008</b>; el CNPP es de <b>2014</b>; el plazo, <b>2016</b>. No mezcles los años.', 'Acusatorio (hoy) ≠ inquisitivo (Colonia).'],
+  trick: '<b>8 · 14 · 16</b>: «Reforma en el 8, código a los 14, todo listo a los 16».',
+  explain: { q: '¿Por qué se reformó la Constitución en 2008 y qué implicó?', model: 'Por el aumento de la criminalidad y la inseguridad, la impunidad, la condena de inocentes y el desamparo de las víctimas. La reforma del 18 de junio de 2008 estableció las bases de un nuevo sistema de seguridad pública y justicia penal, con cambios normativos, estructurales e ideológicos que debían terminar a más tardar el 17 de junio de 2016. El Código Nacional de Procedimientos Penales (2014) adoptó el proceso penal acusatorio.', keys: ['Causas: criminalidad, impunidad, inocentes, víctimas', '18 de junio de 2008', 'Cambios normativos, estructurales, ideológicos', 'CNPP 2014: proceso acusatorio', 'Plazo: 17 de junio de 2016'] }
+});
+
+/* BANCO DE PREGUNTAS · t = estación, q, o = opciones, a = índice correcto, e = explicación, p = página */
+const BANK = [];
+function Q(t, q, o, a, e, p) { BANK.push({ id: 'q' + (BANK.length + 1), t, q, o, a, e, p }); }
+
+Q('puente', 'El ius puniendi es:', ['El conjunto de códigos penales del país', 'La facultad del Estado para prohibir conductas como delitos e imponer sanciones a quienes las realizan', 'El derecho de la víctima a vengarse', 'La pena de prisión'], 1, 'Ius puniendi = «derecho a penar». Es una facultad del Estado, también llamada derecho penal subjetivo.', '3');
+Q('puente', 'El derecho penal objetivo es:', ['El poder del Estado para castigar', 'La opinión de los autores', 'El sistema de normas en las leyes que da a conocer las conductas prohibidas y los requisitos para sancionarlas', 'La sentencia del juez'], 2, 'Objetivo = las normas escritas que nacen cuando el Estado ejerce su facultad de emitir leyes penales.', '4');
+Q('puente', 'El libro dice que el ius puniendi se sostiene en un trípode. ¿Cuáles son sus tres patas?', ['Policía, juez y cárcel', 'Emisión, aplicación y ejecución de las normas penales', 'Delito, pena y víctima', 'Constitución, tratados y códigos'], 1, 'Emitir las normas (Legislativo), aplicarlas (Judicial) y ejecutarlas (sistema penitenciario).', '4');
+Q('puente', '¿En qué artículo de la Constitución está el fundamento del ius puniendi según el libro?', ['Artículo 14', 'Artículo 133', 'Artículo 73, fracción XXI', 'Artículo 22'], 2, 'El art. 73, fr. XXI faculta al Congreso para establecer los delitos y fijar los castigos.', '3');
+Q('puente', 'Una persona mata a otra para defenderse de una agresión. Según el ejemplo del libro:', ['Siempre hay delito porque el libro segundo describe el homicidio', 'Puede no haber delito si existe una causa de justificación como la legítima defensa, prevista en el libro primero', 'Depende solo del daño psicológico de la familia', 'El juez decide sin consultar la ley'], 1, 'Hay que leer juntos el libro segundo (conductas) y el libro primero (reglas generales) del CPF.', '4');
+Q('puente', 'En el Código Penal Federal, el libro segundo contiene:', ['Los principios y reglas generales', 'Las conductas prohibidas (los delitos)', 'Las reglas del proceso', 'La historia del derecho penal'], 1, 'Libro primero = reglas generales. Libro segundo = descripción de las conductas prohibidas.', '4');
+
+Q('prehispanica', 'En la época prehispánica, las normas penales estaban contenidas en:', ['Códigos escritos en náhuatl', 'Códices en forma de pinturas, interpretados después por cronistas españoles', 'Las Siete Partidas', 'Bandos municipales'], 1, 'No eran leyes como las de hoy: eran códices (pinturas).', '7');
+Q('prehispanica', 'La Triple Alianza estaba formada por:', ['México, Texcoco y Tacuba', 'México, Tlaxcala y Cholula', 'Texcoco, Tula y Teotihuacan', 'Tacuba, Tlatelolco y Xochimilco'], 0, 'Teja Zabre describe los delitos en el territorio de México, Texcoco y Tacuba.', '7');
+Q('prehispanica', 'Según el libro, quien robaba en el tianguis (mercado):', ['Pagaba una multa', 'Era desterrado', 'Era muerto a pedradas por los mercaderes', 'Era trasquilado en público'], 2, 'Ejemplo de venganza privada: los propios mercaderes lo castigaban.', '7–8');
+Q('prehispanica', 'Quien mataba al esclavo de otra persona:', ['Recibía la pena de muerte', 'Pasaba a ser esclavo del dueño perjudicado', 'Quedaba libre', 'Era encarcelado en el malcalli'], 1, 'La pena compensaba al dueño: el responsable se volvía su esclavo.', '7');
+Q('prehispanica', '¿Cuál NO es una característica del derecho penal prehispánico según el libro?', ['Se permitía la venganza privada en ciertos supuestos', 'Había diversidad de sanciones', 'Existía una codificación y sistematización de las normas', 'La pena dependía de la clase social del delincuente'], 2, 'Justo al revés: el pueblo conocía las normas por pinturas, sin codificación ni sistematización.', '8');
+Q('prehispanica', 'El cauhcalli era la prisión destinada a:', ['Prisioneros de guerra', 'Responsables de delitos graves', 'Reos de faltas leves', 'Deudores'], 1, 'Cauhcalli = delitos graves; malcalli = prisioneros de guerra; petlacalli = faltas leves; teilpiloyan = deudores y reos sin pena capital.', '8');
+Q('prehispanica', 'En el derecho prehispánico podían ser agravantes:', ['La embriaguez y el perdón del ofendido', 'La juventud, la nobleza y la condición militar', 'La minoría de edad', 'Los celos del marido'], 1, 'La embriaguez (en ciertos casos) y el perdón del ofendido eran atenuantes, no agravantes.', '8');
+Q('prehispanica', '¿Qué recomienda el autor al estudiar el derecho penal prehispánico?', ['Calificarlo como bárbaro', 'Compararlo con el Código de 1931', 'Evitar juicios de valor, porque sus reglas correspondían a los valores de su época', 'Ignorarlo porque no influyó en nada'], 2, 'Las reglas corresponden a los valores sociales de cada época, no a los actuales.', '8');
+
+Q('colonial', 'Los ordenamientos aplicados con más frecuencia en la Nueva España fueron:', ['El Código de Veracruz y el de 1871', 'La Novísima Recopilación de 1805 y las Siete Partidas', 'La Constitución de Apatzingán', 'Los códices prehispánicos'], 1, 'Las Siete Partidas, además, son el origen de nuestro sistema jurídico actual.', '9');
+Q('colonial', 'Las Siete Partidas se sustentaban en la tradición:', ['Anglosajona', 'Romano-canónica-germánica', 'Prehispánica', 'Francesa revolucionaria'], 1, 'Por eso el libro dice que son el origen de nuestro actual sistema jurídico.', '9');
+Q('colonial', 'En la época colonial, las leyes y las penas se determinaban atendiendo a:', ['La raza del condenado', 'La gravedad del daño psicológico', 'El estado donde vivía', 'La edad de la víctima'], 0, 'A los conquistadores se les aplicaban leyes de la península y a indígenas y negros, las de la Nueva España.', '9');
+Q('colonial', 'En la Colonia, el delito se concebía como:', ['Una conducta descrita en un código mexicano', 'Un acto pecaminoso, una infidencia al Estado o una agresión a la seguridad de las personas', 'Un síntoma de temibilidad', 'Un hecho sin importancia'], 1, 'Perspectiva religiosa y política. La pena era expiación, vindicta o escarmiento.', '9');
+Q('colonial', 'El procedimiento penal colonial era:', ['Acusatorio y público', 'Secreto e inquisitivo, sin garantías de defensa', 'Oral y con jurado', 'Igual para todas las personas'], 1, 'Así lo describe Sainz Cantero, citado en el libro.', '9');
+Q('colonial', 'Según Teja Zabre, las normas coloniales fueron poco eficaces porque:', ['Eran muy pocas', 'Los territorios eran extensos, poco colonizados y sus poblaciones conservaban sus costumbres', 'Nadie sabía leer', 'Las aplicaban los jueces indígenas'], 1, 'Las poblaciones solo se incorporaron parcialmente a la cultura criolla.', '9');
+
+Q('independiente', 'Tras consumarse la independencia en 1821, el gran problema político fue decidir entre:', ['Monarquía o imperio', 'Centralismo o federalismo', 'Prisión o pena de muerte', 'Código español o francés'], 1, 'Mientras se discutía, los legisladores casi no se ocuparon de las leyes penales.', '10');
+Q('independiente', 'La Constitución de Apatzingán (1814) contenía bases como:', ['El proceso acusatorio', 'El principio de legalidad (art. 21) y los fines de la pena (art. 23)', 'La mayoría de edad a los 16 años', 'El estado peligroso'], 1, 'Su art. 21: solo las leyes pueden determinar cuándo se acusa, apresa o detiene a un ciudadano.', '10');
+Q('independiente', 'El primer ordenamiento penal de nuestra historia fue:', ['El Código Penal de 1871', 'El bosquejo del Estado de México de 1831', 'El Código Penal de Veracruz de 1835', 'El proyecto de Antonio Corona'], 2, 'El bosquejo de 1831 no se expidió y el proyecto de Corona no tuvo validez.', '10');
+Q('independiente', 'El Código Penal de Veracruz tomó como modelo:', ['El Código Penal español de 1822', 'El Código Penal español de 1870', 'Las Siete Partidas', 'El código francés'], 0, 'El de 1871 fue el que usó como modelo el español de 1870.', '10');
+Q('independiente', 'Ante el vacío legal posterior a la independencia:', ['Se dejó de castigar todo delito', 'Se aplicaron de forma confusa las normas coloniales, más algunos bandos', 'Se aplicó el Código de 1871', 'Se volvió al derecho prehispánico'], 1, 'Bandos para castigar portación de armas, robo, vagancia y malvivencia.', '10');
+Q('independiente', 'La Constitución de 1857:', ['Adoptó el sistema central', 'Adoptó el sistema federal y dejó a los estados legislar sobre delitos del orden común', 'Creó el Código de Almaraz', 'Prohibió los códigos penales'], 1, 'De ahí la necesidad de un código para la Federación y territorios federales.', '10');
+
+Q('c1871', 'El Código Penal de 1871 es conocido como:', ['Código de Almaraz', 'Código de Martínez de Castro', 'Código de Veracruz', 'Código Federal'], 1, 'Por Antonio Martínez de Castro, quien encabezó la comisión.', '11');
+Q('c1871', 'El Código de 1871 tomó como modelo:', ['El Código Penal español de 1870', 'El código de 1929', 'Las Siete Partidas', 'El Código Penal español de 1822'], 0, 'No fue una copia: el legislador mexicano hizo aportaciones propias.', '10');
+Q('c1871', 'La ideología del Código de 1871 fue:', ['Liberal, inspirada en la Declaración de los Derechos del Hombre', 'Religiosa', 'Positivista de la peligrosidad', 'Ecléctica'], 0, 'Responde al sistema político consolidado en 1857.', '11');
+Q('c1871', 'El gran aporte del Código de 1871 fue:', ['Crear el proceso acusatorio', 'Reunir y sistematizar por primera vez las normas penales, dando certeza jurídica', 'Fijar la mayoría de edad en 16 años', 'Eliminar la prisión'], 1, 'Su defecto: 1151 artículos y casuismo extremo.', '11');
+Q('c1871', '¿Cuántos artículos tenía el Código de 1871?', ['1,228', '1151', '462', '133'], 1, '1,228 eran los del código de 1929.', '11');
+Q('c1871', 'Según el libro, el Código de 1871 tenía una concepción de la pena:', ['De reinserción social', 'Retribucionista', 'Tutelar y educativa', 'Basada en la temibilidad'], 1, 'Pena proporcional al mal causado.', '11');
+Q('c1871', 'El proyecto de código penal del imperio de Maximiliano:', ['Sustituyó al de 1871', 'Nunca llegó a aplicarse', 'Fue el primero del país', 'Se convirtió en el CPF'], 1, 'Lo elaboraron Teodosio Lares, Urbano Fonseca y Juan Herrera.', '11–12');
+
+Q('c1929', '¿Quién comisionó la elaboración del Código Penal de 1929?', ['Benito Juárez', 'Emilio Portes Gil', 'Maximiliano', 'Luis Chico Goerne'], 1, 'Chico Goerne formó parte de la comisión; Portes Gil la encargó.', '12');
+Q('c1929', 'El Código Penal de 1929 es conocido como:', ['Código de Almaraz', 'Código de Martínez de Castro', 'Código Ceniceros', 'Código Teja Zabre'], 0, 'Por José Almaraz.', '12');
+Q('c1929', 'La idea de Chico Goerne sobre el delito (un daño a valores esenciales que no puede repararse con sanción civil) dejó clara la concepción del:', ['Estado peligroso', 'Bien jurídico tutelado', 'Casuismo', 'Proceso inquisitivo'], 1, 'El bien jurídico tutelado como sustento del derecho penal.', '12');
+Q('c1929', 'Es un ACIERTO del Código de 1929:', ['El «estado peligroso»', 'Considerar al delito como síntoma de temibilidad', 'Distinguir entre responsabilidad dolosa y culposa', 'Tener 1,228 artículos'], 2, 'También: responsabilidad individual, legalidad y fines preventivos de la pena.', '12');
+Q('c1929', 'El Código de 1929 estableció expresamente la mayoría de edad a los:', ['18 años', '16 años', '12 años', '21 años'], 1, 'Artículo 69; fue uno de los puntos criticados.', '12');
+Q('c1929', '¿Por qué se reemplazó tan pronto el Código de 1929?', ['Porque lo prohibió la Constitución de 1917', 'Porque resultó una obra de gabinete con omisiones, contradicciones y errores', 'Porque era demasiado corto', 'Porque se independizó Veracruz'], 1, 'Por eso de inmediato empezaron los trabajos de un nuevo código.', '12');
+
+Q('c1931', 'El Código Penal de 1931 se publicó el:', ['7 de diciembre de 1931', '14 de agosto de 1931', '18 de junio de 1931', '5 de marzo de 1931'], 1, '7 de diciembre es la fecha del código de 1871.', '13');
+Q('c1931', 'Como la comisión de 1931 no publicó la exposición de motivos, resultan muy importantes:', ['Los códices', 'Las actas de la comisión', 'Las Siete Partidas', 'Los bandos'], 1, 'Orientan sobre sus lineamientos y sirven como interpretación auténtica.', '13');
+Q('c1931', 'Según las actas, el Código de 1931 siguió una tendencia:', ['Clásica pura', 'Positivista pura', 'Ecléctica y programática (práctica y realizable)', 'Religiosa'], 2, 'Ninguna escuela, doctrina ni sistema puede fundamentar por sí solo un código penal.', '13');
+Q('c1931', 'Para la comisión de 1931, la pena es:', ['Una venganza', 'Un mal necesario, de defensa y prevención social', 'Una expiación religiosa', 'Innecesaria'], 1, 'Se justifica sobre todo por la necesidad de conservar el orden social.', '13');
+Q('c1931', 'Respecto a los niños, el Código de 1931 propuso:', ['Juzgarlos igual que a los adultos', 'Dejarlos al margen de la función penal represiva, con una política tutelar y educativa', 'Fijar la mayoría de edad en 16 años', 'Enviarlos al petlacalli'], 1, 'Es una de las soluciones prácticas de las actas.', '13');
+Q('c1931', 'El Código de 1931 quedó como Código Penal Federal con la reforma de:', ['23 de diciembre de 1974', '18 de mayo de 1999', '18 de junio de 2008', '10 de enero de 1994'], 1, 'En 1974 había dejado de aplicarse para el Distrito Federal.', '14');
+Q('c1931', 'Según las actas de 1931, la temibilidad o peligrosidad:', ['Es la base de todo delito', 'Solo sirve como factor para fijar el monto de la sanción, junto con el daño causado', 'Debe castigarse aunque no haya conducta', 'Desaparece por completo'], 1, 'Corrige el exceso del código de 1929.', '13');
+Q('c1931', 'Los anteproyectos de Código Penal de 1949 y 1958:', ['Sustituyeron al de 1931', 'Nunca llegaron a tener vigencia', 'Crearon el CNPP', 'Se aplicaron solo en Veracruz'], 1, 'Por eso el de 1931 sigue siendo la base del CPF.', '14');
+
+Q('r2008', 'La reforma constitucional que establece el nuevo sistema de justicia penal es del:', ['18 de junio de 2008', '5 de marzo de 2014', '17 de junio de 2016', '14 de agosto de 1931'], 0, '2014 es el CNPP y 2016, la fecha límite.', '14');
+Q('r2008', '¿Cuál NO aparece en el libro como causa de la reforma de 2008?', ['El incremento de la criminalidad', 'La impunidad', 'La condena de inocentes', 'La falta de abogados en el país'], 3, 'Las causas: criminalidad, inseguridad, impunidad, condena de inocentes y desamparo de las víctimas.', '14');
+Q('r2008', 'El nuevo sistema implica cambios:', ['Solo de nombre', 'Normativos, estructurales e ideológicos', 'Únicamente económicos', 'Solo en Veracruz'], 1, 'Cambios de gran envergadura en leyes, instituciones y forma de pensar.', '14');
+Q('r2008', 'El Código Nacional de Procedimientos Penales (CNPP) es del:', ['5 de marzo de 2014', '18 de junio de 2008', '14 de agosto de 1931', '7 de diciembre de 1871'], 0, 'Adopta el nuevo proceso penal acusatorio.', '14');
+Q('r2008', 'El proceso penal adoptado en el CNPP es:', ['Inquisitivo', 'Acusatorio', 'Secreto', 'Privado'], 1, 'Lo opuesto al procedimiento secreto e inquisitivo de la Colonia.', '14');
+Q('r2008', 'El autor desarrolla su interpretación del derecho penal con el sistema:', ['Causalista', 'Neoclásico', 'Funcionalista social', 'Finalista'], 2, 'Lo dice al final del capítulo: «nuestro sistema de interpretación funcionalista social».', '14');
+
+/* VERDADERO O FALSO: [enunciado, verdadero?, explicación, estación] */
+const TF = [
+  ['En la época prehispánica no había codificación ni sistematización de las normas.', true, 'Las normas se conocían por pinturas jeroglíficas.', 'prehispanica'],
+  ['En la época prehispánica la nobleza servía como atenuante.', false, 'La nobleza podía ser AGRAVANTE, igual que la juventud y la condición militar.', 'prehispanica'],
+  ['El petlacalli era la prisión para delitos graves.', false, 'El petlacalli era para faltas leves; el cauhcalli, para delitos graves.', 'prehispanica'],
+  ['Los historiadores señalan que la criminalidad prehispánica era escasa.', true, 'El libro lo menciona al final de la sección.', 'prehispanica'],
+  ['Las Siete Partidas son el origen de nuestro sistema jurídico actual.', true, 'Por su tradición romano-canónica-germánica.', 'colonial'],
+  ['En la Colonia, las leyes eran iguales para todas las personas.', false, 'Dependían de la raza del condenado.', 'colonial'],
+  ['El procedimiento penal colonial era secreto e inquisitivo.', true, 'Ignoraba las garantías de defensa.', 'colonial'],
+  ['El primer código penal de nuestra historia fue el de 1871.', false, 'Fue el de Veracruz, en 1835.', 'independiente'],
+  ['La Constitución de Apatzingán ya contenía el principio de legalidad.', true, 'Artículo 21; y los fines de la pena en el 23.', 'independiente'],
+  ['La Constitución de 1857 adoptó el sistema federal.', true, 'Los estados legislan sobre delitos del orden común.', 'independiente'],
+  ['El Código de 1871 tuvo como modelo el Código Penal español de 1870.', true, 'Con aportaciones mexicanas propias.', 'c1871'],
+  ['El Código de 1871 era breve y con reglas generales.', false, 'Tenía 1151 artículos y un casuismo extremo.', 'c1871'],
+  ['El Código de 1929 no tuvo ningún acierto.', false, 'Distinguió dolo y culpa, reconoció la legalidad y los fines preventivos de la pena.', 'c1929'],
+  ['El Código de 1929 fijó la mayoría de edad en 16 años.', true, 'Artículo 69; fue criticado.', 'c1929'],
+  ['El Código de 1929 tuvo menos artículos que el de 1871.', false, 'Tuvo 1,228, todavía más.', 'c1929'],
+  ['La comisión de 1931 publicó una amplia exposición de motivos.', false, 'NO la publicó; por eso importan las actas.', 'c1931'],
+  ['El Código de 1931 siguió una tendencia ecléctica.', true, 'Práctica y realizable; ninguna escuela sola.', 'c1931'],
+  ['Para la comisión de 1931, los niños debían quedar fuera de la función penal represiva.', true, 'Con una política tutelar y educativa.', 'c1931'],
+  ['El anteproyecto de 1958 sustituyó al Código de 1931.', false, 'Ningún anteproyecto llegó a tener vigencia.', 'c1931'],
+  ['La reforma constitucional del nuevo sistema de justicia penal es del 18 de junio de 2008.', true, 'Con plazo hasta el 17 de junio de 2016.', 'r2008'],
+  ['El CNPP adopta un proceso penal inquisitivo.', false, 'Adopta el proceso penal ACUSATORIO.', 'r2008'],
+  ['El derecho penal subjetivo es lo mismo que el ius puniendi.', true, 'Es la facultad del Estado de castigar.', 'puente']
+];
+
+/* TARJETAS: [estación, frente, reverso] */
+const FLASH = [
+  ['puente', 'Ius puniendi', 'Derecho a penar: facultad del Estado para prohibir conductas como delitos e imponer sanciones (derecho penal subjetivo).'],
+  ['puente', 'Derecho penal objetivo', 'Sistema de normas en las leyes que da a conocer las conductas prohibidas y los requisitos para sancionarlas.'],
+  ['puente', 'Trípode del ius puniendi', 'Emisión, aplicación y ejecución de las normas penales.'],
+  ['prehispanica', '¿Dónde estaban las normas prehispánicas?', 'En códices en forma de pinturas, interpretados después por cronistas españoles.'],
+  ['prehispanica', 'Triple Alianza', 'México, Texcoco y Tacuba.'],
+  ['prehispanica', '4 características del derecho penal prehispánico', '1) Sin codificación (pinturas) · 2) Venganza privada en ciertos casos · 3) Diversidad de sanciones · 4) Pena según clase social.'],
+  ['prehispanica', 'Agravantes prehispánicas', 'Juventud, nobleza y condición militar.'],
+  ['prehispanica', 'Atenuantes prehispánicas', 'Embriaguez en determinados casos y perdón del ofendido.'],
+  ['prehispanica', 'Cauhcalli / Petlacalli', 'Cauhcalli: delitos graves. Petlacalli: faltas leves.'],
+  ['colonial', 'Leyes más usadas en la Nueva España', 'Novísima Recopilación de 1805 y las Siete Partidas.'],
+  ['colonial', 'Siete Partidas', 'Tradición romano-canónica-germánica: origen de nuestro sistema jurídico.'],
+  ['colonial', '¿De qué dependían las leyes y penas coloniales?', 'De la raza del condenado.'],
+  ['colonial', 'Procedimiento colonial', 'Secreto e inquisitivo, sin garantías de defensa.'],
+  ['independiente', 'Constitución de Apatzingán', '22 de octubre de 1814. Legalidad (art. 21) y fines de la pena (art. 23).'],
+  ['independiente', 'Primer código penal de nuestra historia', 'Código Penal de Veracruz, 1835 (modelo: código español de 1822).'],
+  ['independiente', 'Constitución de 1857', 'Sistema federal; los estados legislan sobre delitos del orden común.'],
+  ['c1871', 'Código de 1871', 'Martínez de Castro · 7 dic 1871 · modelo español de 1870 · liberal · 1151 artículos · retribucionista.'],
+  ['c1871', 'Casuismo', 'Querer describir cada caso posible en la ley: hace los códigos enormes y difíciles de aplicar.'],
+  ['c1929', 'Código de 1929', 'Almaraz · encargado por Portes Gil · 1,228 artículos · «obra de gabinete».'],
+  ['c1929', 'Críticas al Código de 1929', 'Estado peligroso, delito como síntoma de temibilidad, mayoría de edad a los 16, casuismo.'],
+  ['c1929', 'Aciertos del Código de 1929', 'Dolo y culpa, responsabilidad individual, legalidad, fines preventivos, bien jurídico tutelado.'],
+  ['c1931', 'Código de 1931', '14 ago 1931 · Ceniceros, López Lira, Teja Zabre, Garrido, Garza · ecléctico · hoy CPF (1999).'],
+  ['c1931', 'Actas de 1931', 'Sustituyen a la exposición de motivos que no se publicó: interpretación auténtica.'],
+  ['c1931', 'La pena para la comisión de 1931', 'Un mal necesario, para la defensa y prevención social y la conservación del orden.'],
+  ['r2008', 'Reforma de 2008', '18 de junio de 2008. Cambios normativos, estructurales e ideológicos. Plazo: 17 de junio de 2016.'],
+  ['r2008', 'CNPP', 'Código Nacional de Procedimientos Penales, 5 de marzo de 2014: proceso penal acusatorio.']
+];
+
+/* ORDENAR */
+const ORDER_GAMES = [
+  { id: 'o1', title: 'La gran línea del tiempo', items: ['Normas en códices (época prehispánica)', 'Siete Partidas y Novísima Recopilación (Colonia)', 'Constitución de Apatzingán (1814)', 'Código Penal de Veracruz (1835)', 'Constitución de 1857', 'Código de Martínez de Castro (1871)', 'Código de Almaraz (1929)', 'Código Penal de 1931', 'Reforma constitucional (2008)'] },
+  { id: 'o2', title: 'Del código de 1931 a hoy', items: ['Se publica el código (14 ago 1931)', 'Anteproyecto de 1949 (no entra en vigor)', 'Deja de aplicarse al Distrito Federal (1974)', 'Reforma relevante de 1984', 'Reforma relevante de 1994', 'Queda como Código Penal Federal (1999)'] },
+  { id: 'o3', title: 'El nuevo sistema de justicia penal', items: ['Reforma constitucional (18 jun 2008)', 'Código Nacional de Procedimientos Penales (5 mar 2014)', 'Fecha límite de los cambios (17 jun 2016)'] },
+  { id: 'o4', title: 'Las 4 características prehispánicas (en el orden del libro)', items: ['Normas por pinturas, sin codificación', 'Venganza privada en ciertos supuestos', 'Diversidad de sanciones', 'Pena según la clase social'] }
+];
+
+/* RELACIONAR */
+const MATCH_GAMES = [
+  { id: 'm1', title: 'Código ↔ lo que lo identifica', pairs: [['1835', 'Veracruz, el primero'], ['1871', 'Martínez de Castro'], ['1929', 'Almaraz'], ['1931', 'Ecléctico, hoy CPF']] },
+  { id: 'm2', title: 'Prisión prehispánica ↔ para quién', pairs: [['Teilpiloyan', 'Deudores y reos sin pena capital'], ['Cauhcalli', 'Delitos graves'], ['Malcalli', 'Prisioneros de guerra'], ['Petlacalli', 'Faltas leves']] },
+  { id: 'm3', title: 'Época ↔ rasgo', pairs: [['Prehispánica', 'Venganza privada en ciertos casos'], ['Colonial', 'Leyes según la raza'], ['Independiente', 'Vacío legal y bandos'], ['Desde 2008', 'Proceso acusatorio']] },
+  { id: 'm4', title: 'Conducta prehispánica ↔ pena', pairs: [['Robo en el tianguis', 'Muerte a pedradas'], ['Embriaguez escandalosa', 'Trasquilado en público'], ['Malversación de fondos', 'Esclavitud'], ['Matar a un esclavo ajeno', 'Ser esclavo del dueño']] },
+  { id: 'm5', title: 'Fecha ↔ hecho', pairs: [['7 dic 1871', 'Código de Martínez de Castro'], ['14 ago 1931', 'Código de 1931'], ['18 may 1999', 'Queda como CPF'], ['18 jun 2008', 'Reforma constitucional']] }
+];
+
+/* CRUCIGRAMA (posiciones generadas y verificadas) */
+const CW = {"H": 21, "W": 14, "words": [{"w": "INQUISITIVO", "c": "Tipo de procedimiento, secreto, de la época colonial", "r": 8, "col": 3, "d": "A"}, {"w": "ESCLAVITUD", "c": "Pena prehispánica para la malversación de fondos", "r": 0, "col": 6, "d": "D"}, {"w": "ALMARAZ", "c": "Apellido que da nombre al código de 1929", "r": 4, "col": 6, "d": "A"}, {"w": "TEMIBILIDAD", "c": "El código de 1929 veía al delito como síntoma de ___", "r": 5, "col": 3, "d": "D"}, {"w": "ECLECTICA", "c": "Tendencia (no una sola escuela) que siguió el código de 1931", "r": 6, "col": 0, "d": "A"}, {"w": "ACUSATORIO", "c": "Tipo de proceso penal del sistema que inicia con la reforma de 2008", "r": 0, "col": 11, "d": "D"}, {"w": "APATZINGAN", "c": "Constitución de 1814 que ya hablaba de legalidad y fines de la pena", "r": 14, "col": 3, "d": "A"}, {"w": "CENICEROS", "c": "José Ángel ___, integrante de la comisión del código de 1931", "r": 12, "col": 0, "d": "A"}, {"w": "VERACRUZ", "c": "Estado que expidió en 1835 el primer código penal de nuestra historia", "r": 11, "col": 5, "d": "D"}, {"w": "CASUISMO", "c": "Defecto de querer describir cada caso posible en la ley", "r": 10, "col": 8, "d": "D"}, {"w": "ACTAS", "c": "Documentos que sirven para interpretar el código de 1931 porque no hubo exposición de motivos", "r": 2, "col": 5, "d": "A"}, {"w": "PUNIENDI", "c": "Ius ___: facultad del Estado para castigar", "r": 0, "col": 2, "d": "A"}, {"w": "CODICES", "c": "Pinturas donde se guardaban las normas en la época prehispánica", "r": 7, "col": 13, "d": "D"}, {"w": "PARTIDAS", "c": "Las Siete ___: base del sistema jurídico aplicado en la Nueva España", "r": 13, "col": 11, "d": "D"}]};
+
+/* VIDEOS Y LECTURAS: búsquedas guiadas en YouTube + lecturas de fuentes académicas */
+const VIDEOS = [
+  { t: 'puente', v: [{ id: 'NOq4QMn3chQ', title: '¿Qué es el derecho penal objetivo y subjetivo?', ch: 'Despacho Jurídico Penal', dur: '3:08', start: 0, watch: 'Explica el derecho penal objetivo (las normas) y el subjetivo (la facultad del Estado, el ius puniendi), con un ejemplo de robo. Coincide con el libro.', ojo: '' }] },
+  { t: 'prehispanica', v: [
+    { id: 'kZ3msrE67Zo', title: 'Historia del Derecho | Derecho de los Aztecas', ch: 'JurídicaMente', dur: '3:52', start: 0, watch: 'Cómo se organizaba el derecho mexica y por qué su derecho penal era tan estricto (la muerte como castigo más común) y quiénes juzgaban.', ojo: '' },
+    { id: 'UCYQ-WPPhLM', title: 'Historia del Derecho Penal en México', ch: 'Las Llaves del Derecho', dur: '6:52', start: 35, watch: 'Ve del minuto 0:35 al 1:40: penas de mayas, tarascos y aztecas.', ojo: 'El video también habla de mayas y tarascos; el libro se centra en la Triple Alianza. Para el examen, quédate con los ejemplos del libro.' }] },
+  { t: 'colonial', v: [{ id: 'QQz_mkrSCqE', title: 'Las Siete Partidas', ch: 'JurídicaMente', dur: '7 min aprox.', start: 0, watch: 'Qué son las Siete Partidas de Alfonso X, su influencia del derecho romano y canónico, y que se aplicaron en América durante la Colonia.', ojo: 'El video cuenta mucha historia de España. Lo que te importa del libro: se aplicaban en la Nueva España y son el origen de nuestro sistema jurídico.' }] },
+  { t: 'independiente', v: [
+    { id: 'zESyGKRO70g', title: 'Constitución de Apatzingán de 1814', ch: 'SMRTV (Sistema Michoacano de Radio y Televisión)', dur: '4:54', start: 0, watch: 'El contexto de Morelos y el Decreto Constitucional del 22 de octubre de 1814.', ojo: '' },
+    { id: 'UCYQ-WPPhLM', title: 'Historia del Derecho Penal en México', ch: 'Las Llaves del Derecho', dur: '6:52', start: 164, watch: 'Ve del minuto 2:44 al 4:40: el vacío legal tras la independencia, la vagancia y malvivencia y el Código de Veracruz.', ojo: 'El video dice que el proyecto de Veracruz es de 1832 y entró en vigor en 1835. El libro solo da 1835: para el examen, 1835 es el primer código penal.' }] },
+  { t: 'c1871', v: [{ id: 'UCYQ-WPPhLM', title: 'Historia del Derecho Penal en México', ch: 'Las Llaves del Derecho', dur: '6:52', start: 284, watch: 'Ve del minuto 4:44 al 5:45: la comisión de Martínez de Castro y el modelo español de 1870.', ojo: 'El video dice que comenzó a regir el 1 de abril de 1872; el libro da la fecha de promulgación, 7 de diciembre de 1871. Las dos pueden ser ciertas (se promulga y luego entra en vigor). El video además dice que con Maximiliano se aplicó el código penal francés; el libro solo menciona el proyecto de Lares, Fonseca y Herrera, que nunca se aplicó. Para el examen, sigue el libro.' }] },
+  { t: 'c1929', v: [{ id: 'UCYQ-WPPhLM', title: 'Historia del Derecho Penal en México', ch: 'Las Llaves del Derecho', dur: '6:52', start: 345, watch: 'Ve del minuto 5:45 al 6:00: Portes Gil, el Código de Almaraz, su orientación positivista y su poca vigencia.', ojo: '' }] },
+  { t: 'c1931', v: [{ id: 'UCYQ-WPPhLM', title: 'Historia del Derecho Penal en México', ch: 'Las Llaves del Derecho', dur: '6:52', start: 355, watch: 'Ve del minuto 5:55 al 6:10: el código de 1931 y la escuela ecléctica.', ojo: 'Al final el video da datos actuales que no vienen en el libro (como el Código Penal de la Ciudad de México). No los necesitas para este capítulo.' }] },
+  { t: 'r2008', v: [{ id: 'km94CtMRYDE', title: 'El proceso penal inquisitivo y sus diferencias respecto a uno acusatorio', ch: 'Miguel Carbonell', dur: '3:58', start: 0, watch: 'A partir de la reforma de 2008, qué cambia: en el inquisitivo una misma autoridad investiga, acusa y juzga; en el acusatorio esas funciones se separan.', ojo: '' }] }
+];
+const READINGS = [
+  { t: 'El libro completo (Biblioteca Jurídica Virtual UNAM)', u: 'http://biblio.juridicas.unam.mx/libros/libro.htm?l=3805', s: 'Tu libro de base. Si algo de otra fuente no coincide, gana el libro.' },
+  { t: 'Reforma legal, cambio social y opinión pública: los códigos de 1871, 1929 y 1931', u: 'https://ru.historicas.unam.mx/handle/20.500.12525/3238', s: 'Elisa Speckman Guerra (UNAM). Lectura extra para profundizar en los tres códigos.' },
+  { t: 'Antecedentes y presupuestos constitucionales del sistema procesal penal acusatorio', u: 'https://archivos.juridicas.unam.mx/www/site/publicaciones/281Antecedentes_y_presupuestos_constitucionales_del_sistema_procesal_penal_acusatorio.pdf', s: 'Instituto de Investigaciones Jurídicas, UNAM. Para profundizar en la reforma de 2008.' }
+];
+
+const MOTIVATION = [
+  'Entender toma tiempo. Cada estación que terminas es comprensión que ya es tuya.',
+  'Aquí equivocarse es parte del método: cada error te enseña qué repasar.',
+  'Veinte minutos con calma valen más que tres horas cansada.',
+  'Si una pregunta te salió bien, no fue suerte: lo entendiste.',
+  'Explicarlo con tus palabras es la mejor prueba de que lo sabes.',
+  'Hoy un paso. Mañana, un repaso corto. Así se queda en la memoria.',
+  'Puedes volver a cualquier estación las veces que quieras.'
+];
+
+/* ═══════════ LECTURA GUIADA · fragmentos exactos del libro ═══════════ */
+const READING = {
+  puente: [
+    { pg: '3', start: 'La concepción del derecho penal puede partir de dos aspectos…', end: '…a quienes las realizan.', look: '¿Cómo se llama en latín el «derecho a penar» y qué es?', ans: 'Ius puniendi: la facultad del Estado para prohibir conductas como delitos e imponer sanciones a quienes las realizan.', mins: 2 },
+    { pg: '3', start: 'El fundamento jurídico del ius puniendi…', end: '…cumplan los requisitos que establece el artículo 29 de la CPEUM.', look: '¿Qué artículo de la Constitución da al Congreso la facultad de establecer delitos?', ans: 'El artículo 73, fracción XXI. El texto del artículo (letra más pequeña) puedes leerlo rápido: lo importante es el número.', mins: 3, tip: 'El texto del artículo está citado: no necesitas memorizarlo.' },
+    { pg: '4', start: 'Por otra parte, la facultad del Estado no solo consiste en emitir…', end: '…emisión, aplicación y ejecución de las normas penales.', look: '¿Cuáles son las tres patas del «trípode»?', ans: 'Emisión, aplicación y ejecución de las normas penales.', mins: 2 },
+    { pg: '4', start: 'Cuando el Estado ejerce la facultad de emitir normas penales…', end: '…la Ley General de Salud.', look: '¿Qué es el derecho penal objetivo?', ans: 'El sistema de normas contenidas en las leyes que da a conocer las conductas prohibidas y los requisitos para sancionarlas.', mins: 2 },
+    { pg: '4–5', start: 'Para el desarrollo de la presente obra utilizaremos el Código Penal Federal…', end: '…medidas que se podrán imponer a los adolescentes que han cometido injustos.', look: '¿Qué contiene cada libro del CPF y qué pasa con el ejemplo del homicidio?', ans: 'Libro primero: principios y reglas generales. Libro segundo: conductas prohibidas. Aunque alguien mate a otro, puede no haber delito si hay una causa de justificación como la legítima defensa.', mins: 3 }
+  ],
+  prehispanica: [
+    { pg: '7', start: 'Las normas penales tienen una larga tradición en México…', end: '…plasmadas en textos por los cronistas españoles.', look: '¿Dónde estaban contenidas las normas penales prehispánicas?', ans: 'En códices en forma de pinturas, que después interpretaron y escribieron los cronistas españoles.', mins: 1 },
+    { pg: '7–8', start: 'Teja Zabre nos ilustra sobre los delitos y las sanciones…', end: '…destinadas a la educación del niño.', look: 'Es una lista larga. Elige 4 delitos y fíjate en su pena. Al final busca: ¿qué era agravante y qué era atenuante?', ans: 'Agravantes: juventud, nobleza y condición militar. Atenuantes: la embriaguez en determinados casos y el perdón del ofendido.', mins: 4, tip: 'No memorices la lista completa. La tabla de la explicación te muestra las penas que más se preguntan.' },
+    { pg: '8', start: 'Sobre las prisiones, García Ramírez se refiere…', end: '…el petlacalli, para reos de faltas leves.', look: '¿Cuántas formas de prisión menciona y para quién era cada una?', ans: 'Cuatro: teilpiloyan (deudores y reos sin pena capital), cauhcalli (delitos graves), malcalli (prisioneros de guerra) y petlacalli (faltas leves).', mins: 1 },
+    { pg: '8', start: 'Las conductas y sanciones antes descritas pueden servirnos…', end: '…dependían de la clase social del delincuente.', look: 'Este es el párrafo MÁS importante. Subraya los números 1), 2), 3) y 4).', ans: '1) No había codificación (normas en pinturas); 2) venganza privada en ciertos supuestos; 3) diversidad de sanciones; 4) la pena dependía de la clase social.', mins: 2 },
+    { pg: '8', start: 'Pese a lo anterior, conviene evitar juicios de valor…', end: '…la criminalidad era escasa.', look: '¿Qué nos pide el autor al estudiar esta época?', ans: 'Evitar juicios de valor: las reglas respondían a los valores de su tiempo. Además, la criminalidad era escasa.', mins: 1 }
+  ],
+  colonial: [
+    { pg: '9', start: 'Después de la conquista fue necesario establecer las instituciones jurídicas…', end: '…origen de nuestro actual sistema jurídico.', look: '¿Qué dos ordenamientos se aplicaban más en la Nueva España?', ans: 'La Novísima Recopilación de 1805 y las Siete Partidas (tradición romano-canónica-germánica).', mins: 1 },
+    { pg: '9', start: 'El delito se concibió desde una perspectiva religiosa y política…', end: '…o una forma de escarmiento.', look: '¿Cómo se veía el delito y cómo se veía la pena?', ans: 'El delito: como pecado, infidencia al Estado o agresión a la seguridad. La pena: expiación, vindicta o escarmiento.', mins: 1 },
+    { pg: '9', start: 'Durante la época colonial, tanto las leyes aplicables como las penas…', end: '…las garantías de defensa y de la persona humana.', look: '¿De qué dependían las leyes y las penas? ¿Cómo era el procedimiento?', ans: 'De la raza del condenado. El procedimiento era secreto e inquisitivo, sin garantías de defensa.', mins: 2 },
+    { pg: '9', start: 'Teja Zabre sostiene que las normas expedidas por los colonizadores…', end: '…a la cultura criolla.', look: '¿Fueron eficaces esas normas? ¿Por qué?', ans: 'Fueron poco eficaces: territorios extensos, poco colonizados y con poblaciones que conservaban sus costumbres.', mins: 1 }
+  ],
+  independiente: [
+    { pg: '10', start: 'Después de la consumación de la independencia de México en 1821…', end: '…la portación de armas, el robo, la vagancia y malvivencia.', look: 'Busca tres cosas: el problema político, la Constitución de 1814 y qué se hizo ante el vacío legal.', ans: 'Centralismo o federalismo; la Constitución de Apatzingán (legalidad, art. 21, y fines de la pena, art. 23); se aplicaron normas coloniales y bandos.', mins: 3 },
+    { pg: '10', start: 'En 1831 se elaboró un bosquejo de Código Penal…', end: '…dicho proyecto no llegó a tener validez.', look: '¿Cuál fue el primer código penal de nuestra historia y cuál fue su modelo?', ans: 'El Código Penal de Veracruz de 1835, con modelo en el Código Penal español de 1822.', mins: 1 },
+    { pg: '10', start: 'En la Constitución de 1857 se adoptó el sistema federal…', end: '…delitos del orden común.', look: '¿Qué sistema adoptó la Constitución de 1857 y qué podían legislar los estados?', ans: 'El sistema federal. Los estados conservaron la facultad de legislar sobre delitos del orden común.', mins: 1 }
+  ],
+  c1871: [
+    { pg: '10–11', start: 'Tomando como modelo el Código Penal español de 1870…', end: '…siendo revelador el texto de Vera Estañol…', look: 'Llena tu ficha: modelo, nombre popular, fecha y tipo de ideología.', ans: 'Modelo: código español de 1870. Nombre: Código de Martínez de Castro. Fecha: 7 de diciembre de 1871. Ideología liberal.', mins: 2 },
+    { pg: '11', start: 'Cuando entre nosotros se emprendió la formación de un Código Penal…', end: '…reduciéndolos a preceptos legales.', look: 'Cita difícil. Busca SOLO dos ideas: ¿para qué servía la pena? ¿cómo debía ser respecto del mal causado?', ans: 'La pena era un medio de ejemplaridad y corrección, y debía ser proporcional al mal causado.', mins: 3, tip: 'Léela despacio y en voz alta. Si te pierdes, lee primero el paso 3 de la explicación y vuelve.' },
+    { pg: '11–12', start: 'Este Código reunió y sistematizó por primera vez las normas penales…', end: '…que tampoco llegaron a prosperar.', look: '¿Cuál fue su aporte, su defecto y qué pasó con los proyectos posteriores?', ans: 'Aporte: sistematizó por primera vez y dio certeza jurídica. Defecto: 1151 artículos, casuismo extremo, pena retribucionista. El proyecto de Maximiliano y el de 1912 no prosperaron.', mins: 2 }
+  ],
+  c1929: [
+    { pg: '12', start: 'Terminada la revolución y emitida la Constitución de 1917…', end: '…el llamado Código de Almaraz de 1929.', look: '¿Quién lo encargó y cómo se le conoce?', ans: 'Emilio Portes Gil; se le conoce como Código de Almaraz.', mins: 1 },
+    { pg: '12', start: 'Sobre la política criminal adoptada por la comisión…', end: '…como sustento del derecho penal.', look: '¿Qué idea importante quedó clara con Chico Goerne?', ans: 'La del bien jurídico tutelado: el delito daña valores esenciales que no pueden repararse con una sanción civil.', mins: 2 },
+    { pg: '12', start: 'También son dignos de tomar en cuenta…', end: '…culminarían con un nuevo Código Penal.', look: 'Haz dos columnas en tu cuaderno: «lo bueno» y «lo criticable».', ans: 'Bueno: dolo/culpa, responsabilidad individual, legalidad, fines preventivos. Criticable: estado peligroso, temibilidad, mayoría de edad a los 16, casuismo (1,228 artículos), «obra de gabinete».', mins: 2 }
+  ],
+  c1931: [
+    { pg: '13', start: 'La Comisión Redactora del Código Penal se conformó por…', end: '…como interpretación auténtica del mismo:', look: '¿Por qué son tan importantes las actas?', ans: 'Porque la comisión no publicó la exposición de motivos; las actas orientan sobre sus lineamientos y sirven como interpretación auténtica.', mins: 1 },
+    { pg: '13', start: 'La fórmula: no hay delitos sino delincuentes…', end: '…la necesidad de conservación del orden social.', look: 'Primera mitad de la cita. Busca: ¿qué tendencia siguen y qué es la pena?', ans: 'Una tendencia ecléctica y programática (práctica y realizable). La pena es un mal necesario, justificado sobre todo por conservar el orden social.', mins: 2, tip: 'La cita es larga: divídela en dos. Esta es la primera mitad.' },
+    { pg: '13', start: 'El ejercicio de la acción penal es un servicio público…', end: '…ayudándolos a rehabilitarse socialmente.', look: 'Segunda mitad. Busca la lista a) a i). Elige 3 soluciones que te parezcan importantes.', ans: 'Por ejemplo: ampliar el arbitrio judicial, disminuir el casuismo, simplificar sanciones, dejar a los niños fuera de la función penal represiva y buscar la readaptación social.', mins: 3 },
+    { pg: '13–14', start: 'Es así como se publica el 14 de agosto de 1931…', end: '…parámetros de un Estado social y de derecho.', look: 'Anota las fechas: publicación, 1974, 1999 y las reformas más relevantes.', ans: '14 de agosto de 1931; 1974 deja de aplicarse al DF; 1999 queda como CPF; reformas relevantes de 1984 y 1994. Anteproyectos de 1949 y 1958 nunca entraron en vigor.', mins: 2 }
+  ],
+  r2008: [
+    { pg: '14', start: 'El alarmante incremento de la criminalidad…', end: '…intentaremos ir incorporando las reformas y hacer las modificaciones necesarias.', look: 'Busca: las causas de la reforma, su fecha, los tipos de cambio, la fecha límite y el código de 2014.', ans: 'Causas: criminalidad, inseguridad, impunidad, condena de inocentes, desamparo de víctimas. 18 de junio de 2008. Cambios normativos, estructurales e ideológicos. Límite: 17 de junio de 2016. CNPP: 5 de marzo de 2014, proceso acusatorio.', mins: 3 },
+    { pg: '14–15', start: 'Más adelante nos ocuparemos de los cambios normativos…', end: '…en nuestro país.', look: 'Es un aviso de lo que viene en el libro. ¿De qué se ocupará más adelante?', ans: 'De los cambios en la Constitución, los tratados internacionales y las nuevas leyes del sistema de justicia penal.', mins: 1 }
+  ]
+};
+
+/* ═══════════ CASOS DE LA VIDA REAL (aplicar) ═══════════ */
+const CASES = {
+  puente: [
+    { s: 'En las noticias: un hombre lesiona a quien intentaba asaltarlo con un cuchillo. Una vecina dice: «Seguro lo meten a la cárcel; lastimó a alguien y eso es delito».', q: '¿Qué le contestarías con lo que dice el libro?', a: 'No basta con ver que la conducta aparece en el libro segundo del CPF. Hay que revisar también el libro primero: si hubo una causa de justificación, como la legítima defensa, puede no haber delito (pág. 4). Las condiciones exactas de la legítima defensa las verás más adelante en el libro.' },
+    { s: 'En tu colonia, el comité de vecinos anuncia: «Quien tire basura en la calle irá a la cárcel».', q: '¿Puede el comité crear un delito?', a: 'No. El ius puniendi es una facultad del Estado: emitir normas penales le corresponde al Poder Legislativo (pág. 3). Un comité o un reglamento no pueden crear delitos.' }
+  ],
+  prehispanica: [
+    { s: 'En un video de redes sociales, comerciantes de un mercado golpean a una persona que les robó.', q: '¿Qué característica del derecho prehispánico se parece a esto y qué diferencia hay con hoy?', a: 'Se parece a la venganza privada: en la época prehispánica, a quien robaba en el tianguis los propios mercaderes lo mataban a pedradas (págs. 7–8). Hoy el castigo corresponde solo al Estado; la Constitución (art. 17) prohíbe hacerse justicia por propia mano.' },
+    { s: 'Dos personas cometen la misma falta. A una, por ser de familia importante, le ponen un castigo más fuerte.', q: '¿Qué idea prehispánica aparece aquí?', a: 'Que la pena dependía de la clase social, y que la nobleza podía ser agravante (pág. 8).' }
+  ],
+  colonial: [
+    { s: 'Una persona es acusada y nadie le dice de qué, no puede ver las pruebas ni tener quien la defienda.', q: '¿A qué tipo de procedimiento se parece?', a: 'Al procedimiento secreto e inquisitivo de la Colonia, que ignoraba las garantías de defensa (pág. 9). Es lo contrario del sistema acusatorio actual.' },
+    { s: 'Una amiga dice: «Robar está mal porque es pecado».', q: '¿Con qué época se relaciona esa forma de ver el delito?', a: 'Con la Colonia: el delito se concebía desde una perspectiva religiosa, como acto pecaminoso (pág. 9). Hoy el derecho penal protege bienes jurídicos, no castiga pecados.' }
+  ],
+  independiente: [
+    { s: 'Te detienen por algo que no está escrito en ninguna ley, solo porque «a la autoridad le pareció mal».', q: '¿Qué principio de la Constitución de Apatzingán lo impediría?', a: 'El principio de legalidad (art. 21): solo las leyes pueden determinar cuándo se acusa, apresa o detiene a una persona (pág. 10).' },
+    { s: 'Robas algo en Puebla. Te preguntas qué código te aplican: ¿el federal o el del estado?', q: '¿De dónde viene ese reparto de competencias?', a: 'De la Constitución de 1857, que adoptó el sistema federal: los estados legislan sobre delitos del orden común y la Federación sobre los federales (pág. 10).' }
+  ],
+  c1871: [
+    { s: 'Un reglamento de 300 páginas trata de prever cada caso posible, pero un día pasa algo que no está en la lista y nadie sabe qué hacer.', q: '¿Qué defecto del Código de 1871 ilustra?', a: 'El casuismo extremo: 1151 artículos tratando de describir cada caso (pág. 11). El autor dice en el Capítulo 3 que el casuismo contraviene la certeza jurídica.' },
+    { s: 'En tu casa la regla es: «Si rompes algo, lo pagas según lo que cueste».', q: '¿Qué idea de la pena del Código de 1871 se parece?', a: 'La proporcionalidad entre la pena y el mal causado, con una concepción retribucionista (pág. 11).' }
+  ],
+  c1929: [
+    { s: 'En tu trabajo sancionan a alguien no por algo que hizo, sino porque «tiene cara de problemático».', q: '¿Qué idea criticada del Código de 1929 se parece?', a: 'El «estado peligroso» y ver el delito como síntoma de temibilidad (pág. 12). El libro explica en el Capítulo 4 que solo las conductas (acciones u omisiones) pueden ser delito, no las situaciones de la persona.' },
+    { s: 'Dos personas causan un choque: una lo hizo a propósito y la otra por un descuido.', q: '¿Qué acierto del Código de 1929 permite tratarlas distinto?', a: 'La distinción entre responsabilidad dolosa (a propósito) y culposa (por descuido) (pág. 12).' }
+  ],
+  c1931: [
+    { s: 'Un niño de 11 años rompe a propósito el parabrisas de un auto.', q: '¿Qué proponía la comisión de 1931 sobre los niños?', a: 'Dejarlos completamente al margen de la función penal represiva, con una política tutelar y educativa (pág. 13). Hoy, la Constitución (art. 18) dice que los menores de 12 años solo están sujetos a rehabilitación y asistencia social (el libro lo cita en la pág. 26).' },
+    { s: 'Una persona sale de prisión y nadie la ayuda a conseguir trabajo; al poco tiempo vuelve a delinquir.', q: '¿Qué solución de las actas de 1931 atiende este problema?', a: 'La readaptación a la vida social y la vigilancia y ayuda a quienes salen de las cárceles para rehabilitarse (pág. 13).' }
+  ],
+  r2008: [
+    { s: 'En las noticias ves una audiencia: el juez escucha a la fiscalía y a la defensa en una sala, en voz alta y con público.', q: '¿Con qué sistema se relaciona y con qué época contrasta?', a: 'Con el proceso penal acusatorio que adoptó el CNPP (2014) a partir de la reforma de 2008 (pág. 14). Contrasta con el procedimiento secreto e inquisitivo de la Colonia (pág. 9).' },
+    { s: 'Alguien estuvo años en prisión y luego se demostró que era inocente.', q: '¿Esto tiene relación con la reforma de 2008?', a: 'Sí: la condena de inocentes es una de las causas que el libro menciona para la reforma, junto con la criminalidad, la inseguridad, la impunidad y el desamparo de las víctimas (pág. 14).' }
+  ]
+};
+
+/* ═══════════ PREGUNTAS DE EXAMEN (formatos universitarios) ═══════════ */
+const EXQ = [];
+function E(t, f, q, o, a, e, p) { const it = { id: 'e' + (EXQ.length + 1), t, f, q, o, a, e, p }; EXQ.push(it); BANK.push(it); }
+E('prehispanica', 'Completa', 'En la época prehispánica, el pueblo conocía las normas a través de las ______, por lo que no había ______ ni sistematización.', ['leyes escritas – jueces', 'pinturas jeroglíficas – codificación', 'Siete Partidas – tribunales', 'bandos – procesos'], 1, 'Es la primera de las cuatro características.', '8');
+E('prehispanica', 'Relaciona', 'Relaciona: I. Cauhcalli · II. Malcalli · III. Petlacalli — a) Faltas leves · b) Prisioneros de guerra · c) Delitos graves', ['I-a, II-b, III-c', 'I-c, II-b, III-a', 'I-b, II-c, III-a', 'I-c, II-a, III-b'], 1, 'Cauhcalli, graves; malcalli, guerra; petlacalli, leves.', '8');
+E('prehispanica', 'Elige', 'Son características del derecho penal prehispánico: I. Venganza privada en ciertos supuestos · II. Codificación sistemática · III. Diversidad de sanciones · IV. Pena según la clase social', ['I, II y III', 'II, III y IV', 'I, III y IV', 'I, II y IV'], 2, 'No había codificación (II es falsa).', '8');
+E('prehispanica', 'Caso', 'Un noble y un plebeyo cometen el mismo delito en Texcoco. Según el libro:', ['Ambos reciben la misma pena', 'La nobleza podía agravar la pena', 'La nobleza siempre lo liberaba', 'Solo se castigaba al plebeyo'], 1, 'La juventud, la nobleza y la condición militar podían ser agravantes.', '8');
+E('colonial', 'Completa', 'Las Siete Partidas se sustentaban en la tradición ______ y son el origen de nuestro actual sistema ______.', ['romano-canónica-germánica – jurídico', 'prehispánica – político', 'francesa – penal', 'anglosajona – procesal'], 0, 'Así lo dice el libro en la pág. 9.', '9');
+E('colonial', 'Elige', 'Rasgos de la legislación colonial según el libro: I. Heterogénea y caótica · II. Igual para todos · III. Procedimiento secreto e inquisitivo · IV. Leyes según la raza', ['I, III y IV', 'I, II y III', 'II, III y IV', 'I, II y IV'], 0, 'No era igual para todos: dependía de la raza.', '9');
+E('colonial', 'Caso', 'Durante la Colonia, un conquistador y un indígena cometen la misma conducta. ¿Qué ley se aplicaba a cada uno?', ['La misma ley a ambos', 'Al conquistador, las leyes de la península; al indígena, las emitidas para la Nueva España', 'A ambos, el Código de 1871', 'Al indígena, sus códices'], 1, 'Las leyes y penas se determinaban por la raza.', '9');
+E('independiente', 'Ordena', 'Ordena del más antiguo al más reciente: I. Código Penal de Veracruz · II. Constitución de Apatzingán · III. Constitución de 1857 · IV. Bosquejo del Estado de México', ['II, IV, I, III', 'IV, II, I, III', 'II, I, IV, III', 'I, II, IV, III'], 0, '1814, 1831, 1835, 1857.', '10');
+E('independiente', 'Completa', 'Tras la independencia, ante el vacío legal, se aplicaron las normas ______ y algunos ______.', ['prehispánicas – códices', 'coloniales – bandos', 'federales – reglamentos', 'españolas de 1870 – decretos'], 1, 'Bandos para castigar armas, robo, vagancia y malvivencia.', '10');
+E('independiente', 'Elige', '¿Cuáles nunca llegaron a tener validez? I. Bosquejo del Estado de México (1831) · II. Código de Veracruz (1835) · III. Proyecto de Antonio Corona (1851–1853)', ['Solo I', 'I y III', 'II y III', 'I, II y III'], 1, 'El de Veracruz sí se expidió: fue el primero.', '10');
+E('c1871', 'Relaciona', 'Relaciona el código con su modelo: I. Veracruz (1835) · II. Martínez de Castro (1871) — a) Código español de 1870 · b) Código español de 1822', ['I-a, II-b', 'I-b, II-a', 'Ambos con a', 'Ambos con b'], 1, '1835 ↔ 1822; 1871 ↔ 1870.', '10');
+E('c1871', 'Completa', 'El Código de 1871 sistematizó por primera vez las normas penales, dando ______ a los ciudadanos, aunque sus 1151 artículos lo llevaron a un ______ extremo.', ['libertad – rigor', 'certeza jurídica – casuismo', 'igualdad – formalismo', 'seguridad – retraso'], 1, 'Certeza jurídica y casuismo extremo.', '11');
+E('c1871', 'Caso', 'Un estudiante dice: «El de 1871 fue el primer código penal de México». ¿Qué le corriges?', ['Nada, es correcto', 'El primero de nuestra historia fue el de Veracruz (1835); el de 1871 fue el primero en reunir y sistematizar las normas para el DF y los delitos federales', 'El primero fue el de 1929', 'El primero fueron las Siete Partidas'], 1, 'Distingue «primer ordenamiento penal» (Veracruz) de «primera sistematización» del código de 1871.', '10–11');
+E('c1929', 'Elige', 'Fueron críticas al Código de 1929: I. Estado peligroso · II. Delito como síntoma de temibilidad · III. Distinción entre dolo y culpa · IV. Mayoría de edad a los 16 años', ['I, II y III', 'II, III y IV', 'I, III y IV', 'I, II y IV'], 3, 'Dolo y culpa fue un acierto.', '12');
+E('c1929', 'Completa', 'Para Chico Goerne, el delito daña valores esenciales de forma tal que el daño no puede ser reparado por la sanción ______; así quedó clara la concepción del ______.', ['penal – casuismo', 'civil – bien jurídico tutelado', 'administrativa – estado peligroso', 'religiosa – pecado'], 1, 'Sanción civil y bien jurídico tutelado.', '12');
+E('c1929', 'Caso', 'Un compañero afirma: «El Código de 1929 resolvió el casuismo del de 1871». ¿Es correcto?', ['Sí, tenía menos artículos', 'No: tuvo 1,228 artículos, aún más casuista', 'Sí, porque era ecléctico', 'No aplica: no tenía artículos'], 1, '1,228 contra 1151.', '12');
+E('c1931', 'Relaciona', 'Relaciona: I. 14 ago 1931 · II. 23 dic 1974 · III. 18 may 1999 — a) Queda como CPF · b) Publicación · c) Deja de aplicarse al Distrito Federal', ['I-b, II-c, III-a', 'I-a, II-b, III-c', 'I-c, II-a, III-b', 'I-b, II-a, III-c'], 0, 'Publicación, DF, CPF.', '13–14');
+E('c1931', 'Completa', 'La comisión de 1931 consideró que la pena es un ______ y que la temibilidad solo sirve para fijar el ______ de la sanción.', ['castigo divino – tipo', 'mal necesario – monto', 'derecho de la víctima – lugar', 'acto de venganza – plazo'], 1, 'Junto con el daño causado.', '13');
+E('c1931', 'Elige', 'Soluciones propuestas en las actas de 1931: I. Ampliar el arbitrio judicial · II. Aumentar el casuismo · III. Simplificar sanciones · IV. Dejar a los niños al margen de la función penal represiva', ['I, II y III', 'I, III y IV', 'II, III y IV', 'I, II y IV'], 1, 'Proponía DISMINUIR el casuismo.', '13');
+E('c1931', 'Caso', 'Tu maestra pregunta: «¿Dónde buscarías lo que quiso el legislador de 1931, si no hay exposición de motivos?»', ['En las Siete Partidas', 'En las actas de la Comisión Redactora', 'En el Código de 1929', 'En el CNPP'], 1, 'Las actas son su interpretación auténtica.', '13');
+E('r2008', 'Ordena', 'Ordena: I. CNPP · II. Reforma constitucional · III. Fecha límite de los cambios', ['II, I, III', 'I, II, III', 'II, III, I', 'III, II, I'], 0, '2008, 2014, 2016.', '14');
+E('r2008', 'Elige', 'Causas de la reforma de 2008 según el libro: I. Impunidad · II. Condena de inocentes · III. Desamparo de las víctimas · IV. Exceso de jueces', ['I, II y III', 'II, III y IV', 'I, III y IV', 'I, II y IV'], 0, 'El exceso de jueces no aparece.', '14');
+E('puente', 'Relaciona', 'Relaciona la pata del trípode con el poder o institución: I. Emisión · II. Aplicación · III. Ejecución — a) Poder Judicial · b) Sistema penitenciario · c) Poder Legislativo', ['I-c, II-a, III-b', 'I-a, II-b, III-c', 'I-b, II-c, III-a', 'I-c, II-b, III-a'], 0, 'Legislativo emite, Judicial aplica, sistema penitenciario ejecuta.', '3–4');
+E('puente', 'Completa', 'Cuando el Estado ejerce la facultad de emitir normas penales da origen al derecho penal ______.', ['subjetivo', 'objetivo', 'prehispánico', 'procesal'], 1, 'Derecho penal objetivo = sistema de normas.', '4');
+
+const EXAMS = [
+  { id: 'A', title: 'Examen A', desc: '25 preguntas de todo el capítulo, en orden de las épocas.', ids: () => EXQ.slice(0, 22).map(q => q.id).concat(['q1', 'q3', 'q50']), n: 25, order: true },
+  { id: 'B', title: 'Examen B', desc: '25 preguntas distintas, mezcladas como en un examen real.', ids: () => ['q2', 'q4', 'q7', 'q10', 'q11', 'q12', 'q15', 'q17', 'q19', 'q22', 'q23', 'q26', 'q29', 'q31', 'q33', 'q36', 'q38', 'q40', 'q41', 'q43', 'q45', 'q47', 'q49', 'q51', 'e23'], n: 25 },
+  { id: 'F', title: 'Simulacro final', desc: '30 preguntas al azar del banco completo. Cada vez es diferente.', ids: () => BANK.map(q => q.id), n: 30, random: true }
+];
+
+/* ═══════════ GLOSARIO TÉCNICO ═══════════ */
+const GLOSSARY = [
+  ['Ius puniendi', 'Del latín, «derecho a penar». Facultad del Estado para prohibir conductas como delitos e imponer sanciones a quienes las realizan.', 'puente', '3', 'Que el Estado, y no un particular, decida que robar es delito y fije su castigo.'],
+  ['Derecho penal subjetivo', 'Sinónimo de ius puniendi: el poder del Estado para castigar.', 'puente', '3', ''],
+  ['Derecho penal objetivo', 'Sistema de normas en las leyes que da a conocer las conductas prohibidas y los requisitos para sancionarlas.', 'puente', '4', 'El Código Penal Federal impreso.'],
+  ['Código Penal Federal (CPF)', 'Ley penal federal. Su libro primero tiene reglas generales y su libro segundo describe las conductas prohibidas.', 'puente', '4', ''],
+  ['Causa de justificación', 'Circunstancia prevista en la ley que hace que una conducta que parece delito no lo sea; por ejemplo, la legítima defensa.', 'puente', '4', 'Lesionar a alguien para defenderte de una agresión.'],
+  ['Legítima defensa', 'Causa de justificación del libro primero del CPF. El libro la estudia a fondo en la Segunda parte, Capítulo 7.', 'puente', '4', ''],
+  ['Fuero común / fuero federal', 'Reparto de competencias: los estados legislan sobre delitos del orden común y la Federación sobre los federales.', 'independiente', '10', 'Un robo en la calle (común) frente al contrabando (federal).'],
+  ['Códice', 'Documento prehispánico en forma de pinturas. Ahí estaban las normas penales.', 'prehispanica', '7', 'No confundir con «código» (ley escrita y ordenada).'],
+  ['Cronista', 'Persona que escribe la historia de su tiempo. Los cronistas españoles interpretaron los códices.', 'prehispanica', '7', ''],
+  ['Triple Alianza', 'Unión de México, Texcoco y Tacuba en la época prehispánica.', 'prehispanica', '7', ''],
+  ['Agravante', 'Circunstancia que aumenta la pena.', 'prehispanica', '8', 'En la época prehispánica: juventud, nobleza, condición militar.'],
+  ['Atenuante', 'Circunstancia que disminuye la pena.', 'prehispanica', '8', 'En la época prehispánica: embriaguez en ciertos casos, perdón del ofendido.'],
+  ['Exculpante', 'Que libera de culpa. En la época prehispánica, la minoría de edad lo era muchas veces.', 'prehispanica', '8', ''],
+  ['Venganza privada', 'Castigo que aplica la propia víctima o la comunidad, sin juez ni proceso.', 'prehispanica', '8', 'Los mercaderes que apedreaban a quien robaba en el tianguis.'],
+  ['Juicio de valor', 'Opinión sobre si algo es bueno o malo. El autor pide evitarlo al estudiar épocas pasadas.', 'prehispanica', '8', ''],
+  ['Siete Partidas', 'Conjunto de ordenamientos de tradición romano-canónica-germánica, aplicado en la Nueva España; origen de nuestro sistema jurídico.', 'colonial', '9', ''],
+  ['Novísima Recopilación', 'Ordenamiento español de 1805 aplicado con frecuencia en la Nueva España.', 'colonial', '9', ''],
+  ['Infidencia', 'Falta de fidelidad o lealtad. En la Colonia, el delito podía verse como infidencia al Estado.', 'colonial', '9', ''],
+  ['Expiación', 'Pagar una culpa mediante un sufrimiento o castigo.', 'colonial', '9', ''],
+  ['Vindicta', 'Venganza; castigo como respuesta al daño.', 'colonial', '9', ''],
+  ['Procedimiento inquisitivo', 'Proceso secreto, sin garantías de defensa. Fue el de la Colonia.', 'colonial', '9', 'Lo contrario del proceso acusatorio actual.'],
+  ['Bando', 'Disposición de la autoridad que se anuncia públicamente. Tras la independencia se usaron bandos para castigar algunas conductas.', 'independiente', '10', ''],
+  ['Principio de legalidad', 'Solo la ley puede establecer delitos y penas. Aparece ya en la Constitución de Apatzingán (art. 21).', 'independiente', '10', 'No pueden castigarte por algo que no está en la ley.'],
+  ['Centralismo / federalismo', 'Dos formas de organizar el Estado: todo el poder en un centro o repartido entre la Federación y los estados.', 'independiente', '10', ''],
+  ['Codificación / sistematizar', 'Reunir y ordenar las normas en un código coherente.', 'c1871', '11', 'El Código de 1871 lo hizo por primera vez.'],
+  ['Certeza jurídica', 'Que las personas sepan con claridad qué está prohibido y qué consecuencias tiene.', 'c1871', '11', ''],
+  ['Casuismo', 'Intentar describir en la ley cada caso posible; vuelve los códigos enormes y difíciles de aplicar.', 'c1871', '11', '1151 artículos (1871) y 1,228 (1929).'],
+  ['Retribucionismo', 'Concepción de la pena como castigo proporcional al mal causado.', 'c1871', '11', '«El que rompe, paga».'],
+  ['Positivismo jurídico', 'Corriente de la época del Código de 1871 que el libro relaciona con su casuismo extremo.', 'c1871', '11', ''],
+  ['Bien jurídico tutelado', 'Bien fundamental para la sociedad que la ley penal protege (vida, libertad, patrimonio…). Se aclara con las ideas de Chico Goerne (1929).', 'c1929', '12', 'El homicidio protege la vida.'],
+  ['Dolo / culpa', 'Doloso: hacerlo a propósito. Culposo: por descuido o imprudencia. El Código de 1929 ya los distinguía.', 'c1929', '12', 'Chocar a propósito (dolo) o por ir mirando el celular (culpa).'],
+  ['Estado peligroso / temibilidad', 'Ideas del Código de 1929 que castigaban la supuesta peligrosidad de la persona. Fueron muy criticadas.', 'c1929', '12', ''],
+  ['Obra de gabinete', 'Algo hecho desde el escritorio, sin conocer la práctica. Así se calificó al Código de 1929.', 'c1929', '12', ''],
+  ['Exposición de motivos', 'Texto que explica por qué se hace una ley. El Código de 1931 no la publicó.', 'c1931', '13', ''],
+  ['Interpretación auténtica', 'La que hace el propio autor de la ley (el legislador). Las actas de 1931 cumplen esa función.', 'c1931', '13', ''],
+  ['Ecléctico', 'Que toma elementos de varias escuelas en lugar de seguir una sola. Así fue el Código de 1931.', 'c1931', '13', ''],
+  ['Arbitrio judicial', 'Margen que tiene el juez para decidir, dentro de la ley. El Código de 1931 propuso ampliarlo.', 'c1931', '13', ''],
+  ['Readaptación social', 'Ayudar a quien cometió un delito a volver a vivir en sociedad. Hoy la Constitución habla de reinserción social.', 'c1931', '13', ''],
+  ['Anteproyecto', 'Borrador de una ley que todavía no se aprueba. Los de 1949 y 1958 nunca entraron en vigor.', 'c1931', '14', ''],
+  ['Sistema penal acusatorio', 'Proceso penal adoptado en el CNPP a partir de la reforma de 2008. Lo opuesto al inquisitivo.', 'r2008', '14', 'Audiencias públicas con juez, fiscalía y defensa.'],
+  ['CNPP', 'Código Nacional de Procedimientos Penales, del 5 de marzo de 2014.', 'r2008', '14', ''],
+  ['Funcionalismo social', 'Sistema de interpretación del derecho penal que desarrolla el autor del libro.', 'r2008', '14', '']
+];
+
+/* ═══════════ ADIVINA QUIÉN SOY (pistas progresivas) ═══════════ */
+const RIDDLES = [
+  { a: 'El Código Penal de 1871', clues: ['Tengo como modelo un código español de 1870.', 'Mi ideología es liberal.', 'Tengo 1151 artículos y me llaman por el apellido de Antonio.'], o: ['El Código Penal de 1871', 'El Código Penal de 1929', 'El Código de Veracruz', 'El Código Penal de 1931'] },
+  { a: 'El Código Penal de 1929', clues: ['Nací después de la Constitución de 1917.', 'Hablo de «estado peligroso» y temibilidad.', 'Me dicen «obra de gabinete» y llevo el apellido Almaraz.'], o: ['El Código Penal de 1871', 'El Código Penal de 1929', 'El Código Penal de 1931', 'El CNPP'] },
+  { a: 'El Código Penal de 1931', clues: ['No sigo una sola escuela: soy ecléctico.', 'No publicaron mi exposición de motivos.', 'En 1999 me convertí en el Código Penal Federal.'], o: ['El Código Penal de 1929', 'El Código Penal de 1931', 'Las Siete Partidas', 'El Código de Veracruz'] },
+  { a: 'Las Siete Partidas', clues: ['Me aplicaban en la Nueva España.', 'Vengo de la tradición romano-canónica-germánica.', 'Soy el origen del sistema jurídico mexicano actual.'], o: ['La Novísima Recopilación', 'Las Siete Partidas', 'La Constitución de Apatzingán', 'Los códices'] },
+  { a: 'El Código Penal de Veracruz', clues: ['Me expidieron en 1835.', 'Mi modelo fue el código español de 1822.', 'Soy el primer ordenamiento penal de nuestra historia.'], o: ['El Código Penal de 1871', 'El bosquejo del Estado de México', 'El Código Penal de Veracruz', 'El proyecto de Antonio Corona'] },
+  { a: 'La Constitución de Apatzingán', clues: ['Soy de 1814, antes de que se consumara la independencia.', 'Mi artículo 23 habla de los fines de la pena.', 'Mi artículo 21 contiene el principio de legalidad.'], o: ['La Constitución de 1857', 'La Constitución de Apatzingán', 'La Constitución de 1917', 'Las Siete Partidas'] },
+  { a: 'El cauhcalli', clues: ['Existí en la época prehispánica.', 'Era una forma de privar de la libertad.', 'Era para los responsables de delitos graves.'], o: ['El petlacalli', 'El malcalli', 'El cauhcalli', 'El teilpiloyan'] },
+  { a: 'La reforma constitucional de 2008', clues: ['Nací por la impunidad y la condena de inocentes.', 'Implico cambios normativos, estructurales e ideológicos.', 'Mi plazo terminó el 17 de junio de 2016.'], o: ['El CNPP', 'La reforma constitucional de 2008', 'El Código Penal de 1931', 'La reforma de 1994'] },
+  { a: 'El ius puniendi', clues: ['Soy una facultad del Estado.', 'Me sostengo en un trípode: emisión, aplicación y ejecución.', 'Mi nombre en latín significa «derecho a penar».'], o: ['El derecho penal objetivo', 'El ius puniendi', 'La legítima defensa', 'El bien jurídico'] }
+];
+
+/* ═══════════ LÍNEA DEL TIEMPO INTERACTIVA (hoja de repaso) ═══════════ */
+const TIMELINE = [
+  { y: 'Antes de 1521', t: 'Época prehispánica', d: 'Normas en códices (pinturas). Venganza privada en ciertos casos, muchas sanciones, pena según la clase social. Prisiones: teilpiloyan, cauhcalli, malcalli, petlacalli.', p: '7–8', id: 'prehispanica' },
+  { y: 'Colonia', t: 'Nueva España', d: 'Novísima Recopilación (1805) y Siete Partidas. Delito = pecado o infidencia. Leyes y penas según la raza. Procedimiento secreto e inquisitivo.', p: '9', id: 'colonial' },
+  { y: '1814', t: 'Constitución de Apatzingán', d: 'Bases para futuras leyes penales: principio de legalidad (art. 21) y fines de la pena (art. 23).', p: '10', id: 'independiente' },
+  { y: '1821', t: 'Independencia', d: 'Debate centralismo o federalismo. Vacío legal: se aplican normas coloniales y bandos.', p: '10', id: 'independiente' },
+  { y: '1835', t: 'Código Penal de Veracruz', d: 'Primer ordenamiento penal de nuestra historia. Modelo: código español de 1822.', p: '10', id: 'independiente' },
+  { y: '1857', t: 'Constitución de 1857', d: 'Sistema federal: código para la Federación; los estados legislan el fuero común.', p: '10', id: 'independiente' },
+  { y: '1871', t: 'Código de Martínez de Castro', d: 'Modelo español de 1870, liberal. Primera sistematización (certeza jurídica). 1151 artículos: casuismo extremo. Pena retribucionista.', p: '10–11', id: 'c1871' },
+  { y: '1929', t: 'Código de Almaraz', d: 'Encargo de Portes Gil. Bien jurídico tutelado, dolo/culpa, legalidad, prevención. Críticas: estado peligroso, temibilidad, edad 16, 1,228 artículos.', p: '12', id: 'c1929' },
+  { y: '1931', t: 'Código Penal de 1931', d: '14 de agosto. Ecléctico y programático. Sin exposición de motivos: valen las actas. Pena = mal necesario. Niños fuera de la función penal. Readaptación.', p: '13', id: 'c1931' },
+  { y: '1999', t: 'Código Penal Federal', d: 'Con la reforma del 18 de mayo, el código de 1931 queda como CPF (en 1974 había dejado de aplicarse al DF).', p: '14', id: 'c1931' },
+  { y: '2008', t: 'Reforma constitucional', d: '18 de junio. Nuevo sistema de seguridad pública y justicia penal. Cambios normativos, estructurales e ideológicos.', p: '14', id: 'r2008' },
+  { y: '2014', t: 'CNPP', d: '5 de marzo. Proceso penal acusatorio.', p: '14', id: 'r2008' },
+  { y: '2016', t: 'Fecha límite', d: '17 de junio: plazo para concluir los cambios del nuevo sistema.', p: '14', id: 'r2008' }
+];
+
+/* Cuadro «tapa y destapa» */
+const COMPARE = {
+  cols: ['1871', '1929', '1931'],
+  rows: [
+    ['Nombre', 'Martínez de Castro', 'Almaraz', 'Código de 1931 (hoy CPF)'],
+    ['Quién lo impulsó', 'Comisión de Martínez de Castro, Lafragua, Ortiz de Montellano y Zamacona', 'Encargado por Emilio Portes Gil', 'Ceniceros, López Lira, Teja Zabre, Garrido y Garza'],
+    ['Modelo o tendencia', 'Código español de 1870; liberal', 'Bien jurídico, pero con estado peligroso', 'Ecléctico y programático'],
+    ['Artículos', '1151', '1,228', 'Propone disminuir el casuismo'],
+    ['Idea de la pena', 'Retribucionista, proporcional al mal causado', 'Fines preventivos (art. 68)', 'Mal necesario; readaptación social'],
+    ['Problema principal', 'Casuismo extremo', 'Temibilidad, edad 16, «obra de gabinete»', 'Sin exposición de motivos (se usan las actas)']
+  ]
+};
+
+/* ═══════════ PLATAFORMA · LÓGICA (v2) ═══════════ */
+(function () {
+  'use strict';
+  const KEY = 'carmen-penal-cap2-v1';
+  const LMAP = {}; LESSONS.forEach((l, i) => { l.n = i; LMAP[l.id] = l; });
+  const QMAP = {}; BANK.forEach(q => { QMAP[q.id] = q; });
+  const STUDY = LESSONS;
+  const PHASES = [['intro', 'Inicio'], ['read', 'Leer'], ['steps', 'Entender'], ['cases', 'Aplicar'], ['check', 'Comprobar'], ['explain', 'Explicar']];
+
+  function defaults() {
+    return { done: {}, reviews: {}, step: {}, phase: {}, read: {}, explain: {}, keys: {}, mastery: {}, wrong: {}, flash: {}, games: {}, cw: {}, days: {}, answered: 0, correct: 0, rate: 0.95, exams: {}, guideSeen: false };
+  }
+  function load() {
+    try { const raw = localStorage.getItem(KEY); if (raw) { const d = JSON.parse(raw); const b = defaults(); Object.keys(b).forEach(k => { if (d[k] === undefined) d[k] = b[k]; }); return d; } } catch (e) { /* sin almacenamiento */ }
+    return defaults();
+  }
+  let S = load();
+  function save() { try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (e) { /* ignorar */ } }
+
+  const $ = s => document.querySelector(s);
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  const shuffle = a => { const b = a.slice(); for (let i = b.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [b[i], b[j]] = [b[j], b[i]]; } return b; };
+  const pad = n => String(n).padStart(2, '0');
+  const dstr = d => `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
+  const today = () => dstr(new Date());
+  const addDays = (s, n) => { const [y, m, d] = s.split('-').map(Number); return dstr(new Date(y, m - 1, d + n)); };
+  const LET = ['A', 'B', 'C', 'D'];
+  const INTERVALS = [1, 3, 7];
+  const norm = s => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+
+  function mark() { S.days[today()] = true; save(); }
+  function record(t, ok) { const m = S.mastery[t] || { c: 0, n: 0 }; m.n++; if (ok) m.c++; S.mastery[t] = m; S.answered++; if (ok) S.correct++; mark(); }
+  function mastery(t) { const m = S.mastery[t]; return m && m.n ? m.c / m.n : null; }
+  function toast(msg) {
+    const old = $('.toast'); if (old) old.remove();
+    const d = document.createElement('div'); d.className = 'toast'; d.setAttribute('role', 'status'); d.textContent = msg; document.body.appendChild(d);
+    setTimeout(() => d.remove(), 2600);
+  }
+  function streak() { let n = 0; let d = today(); if (!S.days[d]) d = addDays(d, -1); while (S.days[d]) { n++; d = addDays(d, -1); } return n; }
+  function dueReviews() {
+    const t = today(); const out = [];
+    Object.keys(S.done).forEach(id => { const k = S.reviews[id] || 0; if (k >= INTERVALS.length) return; if (addDays(S.done[id], INTERVALS[k]) <= t) out.push(id); });
+    return out;
+  }
+  function nextLesson() { return LESSONS.find(l => !S.done[l.id]) || null; }
+  function copyText(text) {
+    const done = () => toast('Enlace copiado. Pégalo en el navegador o en YouTube.');
+    try { navigator.clipboard.writeText(text).then(done, () => toast('Mantén presionado el texto para copiarlo.')); } catch (e) { toast('Mantén presionado el texto para copiarlo.'); }
+  }
+
+  /* Voz */
+  const synth = window.speechSynthesis || null; let speaking = null;
+  function clean(h) { return String(h).replace(/<br\s*\/?>/gi, '. ').replace(/<\/(li|tr|div|p)>/gi, '. ').replace(/<\/(td|th)>/gi, ', ').replace(/<[^>]+>/g, ' ').replace(/&amp;/g, 'y').replace(/\bvs\.?/gi, 'contra').replace(/[«»"→↓·]/g, ' ').replace(/\p{Extended_Pictographic}/gu, '').replace(/\s+/g, ' ').trim(); }
+  function speak(id, text) {
+    if (!synth) { toast('Este navegador no puede leer en voz alta.'); return; }
+    synth.cancel(); if (speaking === id) { speaking = null; refreshSpeak(); return; }
+    const u = new SpeechSynthesisUtterance(clean(text)); const vs = synth.getVoices();
+    const v = ['es-MX', 'es-US', 'es-419', 'es-ES', 'es'].map(p => vs.find(x => x.lang && x.lang.replace('_', '-').toLowerCase().startsWith(p.toLowerCase()))).find(Boolean);
+    if (v) u.voice = v; u.lang = v ? v.lang : 'es-MX'; u.rate = S.rate;
+    u.onend = u.onerror = () => { if (speaking === id) { speaking = null; refreshSpeak(); } };
+    speaking = id; refreshSpeak(); synth.speak(u);
+  }
+  function stopSpeak() { if (synth) synth.cancel(); speaking = null; }
+  function refreshSpeak() { document.querySelectorAll('[data-speak]').forEach(b => { const on = b.dataset.speak === speaking; b.classList.toggle('on', on); b.querySelector('.lbl').textContent = on ? 'Detener' : 'Escuchar'; }); }
+  const SPK = {};
+  function speakBtn(id, text) { SPK[id] = text; return `<button class="icon-btn" data-a="speak" data-speak="${id}"><span aria-hidden="true">🔊</span> <span class="lbl">Escuchar</span></button>`; }
+
+  const UI = { view: 'home', lesson: null, step: 0, phase: 'intro', checks: {}, caseOpen: {}, showModel: false, quiz: null, tf: null, order: null, match: null, flash: null, flashT: 'all', cwSel: null, cwChecked: false, exam: null, gq: '', gt: 'all', gquiz: null, riddle: null, tlSel: 0, reveal: {}, hideAll: true, readOpen: {} };
+
+  /* ═════ NAVEGACIÓN ═════ */
+  const ICONS = {
+    home: '<path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/>',
+    learn: '<path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 19V5M9 7h6"/>',
+    practice: '<rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><path d="M14 17.5h7M17.5 14v7"/>',
+    exam: '<rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h3"/>',
+    gloss: '<path d="M4 4h10l6 6v10H4z"/><path d="M14 4v6h6M8 14h8M8 17h5"/>',
+    videos: '<rect x="3" y="5" width="18" height="14" rx="3"/><path d="M10 9l5 3-5 3z"/>'
+  };
+  const SECTIONS = [
+    ['learn', 'Aprender', 'Aquí empiezas siempre. Cada estación te guía para leer el libro por partes, entenderlo con explicaciones y ejemplos, y comprobar lo que aprendiste.', 'Todos los días, una estación a la vez.'],
+    ['practice', 'Practicar', 'Juegos para que no se te olvide: quiz, tarjetas, verdadero o falso, ordenar, relacionar, adivina quién soy y crucigrama.', 'Después de terminar una estación, 5 a 10 minutos.'],
+    ['exam', 'Examen', 'Exámenes de todo el capítulo con calificación del 0 al 10, como en la universidad.', 'Cuando termines todas las estaciones y antes de tu examen real.'],
+    ['gloss', 'Glosario', 'Las palabras técnicas del capítulo explicadas fácil, con ejemplo y página del libro.', 'Cuando no entiendas una palabra, o para repasar vocabulario.'],
+    ['videos', 'Videos', 'Búsquedas de videos para cada tema y lecturas de la UNAM.', 'Como refuerzo, después de la estación.'],
+    ['sheet', 'Hoja de repaso', 'Línea del tiempo y cuadros para repasar todo el capítulo, tapando y destapando las respuestas.', 'Un día antes del examen.']
+  ];
+  function tabbar() {
+    const tabs = [['home', 'Inicio'], ['learn', 'Aprender'], ['practice', 'Practicar'], ['exam', 'Examen'], ['gloss', 'Glosario'], ['videos', 'Videos']];
+    const map = { lesson: 'learn', sheet: 'learn', quiz: 'practice', tf: 'practice', order: 'practice', match: 'practice', flash: 'practice', cw: 'practice', riddle: 'practice', gquiz: 'gloss', examrun: 'exam', progress: 'home' };
+    const cur = map[UI.view] || UI.view;
+    return `<nav class="tabbar" aria-label="Secciones"><div class="tabbar-in">${tabs.map(t => `<button class="tab${cur === t[0] ? ' on' : ''}" data-a="go" data-v="${t[0]}" ${cur === t[0] ? 'aria-current="page"' : ''}><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${ICONS[t[0]]}</svg>${t[1]}</button>`).join('')}</div></nav>`;
+  }
+  const back = (v, label) => `<button class="back" data-a="go" data-v="${v}">← ${label}</button>`;
+
+  /* ═════ INICIO ═════ */
+  function vHome() {
+    const due = dueReviews(); const nx = nextLesson();
+    const doneN = STUDY.filter(l => S.done[l.id]).length; const pct = Math.round(doneN / STUDY.length * 100);
+    const mot = MOTIVATION[new Date().getDate() % MOTIVATION.length];
+    const hour = new Date().getHours(); const hi = hour < 12 ? 'Buenos días' : hour < 19 ? 'Buenas tardes' : 'Buenas noches';
+    const guide = !S.guideSeen ? `<section class="card guide">
+      <p class="eyebrow">Empieza aquí</p><h2>Cómo usar esta página, en 4 pasos</h2>
+      <ol class="method-l">
+        <li>Toca la pestaña <b>Aprender</b> (abajo) o el botón rosa de «Tu siguiente paso».</li>
+        <li>Entra a la estación que sigue. Cada una te dice <b>qué páginas leer</b> y <b>qué buscar</b> en cada párrafo.</li>
+        <li>Sigue los pasos de la estación: Leer → Entender → Aplicar → Comprobar → Explicar. Tarda de 15 a 25 minutos.</li>
+        <li>Cuando termines, juega 5 minutos en <b>Practicar</b>. Mañana la página te pedirá un repaso corto aquí en Inicio.</li>
+      </ol>
+      <div class="row"><button class="btn" data-a="go" data-v="learn">Ir a Aprender</button><button class="btn line" data-a="guideok">Entendido, ocultar</button></div></section>` : '';
+    return `
+    <header class="hero">
+      <p class="eyebrow on-acc">Derecho penal · Capítulo 2 · Breve historia</p>
+      <h1>${hi}, Carmen</h1>
+      <p class="sub">Vamos a entender la historia del derecho penal mexicano: de los códices prehispánicos al sistema acusatorio de 2008.</p>
+      <div class="hero-meter"><div class="spread"><span>${doneN} de ${STUDY.length} estaciones</span><b class="tnum">${pct}%</b></div><div class="bar"><i style="width:${pct}%"></i></div></div>
+    </header>
+    ${guide}
+    ${due.length ? `<section class="card due"><p class="eyebrow">Toca repasar hoy</p><h2>Repaso corto para que no se olvide</h2><p class="muted">5 preguntas por estación, menos de 5 minutos.</p><div class="stack">${due.map(id => `<button class="mission-l" data-a="review" data-id="${id}"><span class="mi">${LMAP[id].icon}</span><span class="t">${LMAP[id].title}</span><span class="chip">Repaso ${(S.reviews[id] || 0) + 1} de 3</span></button>`).join('')}</div></section>` : ''}
+    <section class="card next">
+      <p class="eyebrow">Tu siguiente paso · está en Aprender</p>
+      ${nx ? `<div class="next-row"><span class="big-ic" aria-hidden="true">${nx.icon}</span><div class="stack tight"><p class="muted small">Estación ${nx.n} · ${nx.era} · libro págs. ${nx.pages} · ${nx.mins + 10} min</p><h2>${nx.title}</h2><p>${nx.goal}</p></div></div><button class="btn wide" data-a="open" data-id="${nx.id}">${S.phase[nx.id] ? 'Continuar la estación' : 'Empezar la estación'}</button>`
+        : `<h2>¡Terminaste las ${LESSONS.length} estaciones!</h2><p>Ahora haz el <b>Examen A</b> y luego repasa lo que falles.</p><button class="btn wide" data-a="go" data-v="exam">Ir a Examen</button>`}
+    </section>
+    <section class="card stack">
+      <p class="eyebrow">Mapa de la página</p><h2>¿Para qué sirve cada sección?</h2>
+      <div class="secmap">${SECTIONS.map(s => `<button class="sec" data-a="go" data-v="${s[0]}"><span class="sec-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${ICONS[s[0]] || '<path d="M4 4h16v16H4zM4 10h16M10 4v16"/>'}</svg></span><span class="stack tight"><b>${s[1]}</b><span>${s[2]}</span><small><b>Cuándo:</b> ${s[3]}</small></span></button>`).join('')}</div>
+    </section>
+    <section class="card quiet"><p class="motiv">${mot}</p></section>
+    <button class="btn line wide" data-a="go" data-v="progress">Ver mi avance</button>`;
+  }
+
+  /* ═════ APRENDER ═════ */
+  function vLearn() {
+    return `<header class="stack"><p class="eyebrow">Aprender</p><h1>Las estaciones del capítulo</h1>
+    <p class="muted">Hazlas en orden, una por día (o dos si te sientes bien). Ten tu libro a la mano.</p></header>
+    <section class="card howto"><p class="eyebrow">Cada estación tiene 5 pasos</p>
+    <div class="phase-legend">${PHASES.slice(1).map((p, i) => `<span><b>${i + 1}. ${p[1]}</b>${['lees en el libro solo el párrafo que te indico', 'te lo explico con ejemplos', 'lo usas en casos de la vida real', '3 preguntas con explicación', 'lo dices con tus palabras'][i]}</span>`).join('')}</div></section>
+    <div class="route">${LESSONS.map(l => {
+      const done = !!S.done[l.id]; const m = mastery(l.id); const ph = S.phase[l.id];
+      return `<button class="lrow${done ? ' done' : ''}" data-a="open" data-id="${l.id}"><span class="n">${done ? '✓' : l.n}</span><span class="stack tight"><span class="tt">${l.title}</span><span class="meta">${l.era} · págs. ${l.pages}${done ? ' · terminada' : ph ? ' · en curso' : ''}${m !== null ? ` · <b>${Math.round(m * 100)}% de aciertos</b>` : ''}</span></span><span class="ic" aria-hidden="true">${l.icon}</span></button>`;
+    }).join('')}</div>
+    <button class="btn line wide" data-a="go" data-v="sheet">Abrir la hoja de repaso interactiva</button>
+    <p class="muted small">Libro base: ${BOOK.author}, <i>${BOOK.title}</i>, ${BOOK.pub}. ${BOOK.chapter}.</p>`;
+  }
+
+  function phaseBar(l) {
+    const idx = PHASES.findIndex(p => p[0] === UI.phase);
+    return `<div class="phasebar" role="list">${PHASES.slice(1).map((p, i) => { const k = i + 1; return `<button role="listitem" class="ph${k < idx ? ' on' : k === idx ? ' cur' : ''}" data-a="phase" data-v="${p[0]}">${k}. ${p[1]}</button>`; }).join('')}</div>`;
+  }
+
+  function vLesson() {
+    const l = LMAP[UI.lesson]; const N = l.steps.length; let body = '';
+    if (UI.phase === 'intro') {
+      const R = READING[l.id]; const rmins = R.reduce((a, r) => a + r.mins, 0);
+      body = `<section class="card stack"><h2>Qué vas a hacer en esta estación</h2>
+      <div class="plan">${[['Leer', `${R.length} fragmentos cortos del libro (págs. ${l.pages})`, rmins], ['Entender', `${N} pasos de explicación con ejemplos`, l.mins], ['Aplicar', `${CASES[l.id].length} casos de la vida real`, 4], ['Comprobar', '3 preguntas con explicación', 3], ['Explicar', 'Dilo con tus palabras', 4]].map((r, i) => `<div class="plan-r"><span class="flow-n">${i + 1}</span><span><b>${r[0]}</b><small>${r[1]}</small></span><span class="muted small tnum">${r[2]} min</span></div>`).join('')}</div>
+      <p class="muted small">Puedes salir cuando quieras: la página recuerda en qué paso ibas.</p></section>
+      <section class="callout trick"><h3>Antes de leer (1 minuto)</h3><p>${l.goal} Con esa meta en mente, la lectura se vuelve una búsqueda, no un montón de texto.</p></section>
+      <button class="btn wide" data-a="setphase" data-v="read">Empezar: leer en el libro</button>`;
+    } else if (UI.phase === 'read') {
+      const R = READING[l.id]; const done = S.read[l.id] || {};
+      body = `<section class="card tips"><h2>Lectura guiada</h2><ul class="tight-list"><li>Lee <b>un fragmento a la vez</b>. Cada uno toma de 1 a 4 minutos.</li><li>Antes de leerlo, mira <b>qué tienes que buscar</b>. Al terminar, abre la respuesta y compara.</li><li><b>Salta las notas al pie</b> (las de letra pequeña con números 1, 2, 3…): son referencias a otros autores.</li><li>Si un párrafo se te hace pesado, léelo en voz alta o pasa a «Entender» y regresa después.</li></ul>
+      <p class="small">¿No tienes el libro a la mano? <a href="${BOOK.url}" target="_blank" rel="noopener">Ábrelo en la Biblioteca Jurídica Virtual de la UNAM ↗</a></p></section>
+      ${R.map((r, i) => `<article class="card frag${done[i] ? ' fdone' : ''}"><div class="spread"><p class="eyebrow">Fragmento ${i + 1} de ${R.length} · pág. ${r.pg} · ${r.mins} min</p>${done[i] ? '<span class="chip done">Leído</span>' : ''}</div>
+        <div class="fr-where"><p><span class="lab">Empieza en</span> «${r.start.replace(/…$/, '')}…»</p><p><span class="lab">Termina en</span> «…${r.end.replace(/^…/, '')}»</p></div>
+        <p class="fr-look"><b>Busca:</b> ${r.look}</p>${r.tip ? `<p class="muted small">💡 ${r.tip}</p>` : ''}
+        ${UI.readOpen[i] || done[i] ? `<div class="model"><p class="eyebrow">Lo que debiste encontrar</p><p>${r.ans}</p></div>` : `<button class="btn ghost small" data-a="readans" data-i="${i}">Ya lo leí: ver qué debía encontrar</button>`}
+      </article>`).join('')}
+      <div class="nav-btns"><button class="btn line" data-a="setphase" data-v="intro">Atrás</button><button class="btn" data-a="setphase" data-v="steps">Siguiente: entender</button></div>`;
+    } else if (UI.phase === 'steps') {
+      const s = l.steps[UI.step];
+      body = `<div class="steps-dots" aria-hidden="true">${l.steps.map((_, i) => `<i class="${i < UI.step ? 'on' : i === UI.step ? 'cur' : ''}"></i>`).join('')}</div>
+      <article class="sheet"><div class="spread"><p class="eyebrow">Explicación · paso ${UI.step + 1} de ${N}</p>${speakBtn('st' + UI.step, s.h + '. ' + s.t + (s.v ? s.v() : ''))}</div><h2>${s.h}</h2>${s.t ? `<div class="body">${s.t}</div>` : ''}${s.v ? s.v() : ''}</article>
+      ${UI.step === N - 1 ? `<div class="callout trap"><h3>Cuidado en el examen</h3><ul>${l.trap.map(t => `<li>${t}</li>`).join('')}</ul></div><div class="callout trick"><h3>Para recordarlo</h3><p>${l.trick}</p></div>` : ''}
+      <div class="nav-btns"><button class="btn line" data-a="prev">Anterior</button><button class="btn" data-a="next">${UI.step === N - 1 ? 'Siguiente: aplicar' : 'Siguiente'}</button></div>`;
+    } else if (UI.phase === 'cases') {
+      const C = CASES[l.id];
+      body = `<section class="stack"><h2>Casos de la vida real</h2><p class="muted">Lee el caso, piensa tu respuesta (dila en voz alta) y luego ábrela. Así conectas el libro con lo que ves todos los días.</p>
+      ${C.map((c, i) => `<article class="card case"><p class="eyebrow">Caso ${i + 1}</p><p class="case-s">${c.s}</p><p><b>${c.q}</b></p>${UI.caseOpen[i] ? `<div class="model"><p>${c.a}</p></div>` : `<button class="btn ghost small" data-a="caseopen" data-i="${i}">Ya lo pensé: ver respuesta</button>`}</article>`).join('')}
+      <div class="nav-btns"><button class="btn line" data-a="setphase" data-v="steps">Atrás</button><button class="btn" data-a="setphase" data-v="check">Siguiente: comprobar</button></div></section>`;
+    } else if (UI.phase === 'check') {
+      const qs = BANK.filter(q => q.t === l.id && q.id[0] === 'q').slice(0, 3);
+      const all = qs.every(q => UI.checks[q.id] !== undefined);
+      body = `<section class="stack"><h2>Comprueba lo que entendiste</h2><p class="muted">Si te equivocas, lee la explicación: así se aprende.</p>
+      ${qs.map((q, i) => qBlock(q, UI.checks[q.id], 'chk', i + 1)).join('')}
+      <div class="nav-btns"><button class="btn line" data-a="setphase" data-v="cases">Atrás</button><button class="btn" data-a="setphase" data-v="explain" ${all ? '' : 'disabled'}>Siguiente: explicar</button></div></section>`;
+    } else {
+      const ex = l.explain; const kchk = S.keys[l.id] || {}; const vid = VIDEOS.find(v => v.t === l.id);
+      body = `<section class="sheet"><p class="eyebrow">Explícalo con tus palabras</p><h2>${ex.q}</h2>
+      <p class="muted">Escríbelo (o dilo en voz alta) como si se lo contaras a alguien de tu familia que no estudia derecho. No copies del libro. Está bien si no sale perfecto.</p>
+      <label class="sr" for="exp-${l.id}">Tu explicación</label><textarea id="exp-${l.id}" class="ta" data-a="exptext" rows="6" placeholder="Con mis palabras: …">${esc(S.explain[l.id] || '')}</textarea>
+      ${UI.showModel ? `<div class="model"><p class="eyebrow">Respuesta modelo</p><p>${ex.model}</p></div>
+      <div class="stack"><p class="eyebrow">¿Tu explicación incluyó estas ideas? Márcalas</p>${ex.keys.map((k, i) => `<label class="check"><input type="checkbox" id="k-${l.id}-${i}" data-a="keychk" data-i="${i}" ${kchk[i] ? 'checked' : ''}><span>${k}</span></label>`).join('')}</div>` : `<button class="btn ghost" data-a="showmodel">Comparar con la respuesta modelo</button>`}
+      </section>
+      ${vid ? `<section class="card stack"><p class="eyebrow">Refuerzo opcional en video</p>${videoRow(vid)}</section>` : ''}
+      <div class="nav-btns"><button class="btn line" data-a="setphase" data-v="check">Atrás</button><button class="btn" data-a="finish">${S.done[l.id] ? 'Guardar y salir' : 'Terminar estación'}</button></div>`;
+    }
+    return `${back('learn', 'Estaciones')}<header class="lesson-top"><p class="eyebrow">Estación ${l.n} · ${l.era} · Libro, págs. ${l.pages}</p><h1>${l.title}</h1>${UI.phase !== 'intro' ? phaseBar(l) : ''}</header>${body}`;
+  }
+
+  function qBlock(q, ans, ctx, num) {
+    const answered = ans !== undefined;
+    return `<div class="card q"><p class="q-text">${num ? `<span class="qn">${num}</span>` : ''}${q.f ? `<span class="chip fmt">${q.f}</span> ` : ''}${q.q}</p><div class="opts">${q.o.map((o, i) => {
+      let cls = ''; if (answered) { if (i === q.a) cls = ' ok'; else if (i === ans) cls = ' no'; }
+      return `<button class="opt${cls}" data-a="ans" data-ctx="${ctx}" data-q="${q.id}" data-i="${i}" ${answered ? 'disabled' : ''}><span class="ov">${LET[i]}</span><span>${o}</span></button>`;
+    }).join('')}</div>${answered ? `<div class="fb ${ans === q.a ? 'ok' : 'no'}"><b class="h">${ans === q.a ? '¡Bien! Lo entendiste.' : 'Todavía no. Mira por qué:'}</b><p>${ans === q.a ? '' : `La respuesta es <b>${LET[q.a]}) ${q.o[q.a]}</b>. `}${q.e}</p><p class="pg">Libro, pág. ${q.p}</p></div>` : ''}</div>`;
+  }
+
+  /* ═════ HOJA DE REPASO INTERACTIVA ═════ */
+  function vSheet() {
+    const t = TIMELINE[UI.tlSel];
+    const cell = (k, txt) => { const open = !UI.hideAll || UI.reveal[k]; return `<button class="rv${open ? ' open' : ''}" data-a="rv" data-k="${k}" aria-label="${open ? '' : 'Destapar respuesta'}">${open ? txt : '<span>Toca para ver</span>'}</button>`; };
+    return `${back('learn', 'Estaciones')}<header class="stack"><p class="eyebrow">Hoja de repaso interactiva</p><h1>Todo el capítulo en una página</h1><p class="muted">Primero intenta recordar; después toca para comprobar. Así la memoria trabaja de verdad.</p></header>
+    <section class="card stack"><h2>1. Línea del tiempo</h2><p class="muted small">Toca cada fecha para ver qué pasó.</p>
+      <div class="tl-wrap"><div class="tl">${TIMELINE.map((x, i) => `<button class="tl-i${i === UI.tlSel ? ' on' : ''}" data-a="tl" data-i="${i}"><span class="tl-y">${x.y}</span><span class="tl-d"></span><span class="tl-t">${x.t}</span></button>`).join('')}</div></div>
+      <div class="tl-card"><p class="eyebrow">${t.y} · pág. ${t.p}</p><h3>${t.t}</h3><p>${t.d}</p><div class="row"><button class="btn small line" data-a="tlmove" data-d="-1" ${UI.tlSel === 0 ? 'disabled' : ''}>← Antes</button><button class="btn small line" data-a="tlmove" data-d="1" ${UI.tlSel === TIMELINE.length - 1 ? 'disabled' : ''}>Después →</button><button class="btn small ghost" data-a="open" data-id="${t.id}">Ir a la estación</button></div></div>
+    </section>
+    <section class="card stack"><div class="spread"><h2>2. Los tres códigos: tapa y destapa</h2><button class="icon-btn" data-a="hideall">${UI.hideAll ? 'Mostrar todo' : 'Tapar todo'}</button></div>
+      <p class="muted small">Di la respuesta en voz alta antes de tocar la casilla.</p>
+      <div class="tbl-wrap"><table class="tbl rvt"><thead><tr><th></th>${COMPARE.cols.map(c => `<th>${c}</th>`).join('')}</tr></thead><tbody>${COMPARE.rows.map((r, ri) => `<tr><th scope="row">${r[0]}</th>${r.slice(1).map((c, ci) => `<td>${cell('c' + ri + '-' + ci, c)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>
+    </section>
+    <section class="card stack"><h2>3. Las tres épocas</h2>
+      ${[['Prehispánica', 'Códices (pinturas)', 'Venganza privada en ciertos casos; pena según clase social', '7–8'], ['Colonial', 'Novísima Recopilación y Siete Partidas', 'Leyes según la raza; proceso secreto e inquisitivo', '9'], ['Independiente', 'Normas coloniales y bandos → códigos propios', 'De Veracruz (1835) al CPF (1999)', '10–14']].map((e, i) => `<div class="era"><b>${e[0]} <small class="muted">pág. ${e[3]}</small></b><div class="era-g"><span class="lab">¿Dónde estaban las normas?</span>${cell('e' + i + 'a', e[1])}<span class="lab">Rasgo clave</span>${cell('e' + i + 'b', e[2])}</div></div>`).join('')}
+    </section>
+    <section class="card stack"><h2>4. Reforma de 2008 en 5 datos</h2>
+      ${[['¿Cuándo?', '18 de junio de 2008'], ['¿Por qué?', 'Criminalidad, inseguridad, impunidad, condena de inocentes y desamparo de víctimas'], ['¿Qué tipo de cambios?', 'Normativos, estructurales e ideológicos'], ['¿Qué código procesal?', 'CNPP, 5 de marzo de 2014: proceso acusatorio'], ['¿Fecha límite?', '17 de junio de 2016']].map((x, i) => `<div class="era-g one"><span class="lab">${x[0]}</span>${cell('r' + i, x[1])}</div>`).join('')}
+    </section>
+    <section class="card stack"><h2>5. Frases para recordar</h2>${LESSONS.map(l => `<div class="pair"><b>${l.title}</b><span>${l.trick}</span></div>`).join('')}</section>`;
+  }
+
+  /* ═════ PRACTICAR ═════ */
+  function vPractice() {
+    const wrongN = Object.keys(S.wrong).filter(k => S.wrong[k] > 0 && QMAP[k]).length;
+    return `<header class="stack"><p class="eyebrow">Practicar</p><h1>Juegos para no olvidar</h1><p class="muted">Úsalos después de terminar una estación. Cada juego trabaja la memoria de una forma distinta.</p></header>
+    <section class="card stack"><h2>Quiz con explicación</h2><p class="muted">10 preguntas. Después de cada una te digo por qué y en qué página está.</p>
+      <label class="eyebrow" for="qsel">Tema</label><select id="qsel" class="search"><option value="mix">Todo el capítulo (mixto)</option>${LESSONS.map(l => `<option value="${l.id}">${l.title}</option>`).join('')}</select>
+      <div class="row"><button class="btn" data-a="startquiz">Empezar quiz</button>${wrongN ? `<button class="btn ghost" data-a="startwrong">Repasar mis errores (${wrongN})</button>` : ''}</div></section>
+    <section class="tiles">
+      <button class="tile" data-a="go" data-v="flash"><span class="ti">🃏</span><b>Tarjetas</b><span>Para <b>recordar</b>: di la respuesta y voltea.</span></button>
+      <button class="tile" data-a="go" data-v="riddle"><span class="ti">🕵️</span><b>Adivina quién soy</b><span>Para <b>relacionar</b>: 3 pistas, adivina con la menor cantidad.</span></button>
+      <button class="tile" data-a="go" data-v="tf"><span class="ti">✅</span><b>Verdadero o falso</b><span>Para detectar <b>trampas</b> de examen.</span></button>
+      <button class="tile" data-a="go" data-v="order"><span class="ti">🕰️</span><b>Ordena la historia</b><span>Para la <b>secuencia</b> de fechas.</span></button>
+      <button class="tile" data-a="go" data-v="match"><span class="ti">🔗</span><b>Relaciona</b><span>Para <b>conectar</b> conceptos.</span></button>
+      <button class="tile" data-a="go" data-v="cw"><span class="ti">✏️</span><b>Crucigrama</b><span>Para el <b>vocabulario</b>: 14 palabras.</span></button>
+      <button class="tile" data-a="gquizstart"><span class="ti">📖</span><b>Reto del glosario</b><span>Lee la definición y elige la palabra.</span></button>
+      <button class="tile" data-a="go" data-v="sheet"><span class="ti">🗂️</span><b>Hoja de repaso</b><span>Tapa y destapa todo el capítulo.</span></button>
+    </section>`;
+  }
+
+  function startQuiz(pool, title, n, reviewOf) { UI.quiz = { qs: shuffle(pool).slice(0, n || 10), i: 0, ans: {}, title, reviewOf: reviewOf || null }; UI.view = 'quiz'; }
+  function vQuiz() {
+    const Z = UI.quiz; const total = Z.qs.length;
+    if (Z.i >= total) {
+      const ok = Z.qs.filter(q => Z.ans[q.id] === q.a).length; const pct = Math.round(ok / total * 100);
+      const msg = pct >= 80 ? '¡Excelente! Lo tienes muy claro.' : pct >= 60 ? '¡Vas bien! Revisa las que fallaste.' : 'Buen intento. Con un repaso de la estación esto sube rápido.';
+      const bad = Z.qs.filter(q => Z.ans[q.id] !== q.a);
+      return `<header class="stack"><p class="eyebrow">${Z.title}</p><h1>Resultado</h1></header>
+      <section class="card grade"><b class="tnum">${ok}/${total}</b><span>${msg}</span></section>
+      ${bad.length ? `<section class="card stack"><h2>Para repasar</h2>${bad.map(q => `<div class="review-item"><p><b>${q.q}</b></p><p class="ok">✓ ${q.o[q.a]}</p><p class="muted">${q.e} · pág. ${q.p}</p></div>`).join('')}</section>` : ''}
+      <div class="nav-btns"><button class="btn line" data-a="go" data-v="${Z.reviewOf ? 'home' : 'practice'}">Salir</button><button class="btn" data-a="go" data-v="practice">Otro juego</button></div>`;
+    }
+    const q = Z.qs[Z.i]; const ans = Z.ans[q.id];
+    return `<div class="spread">${back(Z.reviewOf ? 'home' : 'practice', 'Salir')}<span class="muted tnum">${Z.i + 1} / ${total}</span></div>
+    <div class="bar"><i style="width:${Z.i / total * 100}%"></i></div><p class="eyebrow">${Z.title} · ${LMAP[q.t].title}</p>
+    ${qBlock(q, ans, 'quiz')}${ans !== undefined ? `<button class="btn wide" data-a="qnext">${Z.i === total - 1 ? 'Ver resultado' : 'Siguiente pregunta'}</button>` : ''}`;
+  }
+
+  function vTF() {
+    if (!UI.tf) UI.tf = { list: shuffle(TF).slice(0, 10), i: 0, ok: 0, last: null };
+    const Z = UI.tf;
+    if (Z.i >= Z.list.length) return `${back('practice', 'Practicar')}<section class="card grade"><b class="tnum">${Z.ok}/${Z.list.length}</b><span>${Z.ok >= 8 ? '¡Muy bien!' : 'Cada error es una pista de qué repasar.'}</span></section><button class="btn wide" data-a="tfagain">Jugar otra vez</button>`;
+    const it = Z.list[Z.i];
+    return `<div class="spread">${back('practice', 'Practicar')}<span class="muted tnum">${Z.i + 1} / ${Z.list.length}</span></div><p class="eyebrow">Verdadero o falso · ${LMAP[it[3]].title}</p>
+    <section class="card tf-card">${it[0]}</section>
+    ${Z.last === null ? `<div class="tf-btns"><button class="btn" data-a="tf" data-v="1">Verdadero</button><button class="btn ghost" data-a="tf" data-v="0">Falso</button></div>` : `<div class="fb ${Z.last ? 'ok' : 'no'}"><b class="h">${Z.last ? '¡Correcto!' : 'No exactamente.'}</b><p>Es <b>${it[1] ? 'verdadero' : 'falso'}</b>. ${it[2]}</p></div><button class="btn wide" data-a="tfnext">Siguiente</button>`}`;
+  }
+
+  function vOrder() {
+    if (!UI.order) { const g = ORDER_GAMES[0]; UI.order = { g, cur: shuffle(g.items), checked: false }; }
+    const Z = UI.order; const ok = Z.cur.every((x, i) => x === Z.g.items[i]);
+    return `${back('practice', 'Practicar')}<header class="stack"><p class="eyebrow">Ordena la historia</p><h1>${Z.g.title}</h1><p class="muted">Usa las flechas: lo primero arriba, lo último abajo.</p></header>
+    <div class="row">${ORDER_GAMES.map(g => `<button class="icon-btn${g.id === Z.g.id ? ' on' : ''}" data-a="ordsel" data-id="${g.id}">${g.title}</button>`).join('')}</div>
+    <div class="order-list">${Z.cur.map((it, i) => `<div class="order-item${Z.checked ? (it === Z.g.items[i] ? ' good' : ' badp') : ''}"><span class="on">${i + 1}</span><span>${it}</span><span class="mv"><button data-a="mv" data-i="${i}" data-d="-1" aria-label="Subir" ${i === 0 ? 'disabled' : ''}>↑</button><button data-a="mv" data-i="${i}" data-d="1" aria-label="Bajar" ${i === Z.cur.length - 1 ? 'disabled' : ''}>↓</button></span></div>`).join('')}</div>
+    ${Z.checked ? `<div class="fb ${ok ? 'ok' : 'no'}"><b class="h">${ok ? '¡Orden perfecto!' : 'Los marcados en rojo están fuera de lugar. Muévelos y vuelve a revisar.'}</b></div>` : ''}
+    <div class="nav-btns"><button class="btn line" data-a="ordshuffle">Revolver</button><button class="btn" data-a="ordcheck">Revisar orden</button></div>`;
+  }
+
+  function setMatch(g) { UI.match = { g, left: shuffle(g.pairs.map(p => p[0])), right: shuffle(g.pairs.map(p => p[1])), sel: null, done: [], miss: 0, err: null, errR: null }; }
+  function vMatch() {
+    if (!UI.match) setMatch(MATCH_GAMES[0]);
+    const Z = UI.match; const doneAll = Z.done.length === Z.g.pairs.length;
+    return `${back('practice', 'Practicar')}<header class="stack"><p class="eyebrow">Relaciona</p><h1>${Z.g.title}</h1><p class="muted">Toca un elemento de la izquierda y luego su pareja de la derecha.</p></header>
+    <div class="row">${MATCH_GAMES.map(g => `<button class="icon-btn${g.id === Z.g.id ? ' on' : ''}" data-a="matsel" data-id="${g.id}">${g.title}</button>`).join('')}</div>
+    <div class="match-grid"><div class="stack">${Z.left.map(x => `<button class="${Z.done.includes(x) ? 'done' : Z.sel === x ? 'sel' : ''}${Z.err === x ? ' err' : ''}" data-a="mL" data-v="${esc(x)}" ${Z.done.includes(x) ? 'disabled' : ''}>${x}</button>`).join('')}</div>
+    <div class="stack">${Z.right.map(x => { const k = Z.g.pairs.find(p => p[1] === x)[0]; return `<button class="${Z.done.includes(k) ? 'done' : ''}${Z.errR === x ? ' err' : ''}" data-a="mR" data-v="${esc(x)}" ${Z.done.includes(k) ? 'disabled' : ''}>${x}</button>`; }).join('')}</div></div>
+    ${doneAll ? `<div class="fb ok"><b class="h">¡Completo!${Z.miss ? ` Con ${Z.miss} intento${Z.miss > 1 ? 's' : ''} fallido${Z.miss > 1 ? 's' : ''}.` : ' Sin errores.'}</b></div>` : ''}`;
+  }
+
+  function vFlash() {
+    const pool = FLASH.map((f, i) => ({ f, i })).filter(x => UI.flashT === 'all' || x.f[0] === UI.flashT);
+    if (!UI.flash || UI.flash.key !== UI.flashT) { const order = shuffle(pool).sort((a, b) => (S.flash[a.i] === 'ok') - (S.flash[b.i] === 'ok')); UI.flash = { key: UI.flashT, list: order.map(x => x.i), i: 0, flip: false }; }
+    const Z = UI.flash; const known = pool.filter(x => S.flash[x.i] === 'ok').length;
+    if (Z.i >= Z.list.length) return `${back('practice', 'Practicar')}<section class="card grade"><b class="tnum">${known}/${pool.length}</b><span>tarjetas que ya te sabes</span></section><button class="btn wide" data-a="flashagain">Repasar otra vez</button>`;
+    const f = FLASH[Z.list[Z.i]];
+    return `<div class="spread">${back('practice', 'Practicar')}<span class="muted tnum">${Z.i + 1} / ${Z.list.length}</span></div>
+    <label class="eyebrow" for="fsel">Tema</label><select id="fsel" class="search"><option value="all">Todas</option>${LESSONS.map(l => `<option value="${l.id}" ${UI.flashT === l.id ? 'selected' : ''}>${l.title}</option>`).join('')}</select>
+    <button class="flip${Z.flip ? ' on' : ''}" data-a="flip" aria-label="Voltear tarjeta"><div class="flip-in"><div class="face front"><div><small>${LMAP[f[0]].title}</small>${f[1]}<small class="hint-s">Toca para voltear</small></div></div><div class="face back"><div>${f[2]}</div></div></div></button>
+    ${Z.flip ? `<div class="tf-btns"><button class="btn ghost" data-a="fl" data-v="rep">Otra vez</button><button class="btn" data-a="fl" data-v="ok">Ya me la sé</button></div>` : `<p class="muted center">Primero intenta decir la respuesta en voz alta. Luego voltea.</p>`}`;
+  }
+
+  function vRiddle() {
+    if (!UI.riddle) UI.riddle = { list: shuffle(RIDDLES), i: 0, clue: 1, ans: null, pts: 0 };
+    const Z = UI.riddle;
+    if (Z.i >= Z.list.length) return `${back('practice', 'Practicar')}<section class="card grade"><b class="tnum">${Z.pts}</b><span>puntos de ${Z.list.length * 3} posibles</span></section><button class="btn wide" data-a="ridagain">Jugar otra vez</button>`;
+    const r = Z.list[Z.i];
+    return `<div class="spread">${back('practice', 'Practicar')}<span class="muted tnum">${Z.i + 1} / ${Z.list.length} · ${Z.pts} pts</span></div>
+    <header class="stack"><p class="eyebrow">Adivina quién soy</p><p class="muted small">Si aciertas con 1 pista ganas 3 puntos; con 2, 2 puntos; con 3, 1 punto.</p></header>
+    <section class="card stack">${r.clues.slice(0, Z.ans !== null ? 3 : Z.clue).map((c, i) => `<p class="clue-r"><span class="flow-n">${i + 1}</span>${c}</p>`).join('')}
+    ${Z.ans === null && Z.clue < 3 ? `<button class="btn line small" data-a="ridclue">Dame otra pista</button>` : ''}</section>
+    <div class="opts">${r.o.map((o, i) => { let cls = ''; if (Z.ans !== null) { if (o === r.a) cls = ' ok'; else if (i === Z.ans) cls = ' no'; } return `<button class="opt${cls}" data-a="ridans" data-i="${i}" ${Z.ans !== null ? 'disabled' : ''}><span class="ov">${LET[i]}</span><span>${o}</span></button>`; }).join('')}</div>
+    ${Z.ans !== null ? `<div class="fb ${r.o[Z.ans] === r.a ? 'ok' : 'no'}"><b class="h">${r.o[Z.ans] === r.a ? '¡Me adivinaste!' : 'Era: ' + r.a}</b></div><button class="btn wide" data-a="ridnext">Siguiente</button>` : ''}`;
+  }
+
+  /* Crucigrama */
+  const CELLS = (() => { const cells = {}; CW.words.forEach((w, wi) => { for (let k = 0; k < w.w.length; k++) { const key = (w.r + (w.d === 'D' ? k : 0)) + '-' + (w.col + (w.d === 'A' ? k : 0)); cells[key] = cells[key] || { ch: w.w[k], words: [] }; cells[key].words.push(wi); } }); return cells; })();
+  const NUMS = (() => { const starts = {}; let n = 0; CW.words.map((w, i) => ({ i, r: w.r, c: w.col })).sort((a, b) => a.r - b.r || a.c - b.c).forEach(k => { const key = k.r + '-' + k.c; if (!starts[key]) starts[key] = ++n; CW.words[k.i].num = starts[key]; }); return starts; })();
+  const wkey = (w, k) => (w.r + (w.d === 'D' ? k : 0)) + '-' + (w.col + (w.d === 'A' ? k : 0));
+  const solvedW = w => w.w.split('').every((ch, k) => S.cw[wkey(w, k)] === ch);
+  function vCW() {
+    const sel = UI.cwSel; const w = sel !== null ? CW.words[sel] : null;
+    const inW = key => w && w.w.split('').some((_, k) => wkey(w, k) === key);
+    let grid = '';
+    for (let r = 0; r < CW.H; r++) for (let c = 0; c < CW.W; c++) {
+      const key = r + '-' + c; const cell = CELLS[key];
+      if (!cell) { grid += '<span class="cw-x"></span>'; continue; }
+      const v = S.cw[key] || ''; let st = ''; if (UI.cwChecked && v) st = v === cell.ch ? ' good' : ' bad';
+      grid += `<label class="cw-c${inW(key) ? ' hl' : ''}${st}">${NUMS[key] ? `<i>${NUMS[key]}</i>` : ''}<input id="cw-${key}" data-a="cwin" data-k="${key}" maxlength="1" autocomplete="off" autocapitalize="characters" spellcheck="false" value="${v}" aria-label="Casilla"></label>`;
+    }
+    const list = d => CW.words.map((x, i) => ({ x, i })).filter(o => o.x.d === d).sort((a, b) => a.x.num - b.x.num).map(o => `<button class="clue${sel === o.i ? ' on' : ''}${solvedW(o.x) ? ' solved' : ''}" data-a="cwclue" data-i="${o.i}"><b>${o.x.num}</b><span>${o.x.c} <small>(${o.x.w.length})</small></span></button>`).join('');
+    const solvedN = CW.words.filter(solvedW).length;
+    return `${back('practice', 'Practicar')}<header class="stack"><p class="eyebrow">Crucigrama · Capítulo 2</p><h1>Palabras clave de la historia penal</h1><p class="muted">Sin acentos ni espacios. Toca una pista para marcar su lugar. Llevas <b>${solvedN} de ${CW.words.length}</b>.</p></header>
+    ${w ? `<div class="card cw-now"><b>${w.num} ${w.d === 'A' ? 'horizontal' : 'vertical'}:</b> ${w.c}</div>` : ''}
+    <div class="cw-wrap"><div class="cw" style="grid-template-columns:repeat(${CW.W}, var(--cw))">${grid}</div></div>
+    <div class="row"><button class="btn" data-a="cwcheck">Revisar</button>${w ? `<button class="btn ghost" data-a="cwhint">Darme una letra</button>` : ''}<button class="btn line" data-a="cwclear">Borrar todo</button></div>
+    <section class="card stack"><h2>Horizontales</h2><div class="clues">${list('A')}</div><h2>Verticales</h2><div class="clues">${list('D')}</div></section>`;
+  }
+
+  /* ═════ EXAMEN ═════ */
+  function grade10(c, n) { return Math.round(c / n * 100) / 10; }
+  function vExam() {
+    return `<header class="stack"><p class="eyebrow">Examen</p><h1>Exámenes de todo el capítulo</h1><p class="muted">Como en la universidad: no ves si acertaste hasta el final. Al terminar te doy tu calificación del 0 al 10 y te explico cada error.</p></header>
+    <section class="card tips"><h2>Antes de empezar</h2><ul class="tight-list"><li>Hazlo cuando ya hayas terminado todas las estaciones (o casi todas).</li><li>Busca un lugar tranquilo. Calcula 30 a 40 minutos.</li><li>Lee <b>todas</b> las opciones. Fíjate en años, «primero», «nunca», «siempre».</li><li>Si dudas entre dos, descarta la que contradice algo que sabes seguro.</li></ul></section>
+    <div class="stack">${EXAMS.map(x => { const h = S.exams[x.id] || []; const best = h.length ? Math.max(...h.map(r => r.g)) : null; return `<div class="card exrow"><div class="stack tight"><b class="exn">${x.title}</b><span class="muted small">${x.desc}</span>${h.length ? `<span class="small">Mejor: <b class="tnum">${best}</b> · intentos: ${h.length} · último: <b class="tnum">${h[h.length - 1].g}</b></span>` : ''}</div><button class="btn small" data-a="exstart" data-id="${x.id}">${h.length ? 'Repetir' : 'Empezar'}</button></div>`; }).join('')}</div>`;
+  }
+  function vExamRun() {
+    const Z = UI.exam; const total = Z.qs.length;
+    if (Z.finished) {
+      const ok = Z.qs.filter(q => Z.ans[q.id] === q.a).length; const g = grade10(ok, total);
+      const by = {}; Z.qs.forEach(q => { by[q.t] = by[q.t] || [0, 0]; by[q.t][1]++; if (Z.ans[q.id] === q.a) by[q.t][0]++; });
+      const bad = Z.qs.filter(q => Z.ans[q.id] !== q.a);
+      return `<header class="stack"><p class="eyebrow">${Z.title} · resultado</p><h1>Tu calificación</h1></header>
+      <section class="card grade"><b class="tnum">${g}</b><span>${ok} de ${total} correctas · ${g >= 8 ? '¡Excelente trabajo!' : g >= 6 ? 'Aprobado. Repasa las estaciones marcadas.' : 'Todavía no, y está bien: ahora sabes exactamente qué repasar.'}</span></section>
+      <section class="card stack"><h2>Por estación</h2>${Object.keys(by).map(t => { const [c, n] = by[t]; const pc = Math.round(c / n * 100); return `<div class="unitbar"><div class="spread"><span><b>${LMAP[t].title}</b></span><span class="muted tnum">${c}/${n}</span></div><div class="bar ${pc >= 80 ? 'ok' : ''}"><i style="width:${pc}%"></i></div>${pc < 60 ? `<button class="linkbtn" data-a="open" data-id="${t}">Repasar esta estación →</button>` : ''}</div>`; }).join('')}</section>
+      ${bad.length ? `<section class="card stack"><h2>Revisa tus errores</h2>${bad.map(q => `<div class="review-item"><p><b>${q.q}</b></p>${Z.ans[q.id] !== undefined ? `<p class="yo">✗ Tu respuesta: ${q.o[Z.ans[q.id]]}</p>` : '<p class="yo">✗ Sin responder</p>'}<p class="ok">✓ ${q.o[q.a]}</p><p class="muted">${q.e} · pág. ${q.p}</p></div>`).join('')}</section>` : ''}
+      <div class="nav-btns"><button class="btn line" data-a="go" data-v="exam">Volver a exámenes</button><button class="btn" data-a="startwrong">Practicar mis errores</button></div>`;
+    }
+    const q = Z.qs[Z.i]; const ans = Z.ans[q.id]; const answered = Object.keys(Z.ans).length;
+    return `<div class="spread"><button class="back" data-a="exquit">← Salir</button><span class="muted tnum">${answered}/${total} respondidas</span></div>
+    <div class="qnav">${Z.qs.map((x, i) => `<button class="${Z.ans[x.id] !== undefined ? 'ans' : ''}${i === Z.i ? ' cur' : ''}" data-a="exgo" data-i="${i}" aria-label="Pregunta ${i + 1}">${i + 1}</button>`).join('')}</div>
+    <div class="card q"><p class="eyebrow">${Z.title} · pregunta ${Z.i + 1} de ${total}</p><p class="q-text">${q.f ? `<span class="chip fmt">${q.f}</span> ` : ''}${q.q}</p><div class="opts">${q.o.map((o, i) => `<button class="opt${ans === i ? ' picked' : ''}" data-a="exans" data-i="${i}"><span class="ov">${LET[i]}</span><span>${o}</span></button>`).join('')}</div></div>
+    <div class="nav-btns"><button class="btn line" data-a="exmove" data-d="-1" ${Z.i === 0 ? 'disabled' : ''}>Anterior</button>${Z.i < total - 1 ? `<button class="btn" data-a="exmove" data-d="1">Siguiente</button>` : `<button class="btn" data-a="exfinish">Terminar y calificar</button>`}</div>
+    ${Z.confirm ? `<div class="fb no"><b class="h">Te faltan ${total - answered} preguntas.</b><p>Puedes regresar con los números de arriba, o calificar así.</p><div class="row"><button class="btn small" data-a="exfinish2">Calificar así</button><button class="btn small line" data-a="exnoconfirm">Seguir contestando</button></div></div>` : ''}`;
+  }
+
+  /* ═════ GLOSARIO ═════ */
+  function vGloss() {
+    const q = norm(UI.gq || '');
+    const list = GLOSSARY.filter(g => (UI.gt === 'all' || g[2] === UI.gt) && (!q || norm(g[0] + ' ' + g[1]).includes(q)));
+    return `<header class="stack"><p class="eyebrow">Glosario</p><h1>Vocabulario técnico</h1><p class="muted">${GLOSSARY.length} palabras del capítulo explicadas fácil, con ejemplo y página del libro.</p></header>
+    <div class="stack"><label class="sr" for="gq">Buscar palabra</label><input id="gq" class="search" type="search" placeholder="Buscar: casuismo, dolo, códice…" value="${esc(UI.gq)}" data-a="gsearch">
+    <label class="sr" for="gt">Filtrar por estación</label><select id="gt" class="search"><option value="all">Todas las estaciones</option>${LESSONS.map(l => `<option value="${l.id}" ${UI.gt === l.id ? 'selected' : ''}>${l.title}</option>`).join('')}</select>
+    <button class="btn ghost" data-a="gquizstart">Ponte a prueba con el glosario</button></div>
+    <div class="gloss" id="glist">${glossList(list)}</div>`;
+  }
+  function glossList(list) {
+    return list.length ? list.map(g => `<article class="gterm"><div class="spread"><b>${g[0]}</b><span class="muted small">pág. ${g[3]}</span></div><p>${g[1]}</p>${g[4] ? `<p class="gex"><span class="lab">Ejemplo</span> ${g[4]}</p>` : ''}</article>`).join('') : '<p class="muted">No encontré esa palabra. Prueba con otra o quita el filtro.</p>';
+  }
+  function startGQuiz() { const items = shuffle(GLOSSARY).slice(0, 10); UI.gquiz = { items: items.map(g => ({ g, o: shuffle([g[0]].concat(shuffle(GLOSSARY.filter(x => x[0] !== g[0])).slice(0, 3).map(x => x[0]))) })), i: 0, ans: null, ok: 0 }; UI.view = 'gquiz'; }
+  function vGQuiz() {
+    const Z = UI.gquiz;
+    if (Z.i >= Z.items.length) return `${back('gloss', 'Glosario')}<section class="card grade"><b class="tnum">${Z.ok}/${Z.items.length}</b><span>palabras reconocidas</span></section><button class="btn wide" data-a="gquizstart">Otra ronda</button>`;
+    const it = Z.items[Z.i];
+    return `<div class="spread">${back('gloss', 'Glosario')}<span class="muted tnum">${Z.i + 1} / ${Z.items.length}</span></div><p class="eyebrow">¿Qué palabra es?</p>
+    <section class="card tf-card">${it.g[1]}</section>
+    <div class="opts">${it.o.map((o, i) => { let cls = ''; if (Z.ans !== null) { if (o === it.g[0]) cls = ' ok'; else if (i === Z.ans) cls = ' no'; } return `<button class="opt${cls}" data-a="gans" data-i="${i}" ${Z.ans !== null ? 'disabled' : ''}><span class="ov">${LET[i]}</span><span>${o}</span></button>`; }).join('')}</div>
+    ${Z.ans !== null ? `${it.g[4] ? `<p class="muted"><b>Ejemplo:</b> ${it.g[4]}</p>` : ''}<button class="btn wide" data-a="gnext">Siguiente</button>` : ''}`;
+  }
+
+  /* ═════ VIDEOS ═════ */
+  const ytUrl = x => 'https://www.youtube.com/watch?v=' + x.id + (x.start ? '&t=' + x.start + 's' : '');
+  const mmss = n => Math.floor(n / 60) + ':' + String(n % 60).padStart(2, '0');
+  function videoRow(g) {
+    const l = LMAP[g.t];
+    return `<div class="stack"><div><p class="eyebrow">${l.era}</p><b class="vt">${l.title}</b></div>${g.v.map(x => `<div class="vid"><div class="vid-play" aria-hidden="true">▶</div><div class="stack tight"><b>${x.title}</b><span class="muted small">${x.ch} · ${x.dur}${x.start ? ` · empieza en el minuto <b>${mmss(x.start)}</b>` : ''}</span></div>
+    <p class="small"><b>Qué ver:</b> ${x.watch}</p>${x.ojo ? `<p class="ojo small"><b>Ojo, compara con el libro:</b> ${x.ojo}</p>` : `<p class="ok-n small">✓ Revisado: coincide con el libro.</p>`}
+    <div class="row"><a class="btn small" href="${ytUrl(x)}" target="_blank" rel="noopener noreferrer">Ver video ↗</a><button class="btn small line" data-a="copyq" data-q="${ytUrl(x)}">Copiar enlace</button></div></div>`).join('')}</div>`;
+  }
+  function vVideos() {
+    return `<header class="stack"><p class="eyebrow">Videos y lecturas</p><h1>Para ver y escuchar el tema</h1><p class="muted">Videos elegidos para cada estación. Revisé lo que dicen y te indico qué parte ver y en qué se diferencian del libro. Úsalos <b>después</b> de la estación, como refuerzo.</p></header>
+    <section class="card tips stack"><h2>Cómo verlos</h2><p>Toca <b>«Ver video»</b>: se abre en el minuto indicado. Si tu app no lo abre, toca <b>«Copiar enlace»</b> y pégalo en el navegador o en YouTube.</p></section>
+    <section class="card trust stack"><h2>Para aprovecharlos</h2><ul class="tight-list"><li>Si un video dice algo distinto al libro, <b>para tu examen gana el libro</b>. Anota la duda para tu maestra.</li><li>Mientras ves, pausa y pregúntate: ¿esto en qué estación lo vi?</li><li>Si buscas otros videos, prefiere canales de universidades o profesores que digan sus fuentes, y que hablen de <b>México</b>.</li></ul></section>
+    <div class="stack">${VIDEOS.map(g => `<div class="card">${videoRow(g)}</div>`).join('')}</div>
+    <section class="card stack"><h2>Lecturas de fuentes académicas</h2>${READINGS.map(r => `<div class="review-item"><a class="link" href="${r.u}" target="_blank" rel="noopener noreferrer">${r.t} ↗</a><p class="muted small">${r.s}</p><p class="small sel url">${r.u}</p></div>`).join('')}</section>`;
+  }
+
+  /* ═════ MI AVANCE ═════ */
+  function vProgress() {
+    const st = streak(); const pct = S.answered ? Math.round(S.correct / S.answered * 100) : 0;
+    const known = Object.values(S.flash).filter(x => x === 'ok').length;
+    return `${back('home', 'Inicio')}<header class="stack"><p class="eyebrow">Mi avance</p><h1>Lo que ya lograste</h1></header>
+    <section class="stats"><div class="stat"><b class="tnum">${S.correct}</b><span>respuestas correctas</span></div><div class="stat"><b class="tnum">${st}</b><span>día${st === 1 ? '' : 's'} seguidos estudiando</span></div><div class="stat"><b class="tnum">${known}</b><span>tarjetas dominadas</span></div></section>
+    <section class="card evidence"><p class="eyebrow">Evidencia, no opiniones</p><p>${S.correct ? `Has respondido bien <b>${S.correct}</b> preguntas de derecho penal (${pct}% de aciertos). Cada una es algo que entendiste.` : 'Cuando respondas preguntas, aquí verás cuántas entendiste. Los números no mienten.'}</p></section>
+    <section class="card stack"><h2>Por estación</h2>${LESSONS.map(l => { const m = mastery(l.id); const r = S.reviews[l.id] || 0; return `<div class="unitbar"><div class="spread"><span><b>${l.title}</b>${S.done[l.id] ? ` <span class="chip done">Terminada · repasos ${r}/3</span>` : ''}</span><span class="muted tnum">${m === null ? 'sin datos' : Math.round(m * 100) + '%'}</span></div><div class="bar ${m !== null && m >= .8 ? 'ok' : ''}"><i style="width:${m === null ? 0 : Math.round(m * 100)}%"></i></div></div>`; }).join('')}</section>
+    <section class="card stack"><h2>Exámenes</h2>${EXAMS.map(x => { const h = S.exams[x.id] || []; return `<p>${x.title}: ${h.length ? h.map(r => `<b class="tnum">${r.g}</b>`).join(' → ') : '<span class="muted">sin intentos</span>'}</p>`; }).join('')}</section>
+    <section class="card stack"><h2>Voz para escuchar</h2><label class="eyebrow" for="rate">Velocidad de lectura</label><select id="rate" class="search"><option value="0.8" ${S.rate == 0.8 ? 'selected' : ''}>Lenta</option><option value="0.95" ${S.rate == 0.95 ? 'selected' : ''}>Normal</option><option value="1.1" ${S.rate == 1.1 ? 'selected' : ''}>Rápida</option></select></section>
+    <section class="card stack"><h2>Guía de inicio</h2><button class="btn line" data-a="guideon">Volver a mostrar la guía en Inicio</button></section>
+    <section class="card stack"><h2>Empezar de cero</h2><p class="muted small">Tu avance se guarda solo en este teléfono o computadora.</p>${UI.confirmReset ? `<div class="row"><button class="btn" data-a="reset2">Sí, borrar todo</button><button class="btn line" data-a="reset0">Cancelar</button></div>` : `<button class="btn line" data-a="reset">Borrar mi avance</button>`}</section>`;
+  }
+
+  /* ═════ RENDER ═════ */
+  function render(keepScroll) {
+    stopSpeak();
+    const views = { home: vHome, learn: vLearn, lesson: vLesson, sheet: vSheet, practice: vPractice, quiz: vQuiz, tf: vTF, order: vOrder, match: vMatch, flash: vFlash, riddle: vRiddle, cw: vCW, exam: vExam, examrun: vExamRun, gloss: vGloss, gquiz: vGQuiz, videos: vVideos, progress: vProgress };
+    const y = window.scrollY;
+    $('#app').innerHTML = `<main class="app">${(views[UI.view] || vHome)()}</main>${tabbar()}`;
+    window.scrollTo(0, keepScroll ? y : 0);
+  }
+  function go(v) { UI.view = v; if (v === 'tf') UI.tf = null; if (v === 'order') UI.order = null; if (v === 'match') UI.match = null; if (v === 'flash') UI.flash = null; if (v === 'riddle') UI.riddle = null; UI.cwChecked = false; render(); }
+  function setPhase(p) { UI.phase = p; S.phase[UI.lesson] = p; save(); }
+
+  document.addEventListener('click', e => {
+    const b = e.target.closest('[data-a]'); if (!b) return; const a = b.dataset.a;
+    if (['cwin', 'exptext', 'keychk', 'gsearch'].includes(a)) return;
+    if (a === 'go') go(b.dataset.v);
+    else if (a === 'guideok') { S.guideSeen = true; save(); render(true); }
+    else if (a === 'guideon') { S.guideSeen = false; save(); toast('La guía aparecerá en Inicio.'); }
+    else if (a === 'speak') speak(b.dataset.speak, SPK[b.dataset.speak]);
+    else if (a === 'open') { const id = b.dataset.id; UI.lesson = id; UI.step = Math.min(S.step[id] || 0, LMAP[id].steps.length - 1); UI.phase = S.phase[id] || 'intro'; UI.checks = {}; UI.caseOpen = {}; UI.readOpen = {}; UI.showModel = false; UI.view = 'lesson'; render(); }
+    else if (a === 'setphase' || a === 'phase') { setPhase(b.dataset.v); render(); }
+    else if (a === 'readans') { const i = +b.dataset.i; UI.readOpen[i] = true; S.read[UI.lesson] = S.read[UI.lesson] || {}; S.read[UI.lesson][i] = true; mark(); save(); render(true); }
+    else if (a === 'caseopen') { UI.caseOpen[+b.dataset.i] = true; render(true); }
+    else if (a === 'next') { const l = LMAP[UI.lesson]; if (UI.step < l.steps.length - 1) { UI.step++; S.step[l.id] = UI.step; save(); } else setPhase('cases'); render(); }
+    else if (a === 'prev') { if (UI.step === 0) setPhase('read'); else UI.step--; render(); }
+    else if (a === 'showmodel') { UI.showModel = true; render(true); }
+    else if (a === 'finish') { const id = UI.lesson; const first = !S.done[id]; if (first) { S.done[id] = today(); S.reviews[id] = 0; } mark(); save(); UI.view = 'learn'; render(); toast(first ? 'Estación terminada. Mañana te toca un repaso corto en Inicio.' : 'Guardado.'); }
+    else if (a === 'ans') {
+      const q = QMAP[b.dataset.q]; const i = +b.dataset.i; const ok = i === q.a;
+      record(q.t, ok); S.wrong[q.id] = ok ? Math.max(0, (S.wrong[q.id] || 0) - 1) : (S.wrong[q.id] || 0) + 1; save();
+      if (b.dataset.ctx === 'chk') UI.checks[q.id] = i; else UI.quiz.ans[q.id] = i; render(true);
+    }
+    else if (a === 'qnext') { UI.quiz.i++; if (UI.quiz.i >= UI.quiz.qs.length && UI.quiz.reviewOf) { const id = UI.quiz.reviewOf; S.reviews[id] = (S.reviews[id] || 0) + 1; save(); } render(); }
+    else if (a === 'startquiz') { const t = $('#qsel').value; startQuiz(t === 'mix' ? BANK : BANK.filter(q => q.t === t), t === 'mix' ? 'Quiz mixto' : 'Quiz: ' + LMAP[t].title); render(); }
+    else if (a === 'startwrong') { const pool = BANK.filter(q => S.wrong[q.id] > 0); if (!pool.length) { toast('No tienes errores pendientes. ¡Bien!'); return; } startQuiz(pool, 'Mis errores'); render(); }
+    else if (a === 'review') { const id = b.dataset.id; startQuiz(BANK.filter(q => q.t === id), 'Repaso: ' + LMAP[id].title, 5, id); render(); }
+    else if (a === 'tf') { const it = UI.tf.list[UI.tf.i]; const ok = (b.dataset.v === '1') === it[1]; UI.tf.last = ok; if (ok) UI.tf.ok++; record(it[3], ok); save(); render(true); }
+    else if (a === 'tfnext') { UI.tf.i++; UI.tf.last = null; render(); }
+    else if (a === 'tfagain') { UI.tf = null; render(); }
+    else if (a === 'ordsel') { const g = ORDER_GAMES.find(x => x.id === b.dataset.id); UI.order = { g, cur: shuffle(g.items), checked: false }; render(true); }
+    else if (a === 'mv') { const Z = UI.order; const i = +b.dataset.i, j = i + (+b.dataset.d); [Z.cur[i], Z.cur[j]] = [Z.cur[j], Z.cur[i]]; Z.checked = false; render(true); }
+    else if (a === 'ordshuffle') { UI.order.cur = shuffle(UI.order.g.items); UI.order.checked = false; render(true); }
+    else if (a === 'ordcheck') { UI.order.checked = true; if (UI.order.cur.every((x, i) => x === UI.order.g.items[i])) { S.games[UI.order.g.id] = (S.games[UI.order.g.id] || 0) + 1; mark(); } render(true); }
+    else if (a === 'matsel') { setMatch(MATCH_GAMES.find(x => x.id === b.dataset.id)); render(true); }
+    else if (a === 'mL') { UI.match.sel = b.dataset.v; UI.match.err = UI.match.errR = null; render(true); }
+    else if (a === 'mR') {
+      const Z = UI.match; if (!Z.sel) { toast('Primero toca un elemento de la izquierda.'); return; }
+      const pair = Z.g.pairs.find(p => p[0] === Z.sel);
+      if (pair[1] === b.dataset.v) { Z.done.push(Z.sel); Z.sel = null; Z.err = Z.errR = null; if (Z.done.length === Z.g.pairs.length) mark(); } else { Z.miss++; Z.err = Z.sel; Z.errR = b.dataset.v; Z.sel = null; }
+      render(true);
+    }
+    else if (a === 'flip') { UI.flash.flip = !UI.flash.flip; render(true); }
+    else if (a === 'fl') { S.flash[UI.flash.list[UI.flash.i]] = b.dataset.v; mark(); UI.flash.i++; UI.flash.flip = false; render(true); }
+    else if (a === 'flashagain') { UI.flash = null; render(); }
+    else if (a === 'ridclue') { UI.riddle.clue++; render(true); }
+    else if (a === 'ridans') { const Z = UI.riddle; Z.ans = +b.dataset.i; const r = Z.list[Z.i]; if (r.o[Z.ans] === r.a) Z.pts += 4 - Z.clue; mark(); render(true); }
+    else if (a === 'ridnext') { const Z = UI.riddle; Z.i++; Z.clue = 1; Z.ans = null; render(); }
+    else if (a === 'ridagain') { UI.riddle = null; render(); }
+    else if (a === 'cwclue') { UI.cwSel = +b.dataset.i; const w = CW.words[UI.cwSel]; render(true); let k = w.w.split('').findIndex((ch, j) => !S.cw[wkey(w, j)]); if (k < 0) k = 0; const el = document.getElementById('cw-' + wkey(w, k)); if (el) { el.focus({ preventScroll: true }); el.scrollIntoView({ block: 'center', inline: 'center', behavior: 'smooth' }); } }
+    else if (a === 'cwcheck') { UI.cwChecked = true; mark(); render(true); if (Object.keys(CELLS).every(k => S.cw[k] === CELLS[k].ch)) toast('¡Crucigrama completo!'); }
+    else if (a === 'cwhint') { const w = CW.words[UI.cwSel]; for (let k = 0; k < w.w.length; k++) { const key = wkey(w, k); if (S.cw[key] !== w.w[k]) { S.cw[key] = w.w[k]; break; } } save(); render(true); }
+    else if (a === 'cwclear') { S.cw = {}; UI.cwChecked = false; save(); render(true); }
+    else if (a === 'exstart') { const x = EXAMS.find(z => z.id === b.dataset.id); let qs = x.ids().map(id => QMAP[id]).filter(Boolean); qs = x.random ? shuffle(qs).slice(0, x.n) : x.order ? qs.sort((p, q) => LMAP[p.t].n - LMAP[q.t].n) : shuffle(qs); qs = qs.map(q => q); UI.exam = { id: x.id, title: x.title, qs, i: 0, ans: {}, finished: false, confirm: false }; UI.view = 'examrun'; render(); }
+    else if (a === 'exans') { UI.exam.ans[UI.exam.qs[UI.exam.i].id] = +b.dataset.i; render(true); }
+    else if (a === 'exmove') { UI.exam.i += +b.dataset.d; UI.exam.confirm = false; render(); }
+    else if (a === 'exgo') { UI.exam.i = +b.dataset.i; UI.exam.confirm = false; render(); }
+    else if (a === 'exfinish' || a === 'exfinish2') {
+      const Z = UI.exam; const missing = Z.qs.length - Object.keys(Z.ans).length;
+      if (a === 'exfinish' && missing > 0) { Z.confirm = true; render(true); return; }
+      Z.finished = true; let ok = 0; Z.qs.forEach(q => { const good = Z.ans[q.id] === q.a; if (good) ok++; record(q.t, good); S.wrong[q.id] = good ? Math.max(0, (S.wrong[q.id] || 0) - 1) : (S.wrong[q.id] || 0) + 1; });
+      S.exams[Z.id] = (S.exams[Z.id] || []).concat([{ d: today(), g: grade10(ok, Z.qs.length) }]); save(); render();
+    }
+    else if (a === 'exnoconfirm') { UI.exam.confirm = false; render(true); }
+    else if (a === 'exquit') { UI.view = 'exam'; UI.exam = null; render(); }
+    else if (a === 'gquizstart') { startGQuiz(); render(); }
+    else if (a === 'gans') { const Z = UI.gquiz; Z.ans = +b.dataset.i; const it = Z.items[Z.i]; if (it.o[Z.ans] === it.g[0]) Z.ok++; mark(); render(true); }
+    else if (a === 'gnext') { UI.gquiz.i++; UI.gquiz.ans = null; render(); }
+    else if (a === 'copyq') copyText(b.dataset.q);
+    else if (a === 'tl') { UI.tlSel = +b.dataset.i; render(true); }
+    else if (a === 'tlmove') { UI.tlSel += +b.dataset.d; render(true); }
+    else if (a === 'rv') { UI.reveal[b.dataset.k] = !UI.reveal[b.dataset.k]; render(true); }
+    else if (a === 'hideall') { UI.hideAll = !UI.hideAll; UI.reveal = {}; render(true); }
+    else if (a === 'reset') { UI.confirmReset = true; render(true); }
+    else if (a === 'reset0') { UI.confirmReset = false; render(true); }
+    else if (a === 'reset2') { S = defaults(); save(); UI.confirmReset = false; toast('Avance borrado.'); go('home'); }
+  });
+
+  document.addEventListener('input', e => {
+    const el = e.target;
+    if (el.dataset.a === 'exptext') { S.explain[UI.lesson] = el.value; save(); }
+    else if (el.dataset.a === 'gsearch') { UI.gq = el.value; const q = norm(el.value); const list = GLOSSARY.filter(g => (UI.gt === 'all' || g[2] === UI.gt) && (!q || norm(g[0] + ' ' + g[1]).includes(q))); $('#glist').innerHTML = glossList(list); }
+    else if (el.dataset.a === 'cwin') {
+      const key = el.dataset.k; const v = (el.value || '').toUpperCase().normalize('NFD').replace(/[^A-ZÑ]/g, '').slice(-1);
+      el.value = v; S.cw[key] = v; save(); el.parentElement.classList.remove('good', 'bad');
+      if (v) { const [r, c] = key.split('-').map(Number); const cell = CELLS[key]; const w = (UI.cwSel !== null && cell.words.includes(UI.cwSel)) ? CW.words[UI.cwSel] : CW.words[cell.words[0]]; const nk = w.d === 'A' ? r + '-' + (c + 1) : (r + 1) + '-' + c; const nx = document.getElementById('cw-' + nk); if (nx) nx.focus(); }
+    }
+  });
+  document.addEventListener('change', e => {
+    const el = e.target;
+    if (el.dataset.a === 'keychk') { const id = UI.lesson; S.keys[id] = S.keys[id] || {}; S.keys[id][el.dataset.i] = el.checked; save(); }
+    else if (el.id === 'fsel') { UI.flashT = el.value; UI.flash = null; render(true); }
+    else if (el.id === 'gt') { UI.gt = el.value; render(true); }
+    else if (el.id === 'rate') { S.rate = +el.value; save(); toast('Velocidad guardada.'); }
+  });
+  document.addEventListener('focusin', e => {
+    const el = e.target; if (!(el.dataset && el.dataset.a === 'cwin' && UI.view === 'cw')) return;
+    const cell = CELLS[el.dataset.k]; if (UI.cwSel !== null && cell.words.includes(UI.cwSel)) return;
+    UI.cwSel = cell.words[0]; const w = CW.words[UI.cwSel];
+    document.querySelectorAll('.cw-c').forEach(x => x.classList.remove('hl'));
+    for (let k = 0; k < w.w.length; k++) { const n = document.getElementById('cw-' + wkey(w, k)); if (n) n.parentElement.classList.add('hl'); }
+    const html = `<b>${w.num} ${w.d === 'A' ? 'horizontal' : 'vertical'}:</b> ${w.c}`; const now = document.querySelector('.cw-now');
+    if (now) now.innerHTML = html; else { const d = document.createElement('div'); d.className = 'card cw-now'; d.innerHTML = html; document.querySelector('.cw-wrap').before(d); }
+  });
+
+  render();
+})();
+
+</script>
+</body></html>
